@@ -1,6 +1,17 @@
-p  {
+#id {
+width: 50px;
+background-color: #88bdf3;
+
+
+}
+
+
+
+p {
 
 	background-color: #b7d1c4;
+	font-style: bold;
 
 	font-size: 30px;
 }
+
