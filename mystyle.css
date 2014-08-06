@@ -20,7 +20,8 @@ ul li{
 	margin-right: 10px;
 	font-family: Oswald;
 	font-size: 20px;
-	
+	float: right;
+	clear:both;
 	
 	
 }
