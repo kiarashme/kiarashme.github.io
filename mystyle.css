@@ -16,8 +16,7 @@ img {
 ul li{
 
 	display: inline-block;
-	float: right;
-
+	
 	margin-right: 10px;
 	font-family: Oswald;
 	font-size: 20px;
