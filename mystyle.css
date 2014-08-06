@@ -16,13 +16,14 @@ img {
 ul {
 
 	display: inline-block;
-	float: right
+	float: right;
+	margin-bottom: 10px ;
 	
 }
 li {
 
 	display: inline-block;
-	padding: 5px 5px 5px 5px;
+
 }
 
 
