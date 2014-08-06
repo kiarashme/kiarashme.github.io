@@ -21,12 +21,13 @@ ul {
 	margin-right: 10px;
 	font-family: Oswald;
 	font-size: 25px;
-	text-decoration: none;
+	
 	
 }
 li {
 
 	display: inline-block;
+	text-decoration: none;
 
 }
 
