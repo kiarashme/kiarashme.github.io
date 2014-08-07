@@ -19,11 +19,17 @@ img {
 	margin-left: 10px;
 
 }
-ul li{
+#headerList {
 
 	display: inline-block;
-	
 	margin-right: 10px;
+	
+	font-family: Oswald;
+	font-size: 20px;
+	color: red;
+	text-decoration: none;
+	float: right;
+	clear:both;
 	
 	
 	
