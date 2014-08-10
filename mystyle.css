@@ -29,6 +29,7 @@ img {
 .nav li {
   display: inline;
   vertical-align: middle;
+  float: right;
   
 }
 
