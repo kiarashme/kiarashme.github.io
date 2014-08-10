@@ -22,13 +22,13 @@ img {
 	font-size: 20px;
 	color: red;
 	text-decoration: none;
-	display:inline-block;
+	
 
 }
 
 .nav li {
   display: inline;
-  line-height: 100px;
+  vertical-align: middle;
   
 }
 
