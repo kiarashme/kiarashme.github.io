@@ -28,8 +28,8 @@ img {
 
 .nav li {
   display: inline;
-  vertical-align: middle;
-  float: right;
+  line-height: 100px;
+  
 }
 
 
