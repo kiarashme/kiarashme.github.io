@@ -1,9 +1,4 @@
-#header {
-height: 50px;
-background-color: #88bdf3;
 
-
-}
 
 
 img {
@@ -30,6 +25,11 @@ img {
 	display:inline-block;
 
 }
+
+.nav li {
+  display: inline;
+}
+
 
 
 
