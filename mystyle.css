@@ -5,11 +5,6 @@ background-color: #88bdf3;
 
 }
 
-div {
-	
-	overflow: hidden;
-	
-}
 
 img {
 	width: 40px;
@@ -19,30 +14,14 @@ img {
 	margin-left: 10px;
 
 }
-#headerList {
 
-	display: inline-block;
-	margin-right: 10px;
-	
+
+.nav a {
 	font-family: Oswald;
 	font-size: 20px;
 	color: red;
 	text-decoration: none;
-	float: right;
-	clear:both;
-	
-	
-	
-	
-}
-ul li a {
-	font-family: Oswald;
-	font-size: 20px;
-	color: red;
-	text-decoration: none;
-	float: right;
-	clear:both;
-	
+	display:inline-block;
 
 }
 
