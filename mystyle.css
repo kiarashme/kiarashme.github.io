@@ -10,8 +10,9 @@ img {
 
 }
 
-.nav {
+.nav  {
         height: 70px;
+        position: relative;
         background-color: #8CB69B;
 	
 }
@@ -24,6 +25,11 @@ img {
 	text-decoration: none;
 	
 
+}
+
+.nav ul {
+position: absolute;
+top: -50px;
 }
 
 .nav li {
