@@ -29,13 +29,13 @@ img {
 
 .nav ul {
 position: absolute;
-top: -50px;
+top: -20px;
 }
 
 .nav li {
   display: inline;
   vertical-align: middle;
-  float: right;
+  
   
 }
 
