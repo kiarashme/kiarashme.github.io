@@ -1,5 +1,5 @@
 img {
-	width: 1200px;
+	width: 1350px;
 	position: relative;
 	top: 0;
 	
@@ -9,7 +9,7 @@ img {
 
 .header {
 	height: 50px;
-	width: 100%;
+	width: 105%;
 	background-color: #1F1C1C;
 	background:rgba(0,0,0,0.5);
 	position: absolute;
