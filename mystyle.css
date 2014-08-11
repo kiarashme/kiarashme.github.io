@@ -1,54 +1,6 @@
-
-
-
 img {
-	width: 40px;
-	height: 40px;
-	display: inline-block;
-	margin-top: 5px;
-	margin-left: 10px;
-
-}
-
-.nav  {
-        height: 50px;
-        position: relative;
-        background-color: #8CB69B;
+	width: 100%;
+	position: relative;
+	
 	
 }
-
-
-.nav a {
-	font-family: Oswald;
-	font-size: 20px;
-	color: white;
-	text-decoration: none;
-	
-
-}
-
-.nav ul {
-position: absolute;
-top: -8px;
-left: 1100px;
-
-}
-
-.nav li {
-  display: inline;
-  
-  
-  
-}
-
-
-
-
-p {
-
-	background-color: #b7d1c4;
-	font-style: bold;
-
-	font-size: 30px;
-}
-
