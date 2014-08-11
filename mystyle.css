@@ -6,7 +6,7 @@ img {
 }
 
 .header {
-	
+	height: 50px;
 	background-color: #1F1C1C;
 	background:rgba(0,0,0,0.5);
 }
