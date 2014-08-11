@@ -7,6 +7,12 @@ img {
 	
 }
 
+div h1 {
+	position: absolute;
+	top:0;
+	
+}
+
 .header {
 	height: 50px;
 	width: 105%;
