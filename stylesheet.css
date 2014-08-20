@@ -1,0 +1,35 @@
+
+
+
+#goRight{
+  position:absolute;
+   bottom: 0;
+ left:50%;
+  }
+  
+  #goLeft{
+  position:absolute;
+   bottom: 0;
+ left:50%;
+  }
+
+ img{
+  display:none;
+  position:absolute;
+  height:80px; /* Set your image height */
+  width: 100px;
+  bottom:0;
+  left:0;
+}
+.active{
+  display:list-item;
+}
+#circle {
+ 
+ height: 20px;
+ width:20px;
+ background-color: red;
+ border-radius: 50%;
+ position: absolute;
+ right: 50%;
+}
