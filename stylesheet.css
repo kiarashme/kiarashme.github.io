@@ -16,8 +16,8 @@
  img{
   display:none;
   position:absolute;
-  height:80px; /* Set your image height */
-  width: 100px;
+ height:150px; /* Set your image height */
+  width: 180px;
   bottom:0;
   left:0;
 }
