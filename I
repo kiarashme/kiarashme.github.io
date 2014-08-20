@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>Super Mario!</title>
+        <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+		<script type='text/javascript' src='script.js'></script>
+	</head>
+	<body>
+	<div id="goRight">
+  <img id ="rightRightDown"src="https://imagizer.imageshack.us/v2/506x335q90/746/SgDnIo.jpg"/>
+  <img id ="rightLeftDown"src="https://imagizer.imageshack.us/v2/506x335q90/539/thCntr.jpg" />
+  </div>
+  
+  <div id = "goLeft">
+  <img id ="leftRightDown"src="https://imagizer.imageshack.us/v2/506x335q90/661/mlDH2S.jpg" class="active"/>
+  
+  <img id ="leftLeftDown"src="https://imagizer.imageshack.us/v2/506x335q90/904/lFx7nN.jpg" />
+  
+  </div>
+  
+  
+
+	
+	
+        
+        <div id = "circle"></div>
+       
+            
+	</body>
+</html>
