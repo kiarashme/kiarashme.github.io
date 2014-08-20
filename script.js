@@ -1,15 +1,7 @@
 $(document).ready(function() {
     
 
- 
-  $p = $("<p>Div position</p>");
-  $h1 = $("<p>Img position</p>");
-  $h2 = $("<p>key</p>");
-  $('body').append($p);
-  $('body').append($h1);
-  $('body').append($h2);
-  
-   
+
   var lastKey = 0;
     
   
