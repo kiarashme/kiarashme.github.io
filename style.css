@@ -34,26 +34,31 @@ color: white;
 
 #navBar li div {
 	display: inline;
-	margin-left:20px;
-	margin-right:20px;
 	}
 
 	
-
 #me {
     background-color: #2C82C9;
+    margin-left:5px;
+	margin-right:20px;
 } 
 
 #home {
     background-color: #2CC990;
+    margin-left:20px;
+	margin-right:20px;
 } 
 
 #school {
     background-color: #EEE657;
+    margin-left:20px;
+	margin-right:20px;
 } 
 
 #fun {
     background-color: #FCB941;
+    margin-left:20px;
+	margin-right:5px;
 } 
 
 
