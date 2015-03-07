@@ -37,26 +37,26 @@ color: white;
 	}
 
 	
-#me {
+#me p {
     background-color: #2C82C9;
     margin-right:15px;
     padding-top:10px;
 } 
 
-#home {
+#home p {
     background-color: #2CC990;
     margin-left:15px;
 	margin-right:15px;
 	padding-top:10px;
 } 
 
-#school {
+#school p {
     background-color: #EEE657;
     margin-left:15px;
 	margin-right:15px;
 } 
 
-#fun {
+#fun p {
     background-color: #FCB941;
     margin-left:15px;
 	} 
