@@ -32,6 +32,31 @@ font-size:12px;
 color: white;
 }
 
+#navBar li div {
+
+	height:30px;
+}
+#navBar li:nth-child(1) {
+    background-color: #2C82C9;
+} 
+
+#navBar li:nth-child(2) {
+    background-color: #2CC990;
+} 
+
+#navBar li:nth-child(3) {
+    background-color: #EEE657;
+} 
+
+#navBar li:nth-child(4) {
+    background-color: #FCB941;
+} 
+
+
+
+
+
+}
 
 @-webkit-keyframes wave {
     0% { -webkit-transform: rotate(40deg); }
