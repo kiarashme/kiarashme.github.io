@@ -1,0 +1,50 @@
+.circular {
+	margin-left: 60px;
+	margin-top: 30px;
+	}
+
+	.circular img {
+
+		height:180px;
+		border-radius: 200px;
+
+	}
+
+body {
+
+	background-color: #2C82C9;
+}
+
+h1 {
+
+	font-family: Dosis;
+	color: white;
+	font-size: 23px;
+	text-align: center;
+
+
+}
+
+@-webkit-keyframes wave {
+    0% { -webkit-transform: rotate(40deg); }
+    100% { -webkit-transform: rotate(0deg); }
+}
+
+@-webkit-keyframes wave2 {
+    0% { -webkit-transform: rotate(-40deg); }
+    100% { -webkit-transform: rotate(0deg); }
+}
+.hi {
+
+	margin-left: 130px;
+	display: absolute;
+
+}
+
+.hi img {
+height: 50px;
+    -webkit-animation-name: wave;
+    -webkit-animation-name: wave2;
+    -webkit-animation-duration: 4s;
+}
+
