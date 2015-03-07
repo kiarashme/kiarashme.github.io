@@ -34,7 +34,9 @@ color: white;
 
 #navBar li div {
 	display: inline;
-	height:60px;
+	margin-left:10px;
+	margin-right:10px;
+
 	}
 
 #me {
