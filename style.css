@@ -34,14 +34,15 @@ color: white;
 
 #navBar li div {
 	display: inline;
-	margin-left:30px;
-	margin-right:30px;
+	margin-left:20px;
+	margin-right:20px;
 	}
 
 	#navBar li div p {
-		padding: 10px 30px;
+		padding: 10px 10px;
 
 	}
+
 #me {
     background-color: #2C82C9;
 } 
