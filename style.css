@@ -36,12 +36,12 @@ color: white;
 	display: inline;
 	margin-left:30px;
 	margin-right:30px;
-	padding-left:10px;
-	padding-right:10px;
-
-
 	}
 
+	#navBar li div p {
+		padding: 10px 30px;
+
+	}
 #me {
     background-color: #2C82C9;
 } 
