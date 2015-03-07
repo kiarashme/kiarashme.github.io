@@ -35,6 +35,7 @@ color: white;
 #navBar li div {
 
 	height:30px;
+	background-color: #2CC990;
 }
 #navBar li:nth-child(1) {
     background-color: #2C82C9;
