@@ -33,7 +33,7 @@ color: white;
 }
 
 #navBar li div {
-
+	display: inline;
 	height:30px;
 	background-color: #2CC990;
 }
