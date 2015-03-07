@@ -10,7 +10,19 @@
 <link href='http://fonts.googleapis.com/css?family=Dosis:200' rel='stylesheet' type='text/css'>
 <meta name="viewport" content="width=device-width, user-scalable=no" />
 
-
+<script>
+if((Browser.Platform.ios) || (Browser.Platform.webos) || (Browser.Platform.android)) {
+	//For iPhone and Andriod To remove Address bar when viewing website on Safari Mobile
+	// When ready...
+	window.addEventListener("load",function() {
+	  // Set a timeout...
+	  setTimeout(function(){
+		// Hide the address bar!
+		window.scrollTo(0, 1);
+	  }, 0);
+	});
+}
+</script>
 
 </head>
 
@@ -35,7 +47,7 @@
 	<li><div>Me</div></li>
 	<li><div>Home</div></li>
 	<li><div>School</div></li>
-	<li></div>Fun facts</div></li>
+	<li><div>Fun facts</div></li>
 
 </ul>
 	</div>
