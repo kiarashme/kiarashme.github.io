@@ -32,7 +32,7 @@ font-size:12px;
 color: white;
 }
 
-#navBar li div {
+#navBar li div p {
 	display: inline;
 	}
 
@@ -40,25 +40,27 @@ color: white;
 #me p {
     background-color: #2C82C9;
     margin-right:15px;
-    padding-top:10px;
+    padding:10px 20px;
 } 
 
 #home p {
     background-color: #2CC990;
     margin-left:15px;
 	margin-right:15px;
-	padding-top:10px;
+	padding:10px 20px;
 } 
 
 #school p {
     background-color: #EEE657;
     margin-left:15px;
 	margin-right:15px;
+	padding:10px 20px;
 } 
 
 #fun p {
     background-color: #FCB941;
     margin-left:15px;
+    padding:10px 20px;
 	} 
 
 
