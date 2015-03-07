@@ -34,22 +34,22 @@ color: white;
 
 #navBar li div {
 	display: inline;
-	height:30px;
-	background-color: #2CC990;
-}
-#navBar li:nth-child(1) {
+	height:60px;
+	}
+
+#me {
     background-color: #2C82C9;
 } 
 
-#navBar li:nth-child(2) {
+#home) {
     background-color: #2CC990;
 } 
 
-#navBar li:nth-child(3) {
+#school {
     background-color: #EEE657;
 } 
 
-#navBar li:nth-child(4) {
+#fun {
     background-color: #FCB941;
 } 
 
