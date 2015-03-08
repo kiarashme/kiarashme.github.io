@@ -47,9 +47,9 @@ ul li:nth-child(1) {
 
 } 
 ul li:nth-child(1) div {
-     position: fixed;
+    position: fixed;
     bottom: 0;
-    right: 0;
+    left: 0;
 
 } 
 
@@ -58,15 +58,34 @@ ul li:nth-child(2) {
 
 } 
 
+ul li:nth-child(2) div {
+    position: fixed;
+    bottom: 0;
+   
+} 
+
 ul li:nth-child(3) {
     background-color: #EEE657;
 
 } 
 
+ul li:nth-child(3) div {
+    position: fixed;
+    bottom: 0;
+   
+} 
+
+
 ul li:nth-child(4) {
     background-color: #FCB941;
 
 	} 
+ul li:nth-child(4) div {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+   
+} 
 
 
 
