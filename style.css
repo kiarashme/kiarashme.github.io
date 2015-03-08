@@ -35,24 +35,19 @@ color: white;
 #navBar ul li {
 	display: inline;
 	padding-bottom: 10px;
-	float: left;
 	}
 
 #navBar ul li div {
 	width:100px;
 }
 	
-ul li:nth-child(1) {
-    background-color: #2C82C9;
-    
-
-} 
-
 #me {
     background-color: #2C82C9;
     left: 0;
 
 } 
+
+
 
 
 ul li:nth-child(2) {
@@ -68,12 +63,11 @@ ul li:nth-child(3) {
 } 
 
 
+#fun {
+	background-color: #FCB941;
+	right:0;
+}
 
-
-ul li:nth-child(4) {
-    background-color: #FCB941;
-
-	} 
 
 
 
