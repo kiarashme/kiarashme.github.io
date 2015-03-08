@@ -46,6 +46,10 @@ ul li:nth-child(1) {
     background-color: #2C82C9;
 
 } 
+ul li:nth-child(1) div {
+    margin-left:0px;
+
+} 
 
 ul li:nth-child(2) {
     background-color: #2CC990;
