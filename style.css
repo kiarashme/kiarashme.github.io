@@ -26,8 +26,7 @@ h1 {
 }
 
 #navBar {
-	bottom: 0;
-}
+	}
 
 #navBar li {
 display: inline;
@@ -51,26 +50,28 @@ position: relative;
 	
 #me {
     background-color: #2C82C9;
-    left:0;
+    bottom: 0px;
+    right:0px;
    
 
 } 
 
 #home {
     background-color: #2CC990;
-    bottom: 0;} 
+    bottom: 0px;} 
 
 
 
 #school {
     background-color: #EEE657;
-    bottom: 0;
+    bottom: 0px;
     } 
 
 
 #fun {
 	background-color: #FCB941;
-	ht: 0;
+	bottom: 0px;
+	left: 0px;
 }
 
 
