@@ -30,22 +30,17 @@ h1 {
 position: absolute;
 }
 
-#navBar div {
-display: inline;
-font-family: Helvetica;
-font-size:12px;
-color: white;
-position: absolute;
-}
 
 
 
 #navBar div {
-	width:70px;
-	display: inline-block;
+	font-family: Helvetica;
+	font-size:12px;
+	width:120px;
 	padding-bottom: 20px;
 	padding-top: 20px; 
 	position: relative;
+	float: left;
 }
 	
 #me {
