@@ -25,6 +25,10 @@ h1 {
 
 }
 
+#navBar {
+	bottom: 0;
+}
+
 #navBar li {
 display: inline;
 font-family: Helvetica;
