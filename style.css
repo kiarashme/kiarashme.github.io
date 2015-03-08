@@ -12,8 +12,17 @@
 
 body {
 
-	background-color: #2C82C9;
+	
     margin:0;
+}
+
+#index {
+	background-color: #2C82C9;
+}
+
+#uzb {
+	background-color: #2CC990;
+
 }
 
 h1 {
