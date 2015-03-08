@@ -49,6 +49,7 @@ color: white;
 	
 #me {
     background-color: #2C82C9;
+    position: relative;
     left:0;
    
 
@@ -56,18 +57,21 @@ color: white;
 
 #home {
     background-color: #2CC990;
+    position: relative;
     bottom: 0;} 
 
 
 
 #school {
     background-color: #EEE657;
+    position: relative;
     bottom: 0;
     } 
 
 
 #fun {
 	background-color: #FCB941;
+	position: relative;
 	right: 0;
 }
 
