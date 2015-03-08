@@ -49,14 +49,14 @@ color: white;
 
 
 
-ul li:nth-child(2) {
+#home {
     background-color: #2CC990;
     
 } 
 
 
 
-ul li:nth-child(3) {
+#school {
     background-color: #EEE657;
     } 
 
