@@ -37,7 +37,9 @@ color: white;
 	padding: 10px 15px;
 	float: left;
 	}
-
+#navBar div {
+	width: 120px;
+}
 	
 ul li:nth-child(1) {
     background-color: #2C82C9;
