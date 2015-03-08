@@ -47,7 +47,7 @@ ul li:nth-child(1) {
 
 } 
 ul li:nth-child(1) div {
-    margin-left:0px;
+    left:50px;
 
 } 
 
