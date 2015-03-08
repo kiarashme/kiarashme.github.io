@@ -48,7 +48,7 @@ ul li:nth-child(1) {
 
 } 
 
-ul li:nth-child(1) div {
+#me {
     background-color: #2C82C9;
     left: 0;
 
