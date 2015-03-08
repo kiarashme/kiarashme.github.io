@@ -37,8 +37,9 @@ color: white;
 	padding-bottom: 10px;
 	float: left;
 	}
+
 #navBar ul li div {
-	width: 70px;
+	width: 50px;
 }
 	
 ul li:nth-child(1) {
