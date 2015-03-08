@@ -35,6 +35,7 @@ color: white;
 #navBar ul li {
 	display: inline;
 	padding: 10px 15px;
+	float: left;
 	}
 
 	
