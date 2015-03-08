@@ -14,29 +14,39 @@
 
 </head>
 
-<body id = "index">
+<body>
 
- <!-- HTML5 article tag for content -->
 
- <div id="content">
 
- <div class = "circular">
+<div data-role="page" id="mePage">
+  
+  <div data-role="main" class="ui-content">
+    <div class = "circular">
  	<img src = 'me.jpg'></img></div>
 
+<h1>Hi, my name is Asiya. This small app introduces some things about me and where I'm from. </h1>
+  
+  </div>
 
-
- <h1>Hi, my name is Asiya. This small app introduces some things about me and where I'm from. </h1>
-
-<div id = "navBar">
-
-	<div id= "me"><a href="index.html">Me</a></div>	
-	<div id ="home"><a href="uzb.html">Where I'm from</a></div>
+  <div data-role="footer" id="navBar">
+<div id= "me"><a href="index.html">Me</a></div>	
+	<div id ="home"><a href="#uzb" data-transition="slide">Where I'm from</a></div>
 	<div id ="school">School</div>
 	<div id = "fun">Fun facts</div>
 
+
+      <a href="#pagetwo" data-transition="slide">Slide to Page Two</a>
+  </div>
+</div> 
+
+<div id = "uzb">
+ <h1>
+ 	I was born in Tashkent, Uzbekistan. This country is in Central Asia and has the best food in the world.
+ </h1>
 </div>
 
-</div>
+
+
 
 </body>
 
