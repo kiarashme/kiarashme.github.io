@@ -52,6 +52,7 @@ color: white;
 
 ul li:nth-child(2) {
     background-color: #2CC990;
+    bottom: 0;
 
 } 
 
@@ -59,6 +60,7 @@ ul li:nth-child(2) {
 
 ul li:nth-child(3) {
     background-color: #EEE657;
+    bottom: 0;
 
 } 
 
@@ -66,6 +68,7 @@ ul li:nth-child(3) {
 #fun {
 	background-color: #FCB941;
 	right:0;
+	bottom: 0;
 }
 
 
