@@ -33,12 +33,14 @@ color: white;
 }
 
 #navBar ul li {
-	padding-bottom: 20px;
+
 	}
 
 #navBar ul li div {
 	width:70px;
 	display: inline-block;
+	padding-bottom: 20px;
+	padding-top: 20px; 
 }
 	
 #me {
