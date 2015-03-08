@@ -33,7 +33,7 @@ color: white;
 }
 
 #navBar ul li {
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 	}
 
 #navBar ul li div {
@@ -50,13 +50,13 @@ color: white;
 
 #home {
     background-color: #2CC990;
-    
-} 
+    bottom: 0;} 
 
 
 
 #school {
     background-color: #EEE657;
+    bottom: 0;
     } 
 
 
