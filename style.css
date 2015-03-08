@@ -34,6 +34,7 @@ display: inline;
 font-family: Helvetica;
 font-size:12px;
 color: white;
+position: relative;
 }
 
 #navBar ul li {
