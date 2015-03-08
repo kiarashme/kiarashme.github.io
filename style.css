@@ -33,12 +33,11 @@ display: inline;
 font-family: Helvetica;
 font-size:12px;
 color: white;
-position: relative;
+position: absolute;
 }
 
 #navBar ul li {
-	position: relative;
-
+	
 	}
 
 #navBar ul li div {
@@ -46,6 +45,7 @@ position: relative;
 	display: inline-block;
 	padding-bottom: 20px;
 	padding-top: 20px; 
+	position: absolute;
 }
 	
 #me {
