@@ -39,10 +39,16 @@ color: white;
 	}
 
 #navBar ul li div {
-	width:120px;
+	width:100px;
 }
 	
 ul li:nth-child(1) {
+    background-color: #2C82C9;
+    
+
+} 
+
+ul li:nth-child(1) div {
     background-color: #2C82C9;
     left: 0;
 
