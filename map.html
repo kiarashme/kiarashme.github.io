@@ -3,12 +3,10 @@
 
 <head>    
  <meta name="apple-mobile-web-app-capable" content="yes"> 
-
  <meta name="apple-mobile-webapp-status-bar-style" content="black">
-
  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-
-
 scale=1.0, target-densityDpi=device-dpi"/> 
+<link rel="stylesheet" type="text/css" href="style.css">
 
   <title>Location</title>     
     
@@ -20,9 +18,10 @@ scale=1.0, target-densityDpi=device-dpi"/>
  	I was born in Tashkent, Uzbekistan. This country is in Central Asia and has the best food in the world.
  </h1>
 
+ <button class="location" id="geo" onclick="displayMapByAddress()">Geolocate</button>    
 
  <div id="basic_map" style="width:320px;height:240px;"></div>    
-<button class="location" id="geo" onclick="displayMapByAddress()">Geolocate</button>     
+ 
 </div>   
 
 <script> 
