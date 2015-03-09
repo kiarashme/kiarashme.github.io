@@ -3,52 +3,37 @@
 <html>   
 
 <head>    
-
  <meta name="apple-mobile-web-app-capable" content="yes"> 
 
  <meta name="apple-mobile-webapp-status-bar-style" content="black">
 
  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-
 
-scale=1.0, target-densityDpi=device-dpi" /> 
+scale=1.0, target-densityDpi=device-dpi"/> 
 
   <title>Location</title>     
-
-  <link rel="stylesheet" href="iphone.css">        
+    
 
 </head> 
 
 <body onload="getGPSLatLng()"> 
-
 <header class="secondary"> Sign Up! </header>     
-
 <button class="back" onclick="location.href='index.html';">Back</button>
-
 <button class="location" id="get_coords" onClick="getGPS()">Get GPS Coordinates</button>     
-
 <div id="geolocate">    
-
  <input id="address" type="text" placeholder="Enter an address here">    
-
  <div id="basic_map" style="width:320px;height:240px;"></div>    
-
 <button class="location" id="geo" onclick="displayMapByAddress()">Geolocate</button>     
-
 </div>   
-
 <div id="gps_coords">     
-
 <h1>GPS coordinates below </h1>    
-
-</div> 
+</div>s
 
 <script> 
 
 var updateLocation; 
-
 var lat;
-
-    var lon;
+var lon;
 
     function getGPS()
 {
