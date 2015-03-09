@@ -36,7 +36,7 @@ var address = document.getElementById("address");
 //create a Geocoder object and use its geocode method. Pass the 
 
 var geocoder=new google.maps.Geocoder();
-geocoder.geocode({'address': 'Tashkent'},
+geocoder.geocode({'address': "Tashkent"},
 function(results,status)
 {
 initializeByAddress(results[0].geometry.location);
