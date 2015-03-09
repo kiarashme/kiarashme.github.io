@@ -1,85 +1,59 @@
 .circular {
-	margin-left: 60px;
-	margin-top: 30px;
-	}
-
-	.circular img {
-
-		height:180px;
-		border-radius: 200px;
-
-	}
-
-body {	
+    margin-left: 60px;
+    margin-top: 30px;
+}
+.circular img {
+    height:180px;
+    border-radius: 200px;
+}
+body {
     margin:0;
 }
-
 #mePage {
-	background-color: #2C82C9;
+    background-color: #2C82C9;
 }
-
 #uzb {
-	background-color: #2CC990;
+    background-color: #2CC990;
 }
-
 h1 {
-
-	font-family: Dosis;
-	color: white;
-	font-size: 20px;
-	text-align: center;
+    font-family: Dosis;
+    color: white;
+    font-size: 20px;
+    text-align: center;
 }
-
 #navBar {
-position: absolute;
+    position: absolute;
 }
-
-
 #navBar div a {
- font-size: 12px;
- text-decoration: none;
- color: white;
- text-align: center;
- bottom: 0;
-}
-
-#me a{
-	text-decoration: none;
-
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    bottom: 0;
 }
 
 #navBar div {
-	
-	width:80px;
-	height:40px;
-	padding-bottom: 0px;
-	padding-top: 30px; 
-	position: relative;
-	float: left;
+    width:70px;
+    height:40px;
+    padding-bottom: 0px;
+    padding-top: 30px;
+    position: relative;
+    float: left;
+    text-align: center;
 }
-	
+
+
 #me {
     background-color: #2C82C9;
     right:0px;
-   
-
-} 
-
+}
 #home {
     background-color: #2CC990;
-  }
-
+}
 #school {
     background-color: #EEE657;
-        } 
-
-
-#fun {
-	background-color: #FCB941;
-	left: 0px;
 }
-
-
-
-
-
+#fun {
+    background-color: #FCB941;
+    left: 0px;
+}
