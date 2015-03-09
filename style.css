@@ -55,6 +55,13 @@ h1 {
     background-color: #EEE657;
 }
 #fun {
-    background-color: #FCB941;
+    background-color: #FC6042;
     left: 0px;
+}
+
+.location {
+	outline: 0;
+	border: 0;
+	background-color: #FCB941;
+	height: 50px;
 }
