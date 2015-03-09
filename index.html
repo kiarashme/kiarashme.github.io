@@ -22,6 +22,43 @@
         
 <h1>Hi, my name is Asiya. This small app introduces some things about me and where I'm from. </h1>
 
+ <div id="basic_map" style="width:320px;height:240px;"></div>    
+<button class="location" id="geo" onclick="displayMapByAddress()">Geolocate</button>     
+</div>   
+
+<script> 
+
+/* This function is invoked when there is an error in reading GPS info*/
+
+function displayMapByAddress(){
+var geocoder=new google.maps.Geocoder();
+geocoder.geocode({'address': "Tashkent"},
+function(results,status)
+{
+initializeByAddress(results[0].geometry.location);
+});
+}
+
+/*This function initialize a map centerd on the location passed as 
+
+parameter*/
+
+function initializeByAddress(location){
+var myOptions={
+zoom: 15,
+center: location,
+mapTypeId: google.maps.MapTypeId.ROADMAP
+}
+var map= new google.maps.Map(document.getElementById("basic_map"), 
+myOptions);
+var marker= new google.maps.Marker({position: location, map: 
+map});
+}
+
+</script>
+
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
         <div id="navBar">
             <div id="me"><a href="index.html">Me</a>
 
@@ -29,7 +66,7 @@
             <div id="home"><a href="uzb.html">My home</a>
 
             </div>
-            <div id="school"><a href="map.html">My school</div>
+            <div id="school"><a href="map.html">sMy school</div>
             <div id="fun">Fun facts</div>
         </div>
     </div>
