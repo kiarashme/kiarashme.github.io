@@ -15,11 +15,7 @@ scale=1.0, target-densityDpi=device-dpi"/>
 
 </head> 
 
-<header class="secondary"> Sign Up! </header>     
-<button class="back" onclick="location.href='index.html';">Back</button>
-<button class="location" id="get_coords" onClick="getGPS()">Get GPS Coordinates</button>     
-<div id="geolocate">    
- <input id="address" type="text" placeholder="Enter an address here">    
+
  <div id="basic_map" style="width:320px;height:240px;"></div>    
 <button class="location" id="geo" onclick="displayMapByAddress()">Geolocate</button>     
 </div>   
@@ -32,9 +28,6 @@ scale=1.0, target-densityDpi=device-dpi"/>
 /* This function is invoked when there is an error in reading GPS info*/
 
 function displayMapByAddress(){
-var address = document.getElementById("address");
-//create a Geocoder object and use its geocode method. Pass the 
-
 var geocoder=new google.maps.Geocoder();
 geocoder.geocode({'address': "Tashkent"},
 function(results,status)
