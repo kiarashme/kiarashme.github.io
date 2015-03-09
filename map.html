@@ -1,5 +1,4 @@
 <!DOCTYPE html> 
-
 <html>   
 
 <head>    
@@ -17,6 +16,7 @@ scale=1.0, target-densityDpi=device-dpi"/>
 </head> 
 
 <body onload="getGPSLatLng()"> 
+
 <header class="secondary"> Sign Up! </header>     
 <button class="back" onclick="location.href='index.html';">Back</button>
 <button class="location" id="get_coords" onClick="getGPS()">Get GPS Coordinates</button>     
@@ -62,9 +62,7 @@ function errorGPS(){
 alert("GPS Error");
 }
 
-function displayMapByAddress()
-
-{
+function displayMapByAddress(){
 var address=document.getElementById("address");
 //create a Geocoder object and use its geocode method. Pass the 
 
@@ -90,6 +88,7 @@ var map= new google.maps.Map(document.getElementById("basic_map"),
 myOptions);
 var marker= new google.maps.Marker({position: location, map: 
 map});
+}
 
 </script>
 
