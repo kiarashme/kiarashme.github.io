@@ -23,6 +23,7 @@ h1 {
 }
 #navBar {
     position: absolute;
+    bottom: 0;
 }
 #navBar div a {
     font-size: 12px;
