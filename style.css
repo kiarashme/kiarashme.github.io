@@ -68,12 +68,9 @@ h1 {
 }
 #videCont {
 
-    position: absolute;
+    margin: 0 auto;
 }
 
 video {
-position: relative;
-margin-left:auto;
-margin-right: auto;
 margin-bottom: 10px;
 }
