@@ -13,13 +13,11 @@ scale=1.0, target-densityDpi=device-dpi"/>
     
 
 </head> 
-<body id = "uzb">
+<body id = "uzb" onLoad="displayMapByAddress()">
  
  <h1>
  	I was born in Tashkent, Uzbekistan. This country is in Central Asia and has the best food in the world.
  </h1>
-
- <button class="location" id="geo" onclick="displayMapByAddress()">See in Google Maps</button>    
 
  <div id="basic_map" style="width:320px;height:240px;"></div>    
  
@@ -44,7 +42,7 @@ scale=1.0, target-densityDpi=device-dpi"/>
 
 function displayMapByAddress(){
 var geocoder=new google.maps.Geocoder();
-geocoder.geocode({'address': "299 Pavonia Ave Jersey city New Jersey"},
+geocoder.geocode({'address': "Tashkent"},
 function(results,status)
 {
 initializeByAddress(results[0].geometry.location);
