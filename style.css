@@ -52,6 +52,11 @@ h1 {
     background-color: #2C82C9;
     right:0px;
 }
+
+#me img {
+    display: block;
+    margin: 0px auto;
+}
 #home {
     background-color: #2CC990;
 }
