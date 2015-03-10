@@ -66,6 +66,10 @@ h1 {
 #basic_map {
     margin:0px;
 }
+#videCont {
+
+    position: absolute;
+}
 
 video {
 position: relative;
