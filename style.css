@@ -64,7 +64,7 @@ h1 {
 #school {
     background-color: #FCB941;
 }
-#fun {
+#interests {
     background-color: #FC6042;
     left: 0px;
 }
@@ -72,10 +72,7 @@ h1 {
 #basic_map {
     margin:0px;
 }
-#videCont {
 
-  
-}
 
 video {
 display: block; 
