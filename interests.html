@@ -23,7 +23,7 @@
         </div>
         
 <h1 id ="h1Drawing">I have a background in fine arts and really like drawing.</h1>
-<button id = 'portfolio' onClick="showPortfolio();">Want to see my portfolio?</button>
+<button id = 'portfolioButton' onClick="showPortfolio();">Want to see my portfolio?</button>
 
 
 
@@ -42,11 +42,9 @@
 
     <script>
     function showPortfolio() {
-        console.log("hiding"); 
-        var h1toHide= document.getElementById("h1Drawing");
-        console.log(h1toHide);
         document.getElementById("h1Drawing").style.display=="none";
-        h1toHide.style.display="none";
+        document.getElementById("portfolioButton").style.display=="none";
+        
 
 }
     </script>
