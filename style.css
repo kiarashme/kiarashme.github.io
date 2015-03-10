@@ -68,10 +68,12 @@ h1 {
 }
 #videCont {
 
-    margin: 0 auto;
+  
 }
 
 video {
+display: block; 
+margin: 0px auto;
 margin-bottom: 10px;
-text-align: center;
+
 }
