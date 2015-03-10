@@ -15,15 +15,14 @@ scale=1.0, target-densityDpi=device-dpi"/>
     
 
 </head> 
-<!--<body id = "uzb" onLoad="displayMapByAddress()"> -->
-    <body id = "uzb" >
- 
+<body id = "uzb" onLoad="displayMapByAddress()"> 
+
  <h1>
  	I was born in Tashkent, Uzbekistan. Here's a Google Map view of my city.
  </h1>
 
  
- <!--<div id="basic_map" style="width:320px;height:220px;"></div> -->
+<div id="basic_map" style="width:320px;height:220px;"></div> 
 
 
     <div id="navBar">
@@ -41,7 +40,7 @@ scale=1.0, target-densityDpi=device-dpi"/>
 /* This function is invoked when there is an error in reading GPS info*/
 
 
-/*function displayMapByAddress(){
+function displayMapByAddress(){
 var geocoder=new google.maps.Geocoder();
 geocoder.geocode({'address': "Tashkent"},
 function(results,status)
@@ -50,9 +49,7 @@ initializeByAddress(results[0].geometry.location);
 });
 }
 
-/*This function initialize a map centerd on the location passed as 
 
-parameter
 
 function initializeByAddress(location){
 var myOptions={
@@ -64,7 +61,7 @@ var map= new google.maps.Map(document.getElementById("basic_map"),
 myOptions);
 var marker= new google.maps.Marker({position: location, map: 
 map});
-}*/
+}
 
 </script>
 
