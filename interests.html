@@ -4,7 +4,7 @@
 
 <head>
 
- <title> About Asiya </title>
+ <title> My interests </title>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-webapp-status-bar-style" content="black">
 <link rel="stylesheet" type="text/css" href="style.css">
@@ -22,9 +22,11 @@
             <img src='me.jpg'></img>
         </div>
         
-<h1>Hi, my name is Asiya. This small app introduces some things about me and where I'm from. </h1>
-
+<h1 id ="h1Drawing">I have a background in fine arts and really like drawing.</h1>
 <button id = 'portfolio' onClick="showPortfolio();">Want to see my portfolio?</button>
+
+
+
 
         <div id="navBar">
             <div id="me"><img src ="meIcon.png">
@@ -34,11 +36,19 @@
             <div id="home"><img src ="home.png">
                 <a href="map.html">My home</a></div>
             <div id="school"><a href="school.html">My school</div>
-            <div id="My interests"><a href="interests.html">Fun facts</div>
+            <div id="fun"><a href="interests.html">My interests</div>
         </div>
     </div>
 
-    
+    <script>
+    function showPortfolio() {
+        var h1toHide= document.getElementById("h1Drawing");
+        h1toHide.style.display=="none";
+
+
+    }
+    </script>
+
 </body>
 
 </html>
