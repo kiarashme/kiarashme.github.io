@@ -38,7 +38,8 @@ scale=1.0, target-densityDpi=device-dpi"/>
 
 /* This function is invoked when there is an error in reading GPS info*/
 
-function displayMapByAddress(){
+
+/*function displayMapByAddress(){
 var geocoder=new google.maps.Geocoder();
 geocoder.geocode({'address': "Tashkent"},
 function(results,status)
@@ -49,7 +50,7 @@ initializeByAddress(results[0].geometry.location);
 
 /*This function initialize a map centerd on the location passed as 
 
-parameter*/
+parameter
 
 function initializeByAddress(location){
 var myOptions={
@@ -61,11 +62,12 @@ var map= new google.maps.Map(document.getElementById("basic_map"),
 myOptions);
 var marker= new google.maps.Marker({position: location, map: 
 map});
-}
+}*/
 
 </script>
 
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
 </body>
 
 </html>
