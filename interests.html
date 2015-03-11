@@ -44,10 +44,22 @@
     function showPortfolio() {
          document.getElementById("h1Drawing").style.display="none";
         document.getElementById("portfolioButton").style.display="none";
-        document.getElementById("drawing").display = "visible";
+        addNewStyle('#drawing {display:block !important;}');
                
 
 }
+
+function addNewStyle(newStyle) {
+    var styleElement = document.getElementById('styles_js');
+    if (!styleElement) {
+        styleElement = document.createElement('style');
+        styleElement.type = 'text/css';
+        styleElement.id = 'styles_js';
+        document.getElementsByTagName('head')[0].appendChild(styleElement);
+    }
+    styleElement.appendChild(document.createTextNode(newStyle));
+}
+
     </script>
 
 </body>

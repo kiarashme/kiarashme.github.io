@@ -92,14 +92,9 @@ margin-bottom: 10px;
   
 }
 
-#drawings li {
-    display:none;
-}
-
-
 #portfolioImage img {
-display: none !important;
 height: 300px;
 display: block;
 margin: 0px auto;
+display: none;
 }
