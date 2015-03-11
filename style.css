@@ -19,6 +19,11 @@ body {
 #schoolPage {
     background-color: #FCB941;
 }
+
+#interestsPage {
+    background-color: #FC6042;
+}
+
 h1 {
     font-family: Dosis;
     color: white;
@@ -89,4 +94,13 @@ margin-bottom: 10px;
 
 #drawings li {
     display:none;
+}
+#portfolioImage {
+    display: none;
+}
+
+#portfolioImage img {
+height: 700px;
+display: block;
+margin: 0x auto;
 }

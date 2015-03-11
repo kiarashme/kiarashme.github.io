@@ -16,17 +16,16 @@
     content="black-translucent" />
 
 </head>
-<body id="mePage">
+<body id="interestsPage">
     <div id="content">
              
 <h1 id ="h1Drawing">I have a background in fine arts and really like drawing.</h1>
 <button id = 'portfolioButton' onClick="showPortfolio();">Want to see my portfolio?</button>
 
-<ul id = "drawings">
-    <li><img src = "images/1.jpg"><li>
-        <li><img src = "images/3.jpg"><li>
-            <li><img src = "images/4.jpg"><li>
-</ul>
+<div id="porfrolioImage">
+<img src="images/1.jpg">
+
+</div>
 
 
         <div id="navBar">
@@ -45,7 +44,7 @@
     function showPortfolio() {
          document.getElementById("h1Drawing").style.display="none";
         document.getElementById("portfolioButton").style.display="none";
-        document.getElementById("drawings")[1].display = "visible";
+        document.getElementById("portfolioImage").display = "visible";
                
 
 }
