@@ -95,12 +95,11 @@ margin-bottom: 10px;
 #drawings li {
     display:none;
 }
-#portfolioImage {
-    display: none;
-}
+
 
 #portfolioImage img {
-height: 700px;
+display: none;
+height: 300x;
 display: block;
 margin: 0x auto;
 }
