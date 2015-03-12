@@ -156,6 +156,7 @@ input[type="email"]
 
 textarea {
     width: 220px;
+    height: 90px;
      font-family: Dosis;
     color: grey;
     font-weight: 500;
