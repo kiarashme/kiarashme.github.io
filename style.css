@@ -26,6 +26,7 @@ body {
 
 h1 {
     font-family: Dosis;
+    font-weight: 200;
     color: white;
     font-size: 20px;
     text-align: center;
@@ -49,6 +50,7 @@ h1 {
     float: left;
     text-align: center;
     font-family: Dosis;
+    font-weight: 400;
 }
 
 
