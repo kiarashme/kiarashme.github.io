@@ -34,23 +34,24 @@ h1 {
     position: absolute;
     bottom: 0;
 }
-#navBar div a {
+
+
+#navBar div {
     font-size: 12px;
     text-decoration: none;
     color: white;
-    text-align: center;
     bottom: 0;
-}
-
-#navBar div {
     width:80px;
     height:30px;
     padding-bottom: 15px;
-    padding-top: 5px;
+    padding-top: 10px;
     position: relative;
     float: left;
     text-align: center;
+    font-family: Dosis;
 }
+
+
 
 
 #me {
@@ -61,7 +62,8 @@ h1 {
 #navBar div img {
     display: block;
     margin: 0px auto;
-    height:20px;
+    height:25px;
+    padding-bottom: 5px;
 }
 #home {
     background-color: #2CC990;
