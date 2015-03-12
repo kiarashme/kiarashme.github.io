@@ -19,7 +19,7 @@
 <body id="interestsPage">
     <div id="content">
              
-<h1 id ="h1Drawing">I have a background in fine arts and really like drawing.</h1>
+<h1 id ="h1Drawing">I have a background in fine arts and really like drawing and painting.</h1>
 <button id = 'portfolioButton' onClick="showPortfolio();">Want to see my portfolio?</button>
 
 <div id="portfolioImage">
@@ -68,12 +68,12 @@ function addNewStyle(newStyle) {
     styleElement.appendChild(document.createTextNode(newStyle));
 }
 var imgCounter = 1;
-var imgUrls = ["images/0.jpg","images/1.jpg","images/2.jpg", "images/3.jpg", "images/4.jpg", "images/5.jpg", "images/6.jpg", "images/7.jpg"];
+var imgUrls = ["images/0.jpg","images/1.jpg","images/2.jpg", "images/3.jpg", "images/5.jpg", "images/6.jpg", "images/7.jpg"];
 
 function showNextImage() {
 document.getElementById("drawing").src=imgUrls[imgCounter];
 imgCounter++;
-if (imgCounter>7) {
+if (imgCounter>6) {
     console.log("backto Zero");
     imgCounter = 0;
 }
