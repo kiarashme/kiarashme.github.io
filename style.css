@@ -1,6 +1,6 @@
 .circular {
-    margin-left: 60px;
-    margin-top: 30px;
+    display: block;
+    margin: 0px auto;
 }
 .circular img {
     height:180px;
