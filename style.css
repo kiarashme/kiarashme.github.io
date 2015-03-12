@@ -111,27 +111,24 @@ padding-top: 10px;
 }
 
 .info {
-    width: 200px;
+    width: 300px;
+    margin-left:20px;
 }
 
 label {
 
 display: block;
-margin: 0px auto;
-
 }
 
 input {
 
 display: block;
-margin: 0px auto;
-
 }
 
 .error {
 
 display: block;
-margin: 0px auto;
+
 }
 #notePage {
     background-color: #2CC9B5;
