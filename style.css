@@ -205,7 +205,9 @@ visibility: hidden;
 }
 
 #toNote img {
+    padding-top: 5px;
     position: relative;
+    right:-5px;
     height:25px;
     display:block;
     margin: 0px auto;
