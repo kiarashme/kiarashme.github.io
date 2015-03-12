@@ -18,7 +18,30 @@
 </head>
 <body id="notePage">
     <div id="content">
-              
+
+        <div class="info">
+
+<h1>Leave a note for me and I'll get back to you!</h1> 
+
+<form method="post" id="leaveNote" onSubmit=”return validateForm();”> 
+<label for="name">Your Name:</label>
+ <div class="error" id="name-error">I'd like to know how to address you!</div>
+ <input type="text" name="name" id="name">
+
+ <label for="email">Email:</label>
+ <div class="error" id="email-error">I need to know how to get back to you...</div>
+ <input type="email" name="email" id="email">
+
+<label for="note">Leave your thoughts:</label>
+ <div class="error" id="note-error">Can't leave this empty</div>
+ <input type="text" name="note" id="note"> 
+
+
+</form>
+
+</div>
+
+  
 
 
 

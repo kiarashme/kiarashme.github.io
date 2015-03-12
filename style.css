@@ -109,3 +109,30 @@ padding-top: 10px;
     margin-top: 10px;
     display: none;
 }
+
+label {
+
+display: block;
+margin: 0px auto;
+
+}
+
+input {
+
+display: block;
+margin: 0px auto;
+
+}
+
+.error {
+    
+display: block;
+margin: 0px auto;
+}
+#notePage {
+    background-color: #2CC9B5;
+}
+
+#note {
+    height: 150px;
+}
