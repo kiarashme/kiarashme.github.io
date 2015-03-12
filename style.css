@@ -190,3 +190,23 @@ visibility: hidden;
     background-color: #2CC9B5;
 }
 
+#toNote {
+    height: 50px;
+    width:50px;
+    display: block;
+    position: absolute;
+    top:0;
+    right:0;
+    text-align: center;
+    font-family: Dosis;
+    font-weight: 500;
+    color:white;
+    font-size:12px;
+}
+
+#toNote img {
+    position: relative;
+    height:25px;
+    display:block;
+    margin: 0px auto;
+}

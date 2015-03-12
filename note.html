@@ -63,7 +63,7 @@ if(!validateField("name"))
 
 result=false;
 
-if(!validateEmail("email"))
+if(!validateField("email"))
 
 result=false;
 
@@ -90,25 +90,6 @@ else {err.style.visibility = "hidden";
 
 return true; }
 }
-
-function validateEmail(id){
-    result = false;
-    var el = document.getElementById(id);
-    var stringEl = String(el);
-    var charCount = stringEl.length;
-    console.log(stringEl);
-    console.log(charCount);
-
-    for(i=1; i<charCount-1; ++i){
-        if (stringEl.charAt(i)="@") {
-            result = true;
-
-        } 
-
-        }
-  return result;
-}
-
 
 </script>
 </body>
