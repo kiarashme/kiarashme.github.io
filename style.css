@@ -123,6 +123,7 @@ display: block;
 input {
 
 display: block;
+width: 200px;
 }
 
 .error {
