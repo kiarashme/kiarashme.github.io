@@ -120,14 +120,17 @@ padding-top: 10px;
 }
 
 label {
-
 display: block;
+font-family: Dosis;
+color: white;
+font-weight: 500;
+font-size: 15px;
 }
 
 input {
 
 display: block;
-height: 40px;
+height: 30px;
 width: 200px;
 outline: 0;
 }
