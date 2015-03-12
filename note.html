@@ -23,7 +23,7 @@
 
 <h1>Leave a note for me and I'll get <br> back to you!</h1> 
 
-<form method="post" id="leaveNote" onSubmit=”return validateForm();”> 
+<form method="post" id="leaveNote" onSubmit="return validateForm();"> 
 <label for="name">Your Name:</label>
  <div class="error" id="name-error">I'd like to know how to address you!</div>
  <input type="text" name="name" id="name">
@@ -56,45 +56,37 @@
 function validateForm() 
 
 { 
-
+console.log("validating");
 var result=true;
 
-if(!validateField("pwd")) 
+if(!validateField("name")) 
 
 result=false;
-
-if(!validateDOB()) 
-
-result=false; 
 
 if(!validateField("email"))
 
 result=false;
 
-if(!validateField("name"))
-
- 
+if(!validateField("note"))
+    result = false; 
 
 return result; 
 
  }
 
- function validateField (id) { 
+result=false;
 
+ function validateField (id) { 
 var el=document.getElementById(id); 
 var value=el.value; 
 var err=document.getElementById(id+"-error"); 
-
 if (value == "") { 
-
+err.style.visibility = "visible";
+el.focus(); 
+return false;
  }
 
-else {
-
-err.style.visibility = "visible"; 
-el.focus(); 
-return false; 
-err.style.visibility = "hidden"; 
+else {err.style.visibility = "hidden"; 
 
 return true; }
 }
