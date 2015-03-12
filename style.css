@@ -155,7 +155,7 @@ input[type="email"]
    }
 
 textarea {
-    width: 240px;
+    width: 230px;
      font-family: Dosis;
     color: grey;
     font-weight: 500;
@@ -170,6 +170,3 @@ display: none;
     background-color: #2CC9B5;
 }
 
-#note {
-    height: 150px;
-}
