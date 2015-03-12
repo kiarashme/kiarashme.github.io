@@ -110,6 +110,10 @@ padding-top: 10px;
     display: none;
 }
 
+.info {
+    width: 200px;
+}
+
 label {
 
 display: block;
@@ -125,7 +129,7 @@ margin: 0px auto;
 }
 
 .error {
-    
+
 display: block;
 margin: 0px auto;
 }
