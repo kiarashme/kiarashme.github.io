@@ -155,7 +155,7 @@ input[type="email"]
    }
 
 textarea {
-    width: 220px;
+    width: 240px;
      font-family: Dosis;
     color: grey;
     font-weight: 500;
@@ -165,8 +165,6 @@ textarea {
 .error {
 
 display: none;
-
-
 }
 #notePage {
     background-color: #2CC9B5;
