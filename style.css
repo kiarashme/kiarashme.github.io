@@ -125,6 +125,7 @@ font-family: Dosis;
 color: white;
 font-weight: 500;
 font-size: 15px;
+padding-top: 5px;
 }
 
 input {
@@ -133,6 +134,8 @@ display: block;
 height: 30px;
 width: 200px;
 outline: 0;
+position: relative;
+top: -10px;
 }
 
 input[type="text"]
@@ -161,11 +164,26 @@ textarea {
     color: grey;
     font-weight: 500;
     font-size:18px;
+    position: relative;
+top: -10px;
 } 
 
 .error {
+position: relative;
+right: -40px;
+top: -16px;
+font-family: Dosis;
+font-weight: 500;
+font-size: 12px;
 
-display: none;
+}
+
+#note-error {
+    right:-127px;
+}
+
+#name-error {
+    right: -75px;
 }
 #notePage {
     background-color: #2CC9B5;
