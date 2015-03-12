@@ -115,6 +115,10 @@ padding-top: 10px;
     margin-left:20px;
 }
 
+.info h1 {
+    text-align: left;
+}
+
 label {
 
 display: block;
@@ -123,7 +127,9 @@ display: block;
 input {
 
 display: block;
+height: 40px;
 width: 200px;
+outline: 0;
 }
 
 .error {
