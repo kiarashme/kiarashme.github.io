@@ -1,12 +1,9 @@
-.circular {
-    display: block;
-    margin: 0px auto;
-}
 .circular img {
     height:180px;
     border-radius: 200px;
     display: block;
     margin: 0px auto;
+    padding-top: 10px;
 }
 body {
     margin:0;
