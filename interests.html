@@ -22,16 +22,28 @@
          <div id="toNote">
             <img src ="images/noteIcon-01.png"></div>
              
-<h1 id ="h1Drawing">I have a background in fine arts and really like drawing and.</h1>
-<button id = 'portfolioButton' onClick="showPortfolio();">Want to see my portfolio?</button>
+<h1 id ="h1Drawing">I have a background in fine arts. I have been drawing and painting since I was around 5. I don't get to spend much time in the studio anymore but I still doodle in class</h1>
+
 
 <div id="portfolioImage">
-<img id ="drawing" src="images/1.jpg">
+<img id ="drawing" src="">
+
+<button type="button" id="backBut" onClick="location.href='interests.html';">Back</button>
+<button type="button" id="nextButDrawing" onClick="showNextImage(drawingUrls, 4);">Next</button>
+<button type="button" id="nextButPainting" onClick="showNextImage(paintingUrls, 4);">Next</button>
+<button type="button" id="nextButDoodles" onClick="showNextImage(doodleUrls, 6);">Next</button>
+
 
 </div>
 
 
-<button id="nextBut" onclick="showNextImage();">Next</button>
+<Select class="body_text" id="portfolioOptions" name="critical" onchange="getText(this)">
+<option value="Select"> See my...</option>
+   <option value="Drawings"> Drawings</option>
+   <option value="Paintings"> Paintings </option>
+   <option value="Doodles"> Doodles </option>
+       
+</select>
 
 
      
@@ -50,15 +62,59 @@
 
 
     <script>
-    function showPortfolio() {
-         document.getElementById("h1Drawing").style.display="none";
-        document.getElementById("portfolioButton").style.display="none";
+
+
+    function getText(selection){
+txtSelected = selection.selectedIndex;
+if (txtSelected==1) {
+    showDrawings();
+    document.getElementById("drawing").src=drawingUrls[1];
+}
+if (txtSelected==2) {
+    showPaintings();
+    document.getElementById("drawing").src=paintingUrls[1];
+}
+if (txtSelected==3) {
+    showDoodles();
+    document.getElementById("drawing").src=doodleUrls[1];
+}
+}
+
+
+    function showDrawings() {
+        document.getElementById("h1Drawing").style.display="none";
+        document.getElementById("portfolioOptions").style.display="none";
         addNewStyle('#drawing {display:block !important;}');
-        addNewStyle('#nextBut {display:block !important;}');
+        addNewStyle('#nextButDrawing {display:inline !important;}');
+        addNewStyle('#backBut {display:inline !important;}');
+
 
                
 
 }
+
+  function showPaintings() {
+        document.getElementById("h1Drawing").style.display="none";
+        document.getElementById("portfolioOptions").style.display="none";
+        addNewStyle('#drawing {display:block !important;}');
+        addNewStyle('#nextButPainting {display: inline !important;}');
+        addNewStyle('#backBut {display:inline !important;}');
+
+               
+
+}
+
+ function showDoodles() {
+        document.getElementById("h1Drawing").style.display="none";
+        document.getElementById("portfolioOptions").style.display="none";
+        addNewStyle('#drawing {display:block !important;}');
+        addNewStyle('#nextButDoodles {display:inline !important;}');
+        addNewStyle('#backBut {display:inline !important;}');
+
+               
+
+}
+
 
 function addNewStyle(newStyle) {
     var styleElement = document.getElementById('styles_js');
@@ -70,13 +126,15 @@ function addNewStyle(newStyle) {
     }
     styleElement.appendChild(document.createTextNode(newStyle));
 }
-var imgCounter = 1;
-var imgUrls = ["images/0.jpg","images/1.jpg","images/2.jpg", "images/3.jpg", "images/5.jpg", "images/6.jpg", "images/7.jpg"];
+var imgCounter = 2;
+var drawingUrls = ["images/0.jpg","images/1.jpg","images/2.jpg", "images/3.jpg", "images/4.jpg"];
+var paintingUrls= ["images/10.jpg", "images/11.jpg", "images/12.jpg", "images/13.jpg", "images/14.jpg"];
+var doodleUrls = ["images/16.JPG", "images/17.JPG", "images/18.JPG", "images/19.JPG", "images/20.JPG", "images/21.JPG", "images/22.JPG"];
 
-function showNextImage() {
-document.getElementById("drawing").src=imgUrls[imgCounter];
+function showNextImage(list, numImages) {
+document.getElementById("drawing").src=list[imgCounter];
 imgCounter++;
-if (imgCounter>6) {
+if (imgCounter>numImages) {
     console.log("backto Zero");
     imgCounter = 0;
 }

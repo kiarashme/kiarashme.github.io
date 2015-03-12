@@ -92,26 +92,21 @@ margin-bottom: 10px;
 
 }
 
-#portfolioButton {
-  background-color:white;
-  border:none;
-  
-}
+
 
 #portfolioImage img {
 height: 240px;
 display: block;
 margin: 0px auto;
 display: none;
-padding-top: 10px;
+padding-top: 30px;
 
 }
-#nextBut {
-    display:block;
-    margin: 0px auto;
-    margin-top: 10px;
+
+#portfolioImage button {
     display: none;
 }
+
 
 .info {
     width: 300px;
