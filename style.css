@@ -135,6 +135,14 @@ width: 200px;
 outline: 0;
 }
 
+input[type="text"]
+{
+    font-family: Dosis;
+    color: grey;
+    font-weight: 500;
+    font-size:18px;
+}
+
 .error {
 
 display: none;
