@@ -97,4 +97,12 @@ height: 300px;
 display: block;
 margin: 0px auto;
 display: none;
+
+}
+
+#rightAr {
+    height:20px;
+    position: relative;
+    left:5px;
+
 }
