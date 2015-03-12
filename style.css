@@ -5,6 +5,8 @@
 .circular img {
     height:180px;
     border-radius: 200px;
+    display: block;
+    margin: 0px auto;
 }
 body {
     margin:0;
