@@ -26,7 +26,10 @@
 <img id ="drawing" src="images/1.jpg">
 
 </div>
- <img id ="rightAr" src="images/rightArrow-01.png">
+
+
+<button id="nextBut" onclick="showNextImage();">Next</button>
+
 
         <div id="navBar">
             <div id="me"><img src ="meIcon.png">
@@ -40,13 +43,15 @@
         </div>
     </div>
 
-   
+
 
     <script>
     function showPortfolio() {
          document.getElementById("h1Drawing").style.display="none";
         document.getElementById("portfolioButton").style.display="none";
         addNewStyle('#drawing {display:block !important;}');
+        addNewStyle('#nextBut {display:block !important;}');
+
                
 
 }
@@ -60,6 +65,18 @@ function addNewStyle(newStyle) {
         document.getElementsByTagName('head')[0].appendChild(styleElement);
     }
     styleElement.appendChild(document.createTextNode(newStyle));
+}
+var imgCounter = 1;
+var imgUrls = ["images/1.jpg","images/3.jpg","images/4.jpg", "images/5.jpg", "images/8.jpg"];
+
+function showNextImage() {
+document.getElementById("drawing").src=imgUrls[imgCounter];
+imgCounter++;
+if (imgCounter>4) {
+    console.log("backto Zero");
+    imgCounter = 0;
+}
+
 }
 
     </script>
