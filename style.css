@@ -142,6 +142,13 @@ input[type="text"]
     font-weight: 500;
     font-size:18px;
 }
+input[type="email"]
+{
+    font-family: Dosis;
+    color: grey;
+    font-weight: 500;
+    font-size:18px;
+}
 
 .error {
 
