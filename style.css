@@ -128,7 +128,8 @@ width: 200px;
 
 .error {
 
-display: block;
+display: none;
+
 
 }
 #notePage {
