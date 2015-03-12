@@ -103,7 +103,7 @@ display: none;
 #rightAr {
     height:20px;
     position: relative;
-    left:5px;
-    bottom:50px;
+    right:10px;
+    bottom:70px;
 
 }
