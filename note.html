@@ -29,7 +29,7 @@
  <input type="text" name="name" id="name">
 
  <label for="email">Email:</label>
- <div class="error" id="email-error">I need to know how to get back to you...</div>
+ <div class="error" id="email-error">Looks like the email isn't valid</div>
  <input type="email" name="email" id="email">
 
 <label for="note">Leave your thoughts:</label>
@@ -63,7 +63,7 @@ if(!validateField("name"))
 
 result=false;
 
-if(!validateField("email"))
+if(!validateEmail("email"))
 
 result=false;
 
@@ -91,16 +91,24 @@ else {err.style.visibility = "hidden";
 return true; }
 }
 
-function addNewStyle(newStyle) {
-    var styleElement = document.getElementById('styles_js');
-    if (!styleElement) {
-        styleElement = document.createElement('style');
-        styleElement.type = 'text/css';
-        styleElement.id = 'styles_js';
-        document.getElementsByTagName('head')[0].appendChild(styleElement);
-    }
-    styleElement.appendChild(document.createTextNode(newStyle));
+validateEmail(id){
+    result = false;
+    var el = document.getElementById(id);
+    var stringEl = String(el);
+    var charCount = stringEl.length;
+    console.log(stringEl);
+    console.log(charCount);
+
+    for(i=1; i<charCount-1; ++i){
+        if (stringEl.charAt(i)="@" {
+            result = true;
+
+        } 
+
+        }
+  return result;
 }
+
 
 </script>
 </body>
