@@ -3,7 +3,7 @@
     border-radius: 200px;
     display: block;
     margin: 0px auto;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 body {
     margin:0;
@@ -13,9 +13,6 @@ body {
 }
 #uzb {
     background-color: #2CC990;
-}
-#uzb h1 {
-    padding-top:5px;
 }
 
 #schoolPage {
@@ -195,23 +192,19 @@ visibility: hidden;
 
 #toNote {
     height: 50px;
-    width:50px;
+    width:100%;
     display: block;
     position: absolute;
     top:0;
-    right:0;
-    text-align: center;
-    font-family: Dosis;
-    font-weight: 500;
-    color:white;
-    font-size:12px;
+       
 }
 
 #toNote img {
     padding-top: 5px;
+    left: -5px;   
     position: relative;
-    right:-8px;
     height:25px;
+    float:right;
     display:block;
-    margin: 0px auto;
+    
 }
