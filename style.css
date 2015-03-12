@@ -150,6 +150,18 @@ input[type="email"]
     font-size:18px;
 }
 
+ p{
+    margin: 0px;
+   }
+   
+textarea {
+    width: 200px;
+     font-family: Dosis;
+    color: grey;
+    font-weight: 500;
+    font-size:18px;
+} 
+
 .error {
 
 display: none;

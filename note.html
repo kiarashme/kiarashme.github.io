@@ -33,7 +33,7 @@
  <input type="email" name="email" id="email">
 
 <label for="note">Leave your thoughts:</label>
- <p><textarea name="item3" cols="50" rows="7">Example</textarea></p>
+ <p><textarea id="note" name="note" cols="50" rows="7"></textarea></p>
  <div class="error" id="note-error">Can't leave this empty</div>
 
  <input type="submit" value="Send"> 
@@ -51,7 +51,77 @@
 
     </div>
 
-    
+<script>
+function validateForm() 
+
+{ 
+
+var result=true;
+
+if(!validateField("pwd")) 
+
+result=false;
+
+if(!validateDOB()) 
+
+result=false; 
+
+if(!validateField("email"))
+
+result=false;
+
+if(!validateField("name"))
+
+ 
+
+return result; 
+
+ }
+
+ function validateField (id) { 
+
+// Get the input element with the id passed as argument 
+
+var el=document.getElementById(id); 
+
+// Get the user-entered value for that input field 
+
+var value=el.value; 
+
+// Get the corresponding error message element
+
+ var err=document.getElementById(id+"-error"); 
+
+// If the value field is empty show an error message 
+
+if (value == "") { 
+
+ }
+
+else { 
+
+err.style.visibility = "visible"; 
+
+el.focus(); 
+
+return false; 
+
+err.style.visibility = "hidden"; 
+
+return true; }
+
+function addNewStyle(newStyle) {
+    var styleElement = document.getElementById('styles_js');
+    if (!styleElement) {
+        styleElement = document.createElement('style');
+        styleElement.type = 'text/css';
+        styleElement.id = 'styles_js';
+        document.getElementsByTagName('head')[0].appendChild(styleElement);
+    }
+    styleElement.appendChild(document.createTextNode(newStyle));
+}
+
+</script>
 </body>
 
 </html>
