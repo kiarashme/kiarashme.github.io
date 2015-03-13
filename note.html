@@ -38,7 +38,7 @@
 
  <input type="submit" value="Send"> 
 
-<a href="index.html">Nevermind</a>
+<button type="button" id="backBut" onClick="location.href='index.html';">Go back</button>
 
 
 </form>
@@ -69,6 +69,9 @@ result=false;
 if(!validateField("note"))
     result = false; 
 
+if (result == true) {
+    alert("Thank you for your message!");
+}
 return result; 
 
  }

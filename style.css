@@ -123,8 +123,43 @@ padding-top: 30px;
 
 #portfolioImage button {
     display: none;
+    background-color: #989898;
+    font-family: Dosis;
+    font-size: 13px;
+    font-weight: 500;
+    border: 0;
+    color: white;
+    padding:5px 10px 5px 10px;
+    position: relative;
+    left:32%;
 }
 
+#backBut {
+    background-color: #989898;
+    font-family: Dosis;
+    font-size: 13px;
+    font-weight: 500;
+    border: 0;
+    color: white;
+    padding:5px 10px 5px 10px;
+    position: relative;
+}
+
+input[type=submit] {
+padding:5px 10px 5px 10px; 
+border:0 none;
+border-radius: 0px;
+ font-family: Dosis;
+    font-size: 13px;
+    background: #989898;
+    font-weight: 500;
+     color: white;
+    position: relative;
+    } 
+
+form a {
+    color: white;
+}
 
 .info {
     width: 300px;
