@@ -33,6 +33,10 @@ h1 {
     font-size: 20px;
     text-align: center;
 }
+
+#schoolPage h1 {
+    padding-top: 20px;
+}
 #navBar {
     position: absolute;
     bottom: 0;
