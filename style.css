@@ -89,8 +89,10 @@ h1 {
 }
 
 #basic_map {
-    margin:0px;
-    padding-bottom:10px;
+    padding-top:30px;
+    display: block;
+    margin:0px auto;
+
 }
 
 
