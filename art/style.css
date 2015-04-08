@@ -1,0 +1,35 @@
+ul
+{
+list-style-type: none;
+
+}
+
+ul li {
+	margin: 40px;
+	font-size: 25px;
+
+}
+
+div {
+	width: 800px;
+	text-align: center;
+	 margin-left: auto;
+	 margin-right: auto;
+	 position: relative;
+	 top: 120px;
+}
+
+body {
+	background-color: black;
+}
+
+a {
+  text-decoration: none; /* no underline */
+  color: #afafaf;
+  font-family: Lato;
+
+}
+
+a:hover { 
+	text-decoration: underline;
+	}
