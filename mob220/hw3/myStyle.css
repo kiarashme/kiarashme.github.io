@@ -1,0 +1,15 @@
+#home {
+	background-image: url("cover.jpg");
+	text-align: center;
+	}
+
+  h1 { color: white;
+  	font-family: Montserrat, 400;
+
+	}
+
+#footer {
+	position:absolute;
+	bottom: 0;
+	width: 100%;
+}

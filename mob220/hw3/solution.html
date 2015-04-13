@@ -1,0 +1,117 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Campus places</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <link rel="stylesheet" type="text/css" href="myTheme.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+        <link rel="stylesheet" href="myTheme.min.css" />
+
+        <link rel="stylesheet" type="text/css" href="myStyle.css" />
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+
+
+    </head>
+
+    <body>
+        <!-- Start of first page -->
+        <div data-role="page" id="home" data-theme="a">
+
+
+            <div role="content" class="ui-content">  <!-- Start of content -->
+
+                <h1>Welcome to Wellesley campus places</h1>
+
+                <p><a href="#popupInfo" data-rel="popup">What is this?</a>
+                 <div data-role="popup" id="popupInfo">
+                   <p>This is a small application introducing some of the main buidlings on Wellesley campus.</p>
+               </div>
+           </div> <!-- End of content -->
+           <div data-role="footer" id ="footer">
+            <div data-role="navbar">
+                <ul>
+                    <li> <a href="#home" data-icon="grid">Home</a>
+                        <li> <a href="#campusPlaces" id = "campus" data-icon="info">Campus places</a>
+                            <li> <a href="#wMap" data-icon="search">Map</a>
+                            </ul>
+                        </div> <!-- End of nav bar -->
+
+                    </div> <!-- End of footer -->
+
+                </div> <!-- End of first page -->
+
+
+
+                <div data-role="page" id="campusPlaces" data-theme="a" onload = "campusActive()">
+
+                    <div role="main" class="ui-content">
+                        <ul data-role="listview" data-theme="a">
+                            <li><a href="#lulu"> 
+                                <img src="lulu.jpg">
+                                <h3 class="ui-li-heading">Lulu Chow Wang</h3>
+                                <p class="ui-li-desc">Student center</p>
+                            </a>
+                        </li>
+
+                        <li><a href="#pendleton">
+                            <img src="pedleton.jpg">
+
+                            <h3 class="ui-li-heading">Pendleton Hall</h3>
+                            <p class="ui-li-desc">Academic hall</p>
+                          </a>
+
+                    </li>
+                  <li><a href="#greenHall" class="ui-link-inherit">
+                    <img src="gHall.jpg">
+                    <h3 class="ui-li-heading">Green Hall</h3>
+                    <p class="ui-li-desc">Status description</p>
+                </a>
+            </li>
+                    <li><a href="#scienceCenter" class="ui-link-inherit">
+                        <img src="science.jpg" >
+                        <h3 class="ui-li-heading">Sciece Center</h3>
+                        <p class="ui-li-desc">Academic building</p>
+                    </a>
+                </li>
+
+                 <li><a href="#jewett" class="ui-link-inherit">
+                        <img src="jewett.jpg" >
+                        <h3 class="ui-li-heading">Jewett Arts Center</h3>
+                        <p class="ui-li-desc">Academic arts center</p>
+                    </a>
+                </li>
+               
+        </ul>
+
+    </div><!-- /content -->
+    <div data-role="footer" id ="footer">
+        <div data-role="navbar">
+            <ul>
+                <li> <a href="#home" data-icon="grid">Home</a>
+                    <li> <a href="#campusPaces" data-icon="info">Campus places</a>
+                        <li> <a href="#wMap" data-icon="search">Map</a>
+                        </ul>
+                    </div> <!-- Start of nav bar -->
+
+                </div> <!-- End of footer -->
+
+
+
+            </div><!-- /page -->
+
+
+
+<script>
+$(function campusActive () {
+    $('#campus').addClass('ui-btn.ui-btn-active');
+    console.log('active');
+});
+</script>
+
+        </body>
+        </html>
