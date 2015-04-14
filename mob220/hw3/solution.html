@@ -12,6 +12,12 @@
         <link rel="stylesheet" type="text/css" href="myStyle.css" />
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+       
+       <script type="text/javascript" src="http://www.google.fr/jsapi"></script>
+
+<script type="text/javascript" src="googleMaps/jquery.googlemap.js"></script>
+  
+
         <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
 
@@ -47,7 +53,7 @@
 
 
 
-                <div data-role="page" id="campusPlaces" data-theme="a" onload = "campusActive()">
+                <div data-role="page" id="campusPlaces" data-theme="a">
 
                     <div role="main" class="ui-content">
                         <ul data-role="listview" data-theme="a">
@@ -104,14 +110,111 @@
 
             </div><!-- /page -->
 
+<div data-role="page" id="lulu" data-theme="a" >
+
+                    <div role="main" class="ui-content">
+
+                        
+                        <h1>Lulu Chow Wang</h1>
+
+                        <div data-role="collapsible" data-content-theme="a">
+   <h3>General information</h3>
+   <p>The Lulu Chow Wang Campus Center, with its labyrinth-like layout and unexpected open spaces, provides an inviting place where members of the Wellesley community can gather for impromptu conversation or more formal meetings of the College's 160 student organizations and College Government.</p>
+</div>
+
+                        <div data-role="collapsible" data-content-theme="a">
+   <h3>History</h3>
+   <p>The emphasis on landscape instead of buildings might seem unusual, but at Wellesley, a passion for its 450-acre campus dates to the school’s founding in the 1870s.</p>
+</div>
+
+                      
+    </div><!-- /content -->
+    <div data-role="footer" id ="footer">
+        <div data-role="navbar">
+            <ul>
+                <li> <a href="#home" data-icon="grid">Home</a>
+                    <li> <a href="#campusPaces" data-icon="info">Campus places</a>
+                        <li> <a href="#wMap" data-icon="search">Map</a>
+                        </ul>
+                    </div> <!-- Start of nav bar -->
+
+                </div> <!-- End of footer -->
 
 
-<script>
-$(function campusActive () {
-    $('#campus').addClass('ui-btn.ui-btn-active');
-    console.log('active');
-});
+
+            </div><!-- /page -->
+
+
+<div data-role="page" id="wMap" data-theme="a">
+
+                    <div role="main" class="ui-content">
+
+                        <div id="map" style="width: 300px; height: 300px;"></div>
+<script type="text/javascript">
+  $(function() {
+    $("#map").googleMap();
+    $("#map").gmap({'zoom':7})
+    $("#map").addMarker({
+      coords: [42.293434, -71.305896], // GPS coords 42.293434, -71.305896
+      url: 'http://www.tiloweb.com', // Link to redirect onclick (optional)
+      id: 'marker1' // Unique ID for your marker
+    });
+  })
+
+
 </script>
+<div id = "uzb" onLoad="displayMapByAddress()"> </div>
+                      
+    </div><!-- /content -->
+    <div data-role="footer" id ="footer">
+        <div data-role="navbar">
+            <ul>
+                <li> <a href="#home" data-icon="grid">Home</a>
+                    <li> <a href="#campusPaces" data-icon="info">Campus places</a>
+                        <li> <a href="#wMap" data-icon="search">Map</a>
+                        </ul>
+                    </div> <!-- Start of nav bar -->
+
+                </div> <!-- End of footer -->
+
+
+
+            </div><!-- /page -->
+
+
+<script> 
+
+function displayMapByAddress(){
+var geocoder=new google.maps.Geocoder();
+geocoder.geocode({'address': "Wellesley College"},
+function(results,status)
+{
+initializeByAddress(results[0].geometry.location);
+});
+}
+
+
+
+function initializeByAddress(location){
+var myOptions={
+zoom: 15,
+center: location,
+mapTypeId: google.maps.MapTypeId.ROADMAP
+}
+var map= new google.maps.Map(document.getElementById("basic_map"), 
+myOptions);
+var marker= new google.maps.Marker({position: location, map: 
+map});
+}
+
+</script>
+<script type="text/javascript">
+    google.load("maps", "3.4", {
+        other_params: "sensor=false&language=fr"
+    });
+</script>
+
+
 
         </body>
         </html>

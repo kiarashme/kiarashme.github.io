@@ -14,3 +14,7 @@
 	width: 100%;
 	position: fixed;
 }
+
+#lulu {
+	background-image: url("luluBig.jpg");
+}

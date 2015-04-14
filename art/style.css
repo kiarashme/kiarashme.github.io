@@ -10,13 +10,22 @@ ul li {
 
 }
 
+ul {
+	top: 30%;
+}
+
 div {
-	width: 800px;
-	text-align: center;
+	 width: 800px;
+	 text-align: center;
 	 margin-left: auto;
 	 margin-right: auto;
 	 position: relative;
-	 top: 120px;
+	 top: 15%;
+
+}
+
+#pageThree {
+	top:5%;
 }
 
 body {
@@ -32,4 +41,17 @@ a {
 
 a:hover { 
 	text-decoration: underline;
+	}
+
+	#nakedChest {
+		height:250px;
+		display: block;
+		position: relative;
+		margin: auto;
+	}
+		#ritz {
+		height:250px;
+		display: block;
+		position: relative;
+		margin: auto;
 	}
