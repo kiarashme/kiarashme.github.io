@@ -23,6 +23,11 @@
 #pendleton {
 	background-image: url("pdnCover.jpg");
 	text-align: center;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            bottom: 0;
+       
 }
 
 
@@ -31,3 +36,8 @@
 	margin: auto;
 	height: 130px;
 }
+
+ .scrollable {
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+        }
