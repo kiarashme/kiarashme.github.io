@@ -12,12 +12,6 @@
         <link rel="stylesheet" type="text/css" href="myStyle.css" />
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
-       
-       <script type="text/javascript" src="http://www.google.fr/jsapi"></script>
-
-<script type="text/javascript" src="googleMaps/jquery.googlemap.js"></script>
-  
-
         <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
 
@@ -127,22 +121,67 @@
    <p>The emphasis on landscape instead of buildings might seem unusual, but at Wellesley, a passion for its 450-acre campus dates to the school’s founding in the 1870s.</p>
 </div>
 
-                      
+<div data-role="collapsible" data-content-theme="a">
+<h3>The interior</h3>
+   <img id="imgCollapsible" src = 'lulu2.jpg' >
+</div>
+
+                       
     </div><!-- /content -->
+
+
     <div data-role="footer" id ="footer">
         <div data-role="navbar">
             <ul>
                 <li> <a href="#home" data-icon="grid">Home</a>
-                    <li> <a href="#campusPaces" data-icon="info">Campus places</a>
+                    <li> <a href="#campusPlaces" data-icon="info">Campus places</a>
                         <li> <a href="#wMap" data-icon="search">Map</a>
                         </ul>
                     </div> <!-- Start of nav bar -->
 
                 </div> <!-- End of footer -->
-
-
-
             </div><!-- /page -->
+
+
+<div data-role="page" id="pendleton" data-theme="a" >
+
+                    <div role="main" class="ui-content">
+
+                        
+                        <h1>Pendleton Hall</h1>
+
+                        <div data-role="collapsible" data-content-theme="a">
+   <h3>General information</h3>
+   <p>Pendleton Hall is a long building on the north edge of Wellesley's academic quad. The building is home to many academic programs: Anthropology, Art, Economics, Education, Japanese, Political Science and Sociology.</p>
+</div>
+
+                        <div data-role="collapsible" data-content-theme="a">
+   <h3>History</h3>
+   <p>Named for Wellesley's first alumna president, Ellen Pendleton 1886, this academic hall was built in 1934. The word Chemistry was engraved over its main west entry, and science still filled the classrooms in Pendleton West well into the 20th century.</p>
+</div>
+
+<div data-role="collapsible" data-content-theme="a">
+<h3>The interior</h3>
+   <img id="imgCollapsible" src = 'pnd.jpg' >
+</div>
+
+                       
+    </div><!-- /content -->
+
+
+    <div data-role="footer" id ="footer">
+        <div data-role="navbar">
+            <ul>
+                <li> <a href="#home" data-icon="grid">Home</a>
+                    <li> <a href="#campusPlaces" data-icon="info">Campus places</a>
+                        <li> <a href="#wMap" data-icon="search">Map</a>
+                        </ul>
+                    </div> <!-- Start of nav bar -->
+
+                </div> <!-- End of footer -->
+            </div><!-- /page -->
+
+
 
 
 <div data-role="page" id="wMap" data-theme="a">
@@ -150,29 +189,7 @@
                     <div role="main" class="ui-content">
 
                         <div id="map" style="width: 300px; height: 300px;"></div>
-<script type="text/javascript">
-  $(function() {
-    $("#map").googleMap();
-    $("#map").gmap({'zoom':7})
-    $("#map").addMarker({
-      coords: [42.293434, -71.305896], // GPS coords 42.293434, -71.305896
-      url: 'http://www.tiloweb.com', // Link to redirect onclick (optional)
-      id: 'marker1' // Unique ID for your marker
-    });
-  })
 
-
-</script>
-<div id = "uzb" onLoad="displayMapByAddress()"> </div>
-                      
-    </div><!-- /content -->
-    <div data-role="footer" id ="footer">
-        <div data-role="navbar">
-            <ul>
-                <li> <a href="#home" data-icon="grid">Home</a>
-                    <li> <a href="#campusPaces" data-icon="info">Campus places</a>
-                        <li> <a href="#wMap" data-icon="search">Map</a>
-                        </ul>
                     </div> <!-- Start of nav bar -->
 
                 </div> <!-- End of footer -->
@@ -180,41 +197,6 @@
 
 
             </div><!-- /page -->
-
-
-<script> 
-
-function displayMapByAddress(){
-var geocoder=new google.maps.Geocoder();
-geocoder.geocode({'address': "Wellesley College"},
-function(results,status)
-{
-initializeByAddress(results[0].geometry.location);
-});
-}
-
-
-
-function initializeByAddress(location){
-var myOptions={
-zoom: 15,
-center: location,
-mapTypeId: google.maps.MapTypeId.ROADMAP
-}
-var map= new google.maps.Map(document.getElementById("basic_map"), 
-myOptions);
-var marker= new google.maps.Marker({position: location, map: 
-map});
-}
-
-</script>
-<script type="text/javascript">
-    google.load("maps", "3.4", {
-        other_params: "sensor=false&language=fr"
-    });
-</script>
-
-
 
         </body>
         </html>

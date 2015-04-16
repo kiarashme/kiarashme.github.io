@@ -17,4 +17,17 @@
 
 #lulu {
 	background-image: url("luluBig.jpg");
+	text-align: center;
+}
+
+#pendleton {
+	background-image: url("pdnCover.jpg");
+	text-align: center;
+}
+
+
+#imgCollapsible {
+	display: block;
+	margin: auto;
+	height: 130px;
 }
