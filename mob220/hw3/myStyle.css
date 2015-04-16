@@ -42,3 +42,13 @@
             overflow-y: scroll;
             -webkit-overflow-scrolling: touch;
         }
+
+
+
+ .ui-icon-myapp-places {
+	background-image: url("placesIcon.png");
+}
+
+ .ui-icon-myapp-map {
+	background-image: url("mapIcon.png");
+}
