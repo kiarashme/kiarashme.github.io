@@ -15,6 +15,35 @@
         <script src="jquery.sticky-kit.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
+ <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>   
+    <script>
+        $(document).on('pageshow', '#index',function(e,data){   
+         
+            $('#content').height(getRealContentHeight());
+             
+           // This is the minimum zoom level that we'll allow
+           var minZoomLevel = 12;
+ 
+           var map = new google.maps.Map(document.getElementById('map_canvas'), {
+              zoom: minZoomLevel,
+              center: new google.maps.LatLng(38.50, -90.50),
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+           });          
+        });
+ 
+        function getRealContentHeight() {
+            var header = $.mobile.activePage.find("div[data-role='header']:visible");
+            var footer = $.mobile.activePage.find("div[data-role='footer']:visible");
+            var content = $.mobile.activePage.find("div[data-role='content']:visible:visible");
+            var viewport_height = $(window).height();
+ 
+            var content_height = viewport_height - header.outerHeight() - footer.outerHeight();
+            if((content.outerHeight() - header.outerHeight() - footer.outerHeight()) <= viewport_height) {
+                content_height -= (content.outerHeight() - content.height());
+            } 
+            return content_height;
+        }
+    </script> 
 
 
     </head>
@@ -182,20 +211,26 @@ $("#footer").stick_in_parent();
 
 
 
-
-<div data-role="page" id="wMap" data-theme="a">
+<div data-role="page" class = "scrollable" id="wMap" data-theme="a" >
 
                     <div role="main" class="ui-content">
+                           <div id="map_canvas" style="height:100%"></div>
+   
+    </div><!-- /content -->
 
-                        <div id="map" style="width: 300px; height: 300px;"></div>
 
+    <div data-role="footer" id ="footer">
+        <div data-role="navbar">
+            <ul>
+                <li> <a href="#home" data-icon="grid">Home</a>
+                    <li> <a href="#campusPlaces" data-icon="info">Campus places</a>
+                        <li> <a href="#wMap" data-icon="search">Map</a>
+                        </ul>
                     </div> <!-- Start of nav bar -->
 
                 </div> <!-- End of footer -->
-
-
-
             </div><!-- /page -->
+
 
         </body>
         </html>
