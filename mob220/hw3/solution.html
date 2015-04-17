@@ -193,7 +193,9 @@
                 <h4>Page Footer</h4>
             </div><!-- /footer -->
         </div><!-- /page -->
-   <!--Google Maps API-->
+
+      
+         <!--Google Maps API-->
         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
         
         <!-- the following script handles Google Maps -->
@@ -231,11 +233,11 @@
         
         /*This function initializes a Google Map object centered on the current location of the device */
         
-        function successGPSLatLng(position)
+        function successGPSLatLng()
         {
             //store current latitude and longitude information
-            lat=position.coords.latitude;
-            lon=position.coords.longitude;
+            lat=42.29357;
+            lon=-71.30593;
             
             //create a new googl.maps.LatLng object
             var latlng=new google.maps.LatLng(lat,lon);
@@ -261,9 +263,9 @@
         
         
         <!-- Event listener for the pageinit (i.e.uloaded) event of #map -->
-            $("#map").bind("pageinit",function (event)
+            $("#wMap").bind("pageinit",function (event)
             {
-                getGPSLatLng();
+                successGPSLatLng();
             });
             </script>
 
