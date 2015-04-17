@@ -45,3 +45,8 @@
 #wMap {
 	text-align: center;
 }
+
+#basic_map{
+display: block;
+	margin: auto;
+}
