@@ -47,6 +47,7 @@
 }
 
 #basic_map{
-display: block;
-	margin: auto;
+position: relative;
+left:0px;
+float: left;
 }
