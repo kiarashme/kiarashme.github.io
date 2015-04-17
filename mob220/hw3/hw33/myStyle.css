@@ -1,0 +1,62 @@
+#home {
+	background-image: url("cover.jpg");
+	text-align: center;
+	}
+
+  h1 { color: white;
+  	font-family: Montserrat, 400;
+
+	}
+
+#footer {
+	position:absolute;
+	bottom: 0;
+	width: 100%;
+	position: fixed;
+}
+
+#lulu {
+	background-image: url("luluBig.jpg");
+	text-align: center;
+}
+
+
+#pendleton {
+	background-image: url("pdnCover.jpg");
+	background-size: 500px 376px;
+	text-align: center;
+            
+            width: 100%;
+            top: 0;
+            bottom: 0;
+       
+}
+
+#greenHall {
+	background-image: url("greenCover.jpg");
+	text-align: center;
+	
+}
+
+#jewett {
+	background-image: url("jewettCover.jpg");
+	text-align: center;
+}
+#imgCollapsible {
+	display: block;
+	margin: auto;
+	height: 130px;
+}
+
+ .scrollable {
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+        }
+#wMap {
+	text-align: center;
+}
+
+#basic_map{
+display: block;
+margin:auto;
+}
