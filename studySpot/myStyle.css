@@ -1,32 +1,38 @@
 h1 {
 
 	font-family: Montserrat, 100;
-	font-size: 13px;
+	font-size: 14px;
 	
 }
 
 #header {
 	height:30px;
-	line-height:0.6em;
+	line-height:0.8em;
 	text-align: center;
-	position: relative;
-	top: -3px;
+	position: absolute;
+	top: 0;
 	width: 100%;
-	background-color: blue;
+	background-color: #ffffff;
+	border-bottom: solid #898989;
+
 
 
 	
 }
 
 #heartDiv {
-	background-color: red;
+	background-color: #ffffff;
 	height: 30px;
-	position: relative;
+	position: absolute;
 	top: 0;
 	right:0;
+	width: 60px;
 
 }
 
 #heartIcon {
 	height:20px;
+	position: relative;
+	right: -15px;
+	top:4px;
 }
