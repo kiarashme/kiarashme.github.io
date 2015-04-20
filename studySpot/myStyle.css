@@ -1,0 +1,32 @@
+h1 {
+
+	font-family: Montserrat, 100;
+	font-size: 13px;
+	
+}
+
+#header {
+	height:30px;
+	line-height:0.6em;
+	text-align: center;
+	position: relative;
+	top: -3px;
+	width: 100%;
+	background-color: blue;
+
+
+	
+}
+
+#heartDiv {
+	background-color: red;
+	height: 30px;
+	position: relative;
+	top: 0;
+	right:0;
+
+}
+
+#heartIcon {
+	height:20px;
+}

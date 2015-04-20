@@ -1,0 +1,192 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Campus places</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <link rel="stylesheet" type="text/css" href="myTheme.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+        <link rel="stylesheet" href="myTheme.min.css" />
+
+        <link rel="stylesheet" type="text/css" href="myStyle.css" />
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700,100' rel='stylesheet' type='text/css'>
+
+    </head>
+
+
+    <body>
+        <!-- Start of first page -->
+        <div data-role="page" id="home" data-theme="a">
+
+             <div id="header">
+                <h1>StudySpot</h1>
+              <div id = "heartDiv"
+                    <img id ="heartIcon"src = "heartIconD.png">
+</div>
+
+            </div>
+
+
+            <div role="content" class="ui-content">  <!-- Start of content -->
+
+                
+
+
+           </div> <!-- End of content -->
+           
+
+                </div> <!-- End of first page -->
+
+
+
+                <div data-role="page" id="campusPlaces"  data-theme="a">
+
+                    <div role="main" class="ui-content">
+                        <ul data-role="listview" data-theme="a">
+                            <li><a href="#lulu"> 
+                                <img src="lulu.jpg">
+                                <h3 class="ui-li-heading">Lulu Chow Wang</h3>
+                                <p class="ui-li-desc">Student center</p>
+                            </a>
+                        </li>
+
+                        <li><a href="#pendleton">
+                            <img src="pedleton.jpg">
+
+                            <h3 class="ui-li-heading">Pendleton Hall</h3>
+                            <p class="ui-li-desc">Academic hall</p>
+                          </a>
+
+                    </li>
+                  <li><a href="#greenHall" class="ui-link-inherit">
+                    <img src="gHall.jpg">
+                    <h3 class="ui-li-heading">Green Hall</h3>
+                    <p class="ui-li-desc">Academic hall</p>
+                </a>
+            </li>
+                 
+                 <li><a href="#jewett" class="ui-link-inherit">
+                        <img src="jewett.jpg" >
+                        <h3 class="ui-li-heading">Jewett Arts Center</h3>
+                        <p class="ui-li-desc">Academic arts center</p>
+                    </a>
+                </li>
+               
+        </ul>
+
+    </div><!-- /content -->
+  <div data-role="footer" id ="footer">
+            <div data-role="navbar">
+                <ul>
+                    <li id="homeBtn"> <a href="#home" data-icon="home">Home</a> </li>
+                        <li> <a href="#campusPlaces" id = "campus" data-icon="location">Campus places</a>
+                            <li> <a href="#wMap" data-icon="grid">Map</a> </li>
+                            </ul>
+                        </div> <!-- End of nav bar -->
+
+                    </div> <!-- End of footer -->
+
+
+
+
+  <div data-role="page" id="wMap" data-theme="a">
+            
+           
+            <div role="main" class="ui-content">
+               
+                <div id="basic_map" style="width:270px;height:300px;"></div>
+            </div><!-- /content -->
+            
+             <div data-role="footer" id ="footer">
+        <div data-role="navbar">
+            <ul>
+                <li> <a href="#home" data-icon="home">Home</a>
+                    <li> <a href="#campusPlaces" data-icon="location">Campus places</a>
+                        <li> <a href="#wMap" data-icon="grid">Map</a>
+                        </ul>
+                    </div> <!-- Start of nav bar -->
+
+                </div> <!-- End of footer -->
+        </div><!-- /page -->
+
+      
+         <!--Google Maps API-->
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        
+        <!-- the following script handles Google Maps -->
+        <script>
+                //global variables for storing location information
+            var updateLocation;
+            var lat;
+            var lon;
+            
+        /*This function uses the geolocation.getCurrentPosition method.
+        The geolocation.getCurrentPosition takes 3 parameters: a success function, an error function, and options in the form of JSON syntax. 
+        This function is invoked when the user click on the get_coords button. 
+        */
+        
+        function getGPS()
+        {
+            //The enableAccuracy option provides you with the highest accuracy but consumes a lot of battery life.
+            navigator.geolocation.getCurrentPosition(successGPS,errorGPS,{enableHighAccuracy : true});
+        }
+        
+        /* This function is invoked by the geolocation.getCurrentPosition method used in getGPS()
+        */
+        /*This function is used to retrieve GPS coordinates and pass them to a function, which in turn initializes a Google Map centered on the current location of the device.*/
+        function getGPSLatLng()
+        
+        {
+            navigator.geolocation.getCurrentPosition(successGPSLatLng,errorGPS,{enableHighAccuracy : true});
+        }
+        
+        /* This function is invoked when there is an error in reading GPS info*/
+        function errorGPS()
+        {
+            alert("GPS Error");
+        }
+        
+        /*This function initializes a Google Map object centered on the current location of the device */
+        
+        function successGPSLatLng()
+        {
+            //store current latitude and longitude information
+            lat=42.29357;
+            lon=-71.30593;
+            
+            //create a new googl.maps.LatLng object
+            var latlng=new google.maps.LatLng(lat,lon);
+            
+            //set Google Map options
+            var myOptions={
+                zoom: 15,
+                center: latlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            
+            //create a new map, pass its <div> contsainer as parameter
+            var map= new google.maps.Map(document.getElementById("basic_map"), myOptions);
+            
+            //place a marker with current latitude and longitude on the map
+            var marker= new google.maps.Marker({position: latlng, map: map});
+            
+        }
+        </script>
+        
+        <!-- The following <script> handles jQuery Mobile events -->
+        <script>
+        
+        
+        <!-- Event listener for the pageinit (i.e.uloaded) event of #map -->
+            $("#wMap").bind("pageinit",function (event)
+            {
+                successGPSLatLng();
+            });
+            </script>
+
+
+        </body>
+        </html>
