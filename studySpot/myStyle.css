@@ -57,7 +57,7 @@ h3 {
 #arrowIcon {
 	height:15px;
 	position: relative;
-	left: -15px;
+	left: -18px;
 	top:8px;
 
 }
@@ -107,4 +107,70 @@ h3 {
 
 .selected {
 	background-color: #E0E0E0;
+}
+
+#filters {
+	position: absolute;
+	top:30px;
+	background-color: #898989;
+	width:100%;
+	text-align: center;
+}
+#filters h2 {
+	color: #ffffff;
+}
+
+#results {
+	position: absolute;
+	top: 90px;
+	width: 100%;
+}
+
+.container {
+	padding-bottom: 5px;
+}
+
+#results ul
+{
+list-style-type: none;
+}
+
+.resultsImage {
+	float: left;
+	height: 140px;
+	width: 140px;
+	}
+
+.resultsText {
+	float: left;
+	text-align: left;
+	height: 140px;
+	width: 140px;
+	position: relative;
+	top: -15px;
+	right: -15px;
+	
+}
+
+.placePhoto {
+max-width:100%;
+max-height:100%;
+
+}
+
+.arrowRight {
+	background-color: #898989;
+	float:right;
+	width: 40px;
+	height: 140px;
+	text-align: center;
+
+}
+
+.arrowRightImg {
+width: 10px;
+position: relative;
+left:-5px;
+top:55px;
+padding-top: 5px;
 }
