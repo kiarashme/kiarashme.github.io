@@ -59,11 +59,14 @@ h3 {
 
 #placePrefer div {
 	float: left;
-	margin: 18px;
+	margin-right: 10px;
+	margin-left: 10px;
 	position: relative;
-	left:10px;
 	text-align: center;
+	width: 70px;
+	right: -8px;
 }
 #placePrefer div img {
 	height:50px;
+	position: relative;
 }
