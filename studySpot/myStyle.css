@@ -45,6 +45,23 @@ h3 {
 	top:4px;
 }
 
+#backArrowDiv {
+	background-color: #ffffff;
+	height: 30px;
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 60px;
+
+}
+#arrowIcon {
+	height:15px;
+	position: relative;
+	left: -15px;
+	top:8px;
+
+}
+
 #homePage {
 	text-align: center;
 	background-color: #ffffff;
@@ -89,5 +106,5 @@ h3 {
 }
 
 .selected {
-	background-color: red;
+	background-color: #E0E0E0;
 }
