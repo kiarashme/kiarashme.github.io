@@ -1,3 +1,4 @@
+
     <!DOCTYPE html>
     <html>
     <head>
@@ -14,17 +15,24 @@
         <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700,100' rel='stylesheet' type='text/css'>
 
-      <script type="text/javascript">
+          <script type="text/javascript">
     $( document ).ready( function(){
         $('.option').on('click',function () {
              $('.option').removeClass('selected');
              $(this).addClass('selected')
         });
     });
+
+     $( document ).ready( function(){
+        $('.noiseOption').on('click',function () {
+             $('.noiseOption').removeClass('selected');
+             $(this).addClass('selected')
+        });
+    });
+    </script>
     </script>
 
 
-    </script>
 
     </head>
 
@@ -88,9 +96,9 @@
                 </div>
 
             </div>
-
-            <div id= "noisePrefer">
 <h2 class = "title">What's your noise preference?</h2>
+              <div id= "noisePrefer">
+
 
                  <div class="noiseOption">
                     <img src ="silentIcon.png">
@@ -116,6 +124,8 @@
 
 
             </div>
+
+
 
            </div> <!-- End of content -->
            

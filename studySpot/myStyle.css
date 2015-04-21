@@ -72,13 +72,43 @@ h3 {
 }
 
 #placePrefer {
-	background-color: blue;
 	position: relative;
 	margin: auto;
 	width: 290px;
 }
 
 #placePrefer div {
+	float: left;
+	margin-right: 2px;
+	margin-left: 2px;
+	margin-bottom: 4px;
+	position: relative;
+	text-align: center;
+	width: 90px;
+	height: 90px;
+	right: -8px;
+	border-radius: 200px;
+	left:3px;
+	
+}
+
+#noisePrefer {
+	position: relative;
+	margin: auto;
+	width: 290px;
+}
+
+
+#noisePrefer img {
+	height:45px;
+	position: relative;
+	top:13px;
+}
+
+#noisePrefer h2 {
+	padding-top: 25px;
+}
+.noiseOption {
 	float: left;
 	margin-right: 2px;
 	margin-left: 2px;
