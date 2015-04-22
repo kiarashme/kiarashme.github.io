@@ -67,9 +67,13 @@ h3 {
 	background-color: #ffffff;
 }
 
-#homePage h2 {
-	padding-top: 25px;
+
+#homePage div h2 {
+	position: relative;
+	top:15px;
 }
+
+
 
 #placePrefer {
 	position: relative;
@@ -99,15 +103,7 @@ h3 {
 }
 
 
-#noisePrefer img {
-	height:45px;
-	position: relative;
-	top:13px;
-}
 
-#noisePrefer h2 {
-	padding-top: 25px;
-}
 .noiseOption {
 	float: left;
 	margin-right: 2px;
@@ -123,7 +119,7 @@ h3 {
 }
 
 
-#placePrefer img {
+.uiIcon {
 	height:45px;
 	position: relative;
 	top:13px;
