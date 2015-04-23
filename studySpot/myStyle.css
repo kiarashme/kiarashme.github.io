@@ -117,12 +117,20 @@ h3 {
 #resourceOptions {
 	position: relative;
 	margin: auto;
-	width: 220px;
-	background-color: blue;
+	width: 240px;
 	height:120px;
 	text-align: center;
 	bottom:140px;
 }
+
+.optionResource1, .optionResource3, .optionResource5 {
+	float: left;
+}
+
+.optionResource2, .optionResource4, .optionResource6 {
+	float: right;
+}
+
 #resourceTitle {
 	position: relative;
 	bottom: 160px;
