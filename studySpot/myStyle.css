@@ -81,6 +81,10 @@ h3 {
 	bottom: 20px;
 }
 
+#proxTitle {
+	position: relative;
+	bottom: 77px;
+}
 
 
 #placePrefer {
@@ -92,11 +96,78 @@ h3 {
 	display: block;
 	}
 
-#filterOptions {
+#lightOptions {
+	position: relative;
+	margin: auto;
+	width: 300px;
+	height:120px;
+	text-align: center;
+	top:5px;
+}
+
+#proxOptions {
 	position: relative;
 	margin: auto;
 	width: 290px;
+	height:120px;
 	text-align: center;
+	bottom:87px;
+}
+
+#resourceOptions {
+	position: relative;
+	margin: auto;
+	width: 320px;
+	height:120px;
+	text-align: center;
+	bottom:140px;
+}
+#resourceTitle {
+	position: relative;
+	bottom: 160px;
+}
+
+#resourceOptions div {
+	display: inline-block;
+	margin-right: 30px;
+	margin-bottom: 3px;
+	position: relative;
+	text-align: center;
+	width: 90px;
+	height: 90px;
+	right: -8px;
+	border-radius: 200px;
+	left:3px;
+	bottom: 30px;
+}
+
+#proxOptions div {
+	display: inline-block;
+	margin-right: 2px;
+	margin-left: 2px;
+	margin-bottom: 4px;
+	position: relative;
+	text-align: center;
+	width: 95px;
+	height: 95px;
+	right: -8px;
+	border-radius: 200px;
+	left:3px;
+
+}
+#groupOptions div {
+	float: left;
+	margin-right: 2px;
+	margin-left: 2px;
+	margin-bottom: 4px;
+	position: relative;
+	text-align: center;
+	width: 90px;
+	height: 90px;
+	right: -8px;
+	border-radius: 200px;
+	left:3px;
+	
 }
 
 #placePrefer div {
@@ -129,14 +200,19 @@ h3 {
 	bottom: 16px;
 }
 
-#goupPrefer h2 {
+#eatOptions {
 	position: relative;
-}
-
-#filtersPage{
+	margin: auto;
+	width: 290px;
+	height:120px;
 	text-align: center;
+	bottom:115px;
 }
-#filterOptions div {
+#eatTitle {
+	position: relative;
+	bottom: 120px;
+}
+#eatOptions div {
 	float: left;
 	margin-right: 2px;
 	margin-left: 2px;
@@ -147,14 +223,51 @@ h3 {
 	height: 90px;
 	right: -8px;
 	border-radius: 200px;
+	left:3px;
+	bottom: 16px;
+
+}
+#filtersPage{
+	text-align: center;
+}
+#lightOptions div {
+	float: left;
+	margin-right: 2px;
+	margin-left: 2px;
+	margin-bottom: 4px;
+	position: relative;
+	text-align: center;
+	width: 95px;
+	height: 95px;
+	right: -8px;
+	border-radius: 200px;
 	left:3px;	
 	
 }
 
-#filterOptions h2 {
+#lightingTitle {
 	position: relative;
-	top: 15px;
-	}
+	top:17px;
+}
+
+#groupTitle {
+	position: relative;
+	bottom: 30px;
+}
+
+#groupOptions {
+	position: relative;
+	margin: auto;
+	width: 290px;
+	height:120px;
+	text-align: center;
+	bottom:25px;
+}
+
+#optionLighting {
+	position: relative;
+	bottom: 10px;
+}
 
 #noisePrefer {
 	position: relative;
@@ -263,5 +376,14 @@ padding-top: 5px;
 }
 
 
+#popularTitle {
+	position: relative;
+	bottom: 165px;
+}
 
-
+.radioCont {
+	width:40%;
+	display: inline-block;
+	position: relative;
+	bottom: 168px;
+}

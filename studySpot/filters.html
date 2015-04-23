@@ -45,14 +45,68 @@
         });
     });
    
-    $(function() {
-    $( "#slider" ).slider();
-  });
-    
 
+    $( document ).ready( function(){
+        $('.optionProximity').on('click',function () {
+             $('.optionProximity').removeClass('selected');
+             $(this).addClass('selected')
+        });
+    });
+
+     $( document ).ready( function(){
+        $('.optionEat').on('click',function () {
+             $('.optionEat').removeClass('selected');
+             $(this).addClass('selected')
+        });
+    });
+
+      $( document ).ready( function(){
+        $('.optionResource1').on('click',function () {
+             $('.optionResource1').removeClass('selected');
+             $(this).addClass('selected')
+        });
+    });
+ $( document ).ready( function(){
+        $('.optionResource2').on('click',function () {
+             $('.optionResource2').removeClass('selected');
+             $(this).addClass('selected')
+        });
+    });
+ $( document ).ready( function(){
+        $('.optionResource3').on('click',function () {
+             $('.optionResource3').removeClass('selected');
+             $(this).addClass('selected')
+        });
+    });
+ $( document ).ready( function(){
+        $('.optionResource4').on('click',function () {
+             $('.optionResource4').removeClass('selected');
+             $(this).addClass('selected')
+        });
+    });
+ $( document ).ready( function(){
+        $('.optionResource5').on('click',function () {
+             $('.optionResource5').removeClass('selected');
+             $(this).addClass('selected')
+        });
+    });
+ $( document ).ready( function(){
+        $('.optionResource6').on('click',function () {
+             $('.optionResource6').removeClass('selected');
+             $(this).addClass('selected')
+        });
+    });
+ $( document ).ready( function(){
+        $('.optionResource7').on('click',function () {
+             $('.optionResource7').removeClass('selected');
+             $(this).addClass('selected')
+        });
+    });
+
+
+
+ 
     </script>
-
-
 
     </head>
 
@@ -78,9 +132,9 @@
                
 
       
-
-            <div id ="filterOptions">
-            <h2 class = "title">Lighting</h2>
+<h2 id="lightingTitle" class = "title">Lighting</h2>
+            <div id ="lightOptions">
+            
                 <div class = "optionLighting">
 
                      <img class="uiIcon" src ="icons/sunlight.png">
@@ -106,7 +160,8 @@
 
 
             
-            <h2 class = "title">Group work</h2>
+            <h2 id="groupTitle" class = "title">Group work</h2>
+            <div id = "groupOptions">
                 <div class = "optionGroup">
 
                      <img class="uiIcon" src ="icons/two.png">
@@ -127,15 +182,129 @@
                     3+
                   </h3>
                 </div>
+            </div>
 
-                <h2 class ="title">Proximity</h2>
+                <h2 id="proxTitle" class ="title">Study spot roximity</h2>
           
-<div id="slider"></div>
+<div id="proxOptions">
+
+           <div class="optionProximity">
+                    <img class="uiIcon"  src ="icons/close.png">
+                        <h3 class = "title">
+                    Not too far
+                  </h3>
+                </div>
+
+                <div class="optionProximity">
+                    <img class="uiIcon"  src ="icons/far.png">
+                        <h3 class = "title">
+                    Far
+                  </h3>
+                </div>
+
+            </div>
 
 
-           
+             <h2 id="eatTitle" class = "title">Will you need food?</h2>
+            <div id = "eatOptions">
+                <div class = "optionEat">
+
+                     <img class="uiIcon" src ="icons/hungry.png">
+                  <h3 class = "title">
+                    Hungry
+                  </h3>
+
+                </div>
+                <div class="optionEat">
+                    <img class="uiIcon" src ="icons/couldEat.png">
+                    <h3 class = "title">
+                    Could eat
+                  </h3>
+                </div>
+                <div class="optionEat">
+                    <img class="uiIcon"  src ="icons/full.png">
+                        <h3 class = "title">
+                    Full
+                  </h3>
+                </div>
+            </div>
+
+  <h2 id="popularTitle" class = "title">Popularity</h2>
+            <div id = "popOptions">
+
+<div class="radioCont">
+<input id="radio1" name="radios" type="radio"/>
+
+        <label id="label1" for="radio1">
+          Yes
+        </label>
+</div>
+<div class="radioCont">
+          <input id="radio2" name="radios" type="radio"/>
+
+        <label for="radio2">
+          No
+        </label>
+</div>
 
 
+
+             <h2 id="resourceTitle" class = "title">Resources</h2>
+            <div id = "resourceOptions">
+                <div class = "optionResource1">
+
+                     <img class="uiIcon" src ="icons/couch.png">
+                  <h3 class = "title">
+                    Couch
+                  </h3>
+
+                </div>
+                <div class="optionResource2">
+                    <img class="uiIcon" src ="icons/whiteboard.png">
+                    <h3 class = "title">
+                    Whiteboard
+                  </h3>
+                </div>
+                <div class="optionResource3">
+                    <img class="uiIcon"  src ="icons/table.png">
+                        <h3 class = "title">
+                    Big table
+                  </h3>
+                </div>
+
+ <div class="optionResource4">
+                    <img class="uiIcon"  src ="icons/view.png">
+                        <h3 class = "title">
+                    Pretty view
+                  </h3>
+                </div>
+
+                <div class="optionResource5">
+                    <img class="uiIcon"  src ="icons/printer.png">
+                        <h3 class = "title">
+                    Printer
+                  </h3>
+                </div>
+
+  <div class="optionResource6">
+                    <img class="uiIcon"  src ="icons/computer.png">
+                        <h3 class = "title">
+                    Computer
+                  </h3>
+                </div>
+
+<div class="optionResource7">
+                    <img class="uiIcon"  src ="icons/software.png">
+                        <h3 class = "title">
+                    Software
+                  </h3>
+                </div>
+
+
+
+            </div>
+    
+    
            </div> <!-- End of content -->
            
 
