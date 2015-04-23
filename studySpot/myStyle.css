@@ -65,13 +65,20 @@ h3 {
 #homePage {
 	text-align: center;
 	background-color: #ffffff;
+
 }
 
 
 
-#homePage div h2 {
+#spacePreftitle {
+	margin: auto;
+	line-height: 7em;
+}
+
+#noisePreftitle {
+	margin: auto;
 	position: relative;
-	top:15px;
+	bottom: 20px;
 }
 
 
@@ -80,6 +87,16 @@ h3 {
 	position: relative;
 	margin: auto;
 	width: 290px;
+	height: 200px;
+	bottom:45px;
+	display: block;
+	}
+
+#filterOptions {
+	position: relative;
+	margin: auto;
+	width: 290px;
+	text-align: center;
 }
 
 #placePrefer div {
@@ -97,10 +114,53 @@ h3 {
 	
 }
 
+.optionGroup {
+	float: left;
+	margin-right: 2px;
+	margin-left: 2px;
+	margin-bottom: 4px;
+	position: relative;
+	text-align: center;
+	width: 90px;
+	height: 90px;
+	right: -8px;
+	border-radius: 200px;
+	left:3px;
+	bottom: 16px;
+}
+
+#goupPrefer h2 {
+	position: relative;
+}
+
+#filtersPage{
+	text-align: center;
+}
+#filterOptions div {
+	float: left;
+	margin-right: 2px;
+	margin-left: 2px;
+	margin-bottom: 4px;
+	position: relative;
+	text-align: center;
+	width: 90px;
+	height: 90px;
+	right: -8px;
+	border-radius: 200px;
+	left:3px;	
+	
+}
+
+#filterOptions h2 {
+	position: relative;
+	top: 15px;
+	}
+
 #noisePrefer {
 	position: relative;
 	margin: auto;
 	width: 290px;
+	bottom: 10px;
 }
 
 
@@ -201,3 +261,7 @@ left:-5px;
 top:55px;
 padding-top: 5px;
 }
+
+
+
+
