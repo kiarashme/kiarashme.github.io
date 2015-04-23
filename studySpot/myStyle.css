@@ -117,7 +117,8 @@ h3 {
 #resourceOptions {
 	position: relative;
 	margin: auto;
-	width: 320px;
+	width: 220px;
+	background-color: blue;
 	height:120px;
 	text-align: center;
 	bottom:140px;
@@ -129,7 +130,6 @@ h3 {
 
 #resourceOptions div {
 	display: inline-block;
-	margin-right: 30px;
 	margin-bottom: 3px;
 	position: relative;
 	text-align: center;
@@ -137,9 +137,8 @@ h3 {
 	height: 90px;
 	right: -8px;
 	border-radius: 200px;
-	left:3px;
 	bottom: 30px;
-}
+	}
 
 #proxOptions div {
 	display: inline-block;
