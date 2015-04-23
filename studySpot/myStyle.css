@@ -437,3 +437,10 @@ padding-top: 5px;
 	left:40%;
 	margin-bottom: 10px;
 }
+
+#classwhite {
+	display: none;
+}
+#classwhite h3 {
+color: #ffffff;
+}

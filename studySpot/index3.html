@@ -18,9 +18,32 @@
         <script type="text/javascript">
     $( document ).ready( function(){
         $('.option').on('click',function () {
+          
+var parentDiv = document.getElementById("placePrefer").innerHTML;
+console.log(parentDiv);
+var children = parentDiv.children;
+for (var i = 0; i < 5; i++) {
+  var child = children[i];
+  var childId = child.id;
+  if (childId.indexOf("white")>-1) {
+    child = document.getElementById(childId.substring(0, childId.length - 5));
+    console.log(childId);
+  }
+ 
+}
+         
+(s.indexOf("oo") > -1);
+
+         
              $('.option').removeClass('selected');
-             $(this).addClass('selected')
+             $(this).addClass('selected');
+             var ar = this.id;
+             document.getElementById(ar).innerHTML=document.getElementById(ar+"white").innerHTML;
+            
         });
+
+       
+
 
         $('.noiseOption').on('click',function () {
              $('.noiseOption').removeClass('selected');
@@ -82,8 +105,7 @@
              $(this).addClass('selected')
         });
             
-
-
+    
     });
 </script>
 
@@ -138,12 +160,20 @@
                 </div>
                 
 
-                <div class="option">
+                <div class="option" id="class">
                     <img class="uiIcon" src ="classroom.png">
                         <h3 class = "title">
                     Classroom
                   </h3>
                 </div>
+                 <div id="classwhite" class="option">
+                    <img class="uiIcon" src ="classroomWhite.png">
+                        <h3 class = "title">
+                    Classroom
+                  </h3>
+                </div>
+
+
                 <div class="option">
                     <img class="uiIcon"  src ="nature.png">
                         <h3 class = "title">
