@@ -166,7 +166,7 @@ h3 {
 	height: 90px;
 	right: -8px;
 	border-radius: 200px;
-	left:3px;
+	right: 7px;
 	
 }
 
@@ -241,9 +241,10 @@ h3 {
 	height: 90px;
 	right: -8px;
 	border-radius: 200px;
-	left:3px;	
+	right:2px;	
 	
 }
+
 
 #lightingTitle {
 	position: relative;
