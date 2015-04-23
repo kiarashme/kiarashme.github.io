@@ -19,7 +19,10 @@
     $( document ).ready( function(){
         $('.option').on('click',function () {
              $('.option').removeClass('selected');
-             $(this).addClass('selected')
+             $('.option').children().css({"color":"#66B1AD"});
+             $(this).addClass('selected');
+             $(this).children().css({"color": "#ffffff"})
+             
         });
 
         $('.noiseOption').on('click',function () {
@@ -105,27 +108,27 @@
 
 
             <div id = "homePage" role="content" class="ui-content">  <!-- Start of content -->
-             
+
 
             <h2 id="spacePreftitle" class = "title">Space preference?</h2>
       
 
             <div id ="placePrefer">
                 <div class = "option">
-                     <img class="uiIcon" src ="studyspace.png">
+                     <span class="icon-iconFilters-13"></span>
                   <h3 class = "title">
                     Study area
                   </h3>
 
                 </div>
                 <div class="option">
-                    <img class="uiIcon" src ="lounge.png">
+                     <span id="testIcon" class="icon-iconFilters-02"></span>
                     <h3 class = "title">
                     Lounge
                   </h3>
                 </div>
                 <div class="option">
-                    <img class="uiIcon"  src ="cafe.png">
+                    <span class="icon-iconFilters-15"></span>
                         <h3 class = "title">
                     Cafe
                   </h3>
