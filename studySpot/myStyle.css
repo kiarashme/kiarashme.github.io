@@ -54,6 +54,8 @@ h3 {
 	width: 60px;
 
 }
+
+
 #arrowIcon {
 	height:15px;
 	position: relative;
@@ -65,6 +67,7 @@ h3 {
 #homePage {
 	text-align: center;
 	background-color: #ffffff;
+	height: 480px;
 
 }
 
@@ -323,6 +326,32 @@ h3 {
 	width:100%;
 	text-align: center;
 }
+
+#saveFilters {
+	position: absolute;
+	bottom:0px;
+	left: 0px;
+	background-color: #898989;
+	width:100%;
+	text-align: center;
+}
+#saveFilters h2 {
+	color: #ffffff;
+}
+
+#saveInitial {
+	position: absolute;
+	bottom:0px;
+	left: 0px;
+	background-color: #898989;
+	width:100%;
+	text-align: center;
+}
+
+#saveInitial h2 {
+	color: #ffffff;
+}
+
 #filters h2 {
 	color: #ffffff;
 }
@@ -405,5 +434,6 @@ padding-top: 5px;
 }
 .saveBtn {
 	position: relative;
-	left:36%;
+	left:40%;
+	margin-bottom: 10px;
 }
