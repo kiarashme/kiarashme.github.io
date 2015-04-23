@@ -78,9 +78,13 @@
         });
 
           $('.optionResource7').on('click',function () {
-             $('.optionResource6').removeClass('selected');
+             $('.optionResource7').removeClass('selected');
              $(this).addClass('selected')
         });
+            $('.soft').on('click',function () {
+            $(this).addClass('selected')
+        });
+          
 
 
     });
@@ -299,14 +303,24 @@
 
 
 <div data-role ="popup" id="popupMenu" data-theme="a">
-<ul data role="listview" data-inset="true" style="min-width:210px;">
-<li><div class="soft1">Adobe Photoshop</div></li>
-                         <li><div class="soft2">Adobe Illustrator</div></li>
-                          <li><div class="soft3">Adobe inDesign</div></li>
-                           <li><div class="soft4">Adobe AfterEffects</div></li>
-                            <li><div class="soft5">Final Cut</div></li>
-                             <li><div class="soft6">Maya</div></li>
-</ul>
+<form>
+    <label>
+        <input type="checkbox" name="checkbox-0 ">Check me
+    </label>
+      <label>
+        <input type="checkbox" name="checkbox-0 ">Check me
+    </label>
+      <label>
+        <input type="checkbox" name="checkbox-0 ">Check me
+    </label>
+      <label>
+        <input type="checkbox" name="checkbox-0 ">Check me
+    </label>
+</form>
+<div class="saveBtn">
+            <a class="btn" href="#filters" id="register_form" name=
+            "register_form">Save</a>
+        </div>
 </div>
 
 
