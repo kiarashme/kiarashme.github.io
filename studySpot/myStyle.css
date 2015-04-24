@@ -802,7 +802,7 @@ width: 160px;
 position: relative;
 float: left;
 text-align: left;
-top:80px;
+top:160px;
 display: inline-block;
 
 }
@@ -816,19 +816,23 @@ display: inline-block;
 	display: inline-block;
 	top:80px;
 }
+
 #addFav2 {
 	width: 60px;
 	position: relative;
 	float:right;
 	text-align: center;
 	display: inline-block;
-	top:100px;
+	top:160px;
 }
 
 
 
-
 #addFav img {
+	position: relative;
+	right:1px;
+}
+#addFav2 img {
 	position: relative;
 	right:1px;
 }
@@ -843,7 +847,23 @@ display: inline-block;
 
 }
 
+#addFav2 h3 {
+	position: relative;
+	margin:auto;
+	line-height: 13px;
+	top:2px;
+	color:#C98BC4;
+	height: 100px;
+
+}
+
 #titleCont h1 {
+	position: relative;
+	bottom:11px;
+	line-height: 14px;
+}
+
+#titleCont2 h1 {
 	position: relative;
 	bottom:11px;
 	line-height: 14px;
