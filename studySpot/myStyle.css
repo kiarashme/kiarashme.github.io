@@ -10,10 +10,12 @@
 
 h1 {
 font-size: 14px;
+text-shadow: none;
 }
 
 h2 {
 	font-size: 18px;
+	text-shadow: none;
 }
 
 h3 {
@@ -794,6 +796,17 @@ float: left;
 text-align: left;
 top:48%;
 display: inline-block;
+
+}
+
+#titleCont h2 {
+	color:#67B2AE;
+}
+#titleCont h3 {
+	color:#67B2AE;
+	position: relative;
+	bottom:11px;
+	line-height: 14px;
 
 }
 
