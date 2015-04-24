@@ -201,9 +201,9 @@ h3 {
 
 
 
-#results {
-	position: absolute;
-	top: 90px;
+#Mapresults {
+	position: relative;
+	top: 120px;
 	width: 100%;
 }
 
