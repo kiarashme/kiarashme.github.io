@@ -811,12 +811,12 @@ display: inline-block;
 }
 
 #titleCont2 {
-width: 160px;
+width: 100%;
 position: relative;
 float: left;
 text-align: left;
 top:27px;
-display: inline-block;
+display: block;
 height: 65px;
 
 }
