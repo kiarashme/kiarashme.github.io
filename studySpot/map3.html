@@ -7,15 +7,14 @@
         <!--REMOVED FROM ORIGINAL<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />-->
 
         <!--ADDED-->
-        <!--<link rel="stylesheet" href="themes/wells.min.css" />
-        <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />-->
+        
+        
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
         <!--END OF ADDED CONTENT -->
 
         <!--ADDED-->
-        <link rel="stylesheet" type="text/css" href="myStyle.css" />
         <link rel="stylesheet" type="text/css" href="mapStyle.css" />
-
+        <link rel="stylesheet" type="text/css" href="myStyle.css" />
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700,100' rel='stylesheet' type='text/css'>
@@ -102,17 +101,25 @@
             });
 
         </script>
+
+          <script type="text/javascript">
+    $( document ).ready( function(){
+
+$("#addFav2").click(function(){
+    alert("Tha spot was added to your favorites");
+});
+});
+</script>
     </head>
 
     <body>
 
-    <!--Clapp Reading Room Page-->
-        <div data-role="page" id="clapp" data-theme="a">
+        <!--Anderson Forum Page-->
+        <div data-role="page" id="anderson" data-theme="a">
             <script type="text/javascript">
                 destinationLatitude = 42.291550, 
                 destinationLongitude = -71.306454;
-            </script>  
-
+            </script>    
 
             <!-- STUDYSPOT HEADER -->
             <div id="header">
@@ -121,29 +128,26 @@
                         <img id = "heartIcon" src = "heartIconD.png">
                     </div>
 
-                    <div id="backArrowDiv">
+                    <a href="clapp.html" data-rel="page" data-transition="slide" ><div id="backArrowDiv">
                         <img id = "arrowIcon" src = "arrowBack.png">
-                    </div>
+                    </div></a>
             </div>
             <!-- END OF STUDYSPOT HEADER -->
 
             <div data-role="content">   
                 <!--<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:1em;"> -->
                     <div id="map_canvas"></div>
-                <!--</div>  -->
-  <div id="navigateTo">
-                        <h2 class="title">Sanger Reading Room</h2>
-                        <h3 class="title">Clapp Library</h3>
-                        
-                    </div>
-                    <div id="pathDir">
-                 <div id="results" style="display:none;">
-                  
+                <!--</div>-->   <div id="titleCont2">
+
+            <h2 class="title"> Clapp Library</h2>
+            <h3 class="title"> Room #123, 1st floor</h3>
+        </div>
+
+<div id="pathDir">
+                <div id="mapResults">                  
                     <div id="directions"></div>
+
                 </div> <!--results-->
             </div>
             </div> <!--content-->
-        </div> <!--page-->  
-
-    </body>
-</html>
+        </div> <!--page--> 
