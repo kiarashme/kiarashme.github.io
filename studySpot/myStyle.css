@@ -948,4 +948,5 @@ height: 80px;
 }
 #pathDir {
 	display: block;
+	position: relative;
 }

@@ -16,13 +16,13 @@ h3 {
 }
 
 #directions {
-	position: relative;
+	position: absolute;
 	padding-right: 7%;
 	bottom: 50px;
 }
 
 #navigateTo {
-	position: relative;
+	position: absolute;
 	bottom: 50px;
 }
 
