@@ -949,6 +949,7 @@ height: 65px;
 #pathDir {
 	display: block;
 	position: relative;
-	bottom: 80px;
+	bottom: 60px;
+	padding-top: 20px;
 	padding-top: 20px;
 }
