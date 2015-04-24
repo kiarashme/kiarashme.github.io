@@ -545,7 +545,8 @@ list-style-type: none;
 
 .resultsText li {
 	position: relative;
-	bottom: 17px;
+	top: 1px;
+	right:5px;
 
 }
 
