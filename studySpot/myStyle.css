@@ -949,9 +949,5 @@ height: 80px;
 #pathDir {
 	display: block;
 	position: relative;
-	bottom: 85px;
-}
-#placeN {
-	position: relative;
-	bottom: 10px;
+	bottom: 80px;
 }
