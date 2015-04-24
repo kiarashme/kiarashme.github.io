@@ -3,7 +3,7 @@
 	color: #898989;
 }
 
- #appTitle {
+ #header h1 {
  color: #67B2AE;
  }
 
@@ -815,7 +815,7 @@ height: 65px;
 	float:right;
 	text-align: center;
 	display: inline-block;
-	top:80px;
+	top:240px;
 }
 
 #addFav2 {
@@ -907,7 +907,7 @@ height: 65px;
 	position: relative;
 	float: left;
 	display: inline-block;
-	top:260px;
+	top:300px;
 
 }
 #col2 {
@@ -915,7 +915,7 @@ height: 65px;
 	position: relative;
 	float: right;
 	display: inline-block;
-	top:260px;
+	top:300px;
 }
 
 #resPage{
