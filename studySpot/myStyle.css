@@ -744,14 +744,14 @@ list-style-type: none;
 	padding-right: 7%;
 }
 
-#navigateTo h4 {
+#navigateTo h1 {
 	position: relative;
 	top: 170px;
 }
 
 #navigateTo h3 {
 	position: relative;
-	top: 150px;
+	top: 170px;
 }
 
 #map_canvas {
