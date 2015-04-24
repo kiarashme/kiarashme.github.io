@@ -21,15 +21,11 @@ h3 {
 	padding-right: 7%;
 }
 
-#navigateTo h4 {
+#navigateTo {
 	position: relative;
 	top: 170px;
 }
 
-#navigateTo h3 {
-	position: relative;
-	top: 150px;
-}
 
 #map_canvas {
 	top: 20px;
