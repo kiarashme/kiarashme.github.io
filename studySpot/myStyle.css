@@ -788,7 +788,7 @@ list-style-type: none;
 
 
 #titleCont {
-width: 180px;
+width: 160px;
 position: relative;
 float: left;
 text-align: left;
@@ -798,13 +798,15 @@ display: inline-block;
 }
 
 #titleCont2 {
-width: 180px;
+width: 160px;
 position: relative;
 float: left;
 text-align: left;
+top:80px;
 display: inline-block;
 
 }
+
 
 #addFav {
 	width: 60px;
@@ -812,37 +814,26 @@ display: inline-block;
 	float:right;
 	text-align: center;
 	display: inline-block;
-	top:50%;
+	top:80px;
 }
-
-
 #addFav2 {
 	width: 60px;
 	position: relative;
 	float:right;
 	text-align: center;
 	display: inline-block;
-	
+	top:100px;
 }
+
+
+
 
 #addFav img {
 	position: relative;
 	right:1px;
 }
-#addFav2 img {
-	position: relative;
-	right:1px;
-}
-#addFav h3 {
-	position: relative;
-	margin:auto;
-	line-height: 13px;
-	top:2px;
-	color:#C98BC4;
-	height: 100px;
 
-}
-#addFav2 h3 {
+#addFav h3 {
 	position: relative;
 	margin:auto;
 	line-height: 13px;
@@ -857,11 +848,7 @@ display: inline-block;
 	bottom:11px;
 	line-height: 14px;
 }
-#titleCont2 h1 {
-	position: relative;
-	bottom:11px;
-	line-height: 14px;
-}
+
 #imgContainer{
 	position: absolute;
 	top:0px;
