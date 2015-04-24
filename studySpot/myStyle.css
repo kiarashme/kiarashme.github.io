@@ -804,6 +804,7 @@ float: left;
 text-align: left;
 top:30px;
 display: inline-block;
+height: 80px;
 
 }
 
@@ -824,6 +825,7 @@ display: inline-block;
 	text-align: center;
 	display: inline-block;
 	top:40px;
+	height: 80px;
 }
 
 
