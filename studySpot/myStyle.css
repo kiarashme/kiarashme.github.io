@@ -946,3 +946,6 @@ height: 80px;
 	top:8px;
 
 }
+#pathDir {
+	display: block;
+}
