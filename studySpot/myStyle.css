@@ -829,7 +829,20 @@ display: inline-block;
 	position: relative;
 	right:1px;
 }
+#addFav2 img {
+	position: relative;
+	right:1px;
+}
 #addFav h3 {
+	position: relative;
+	margin:auto;
+	line-height: 13px;
+	top:2px;
+	color:#C98BC4;
+	height: 100px;
+
+}
+#addFav2 h3 {
 	position: relative;
 	margin:auto;
 	line-height: 13px;
@@ -840,6 +853,11 @@ display: inline-block;
 }
 
 #titleCont h1 {
+	position: relative;
+	bottom:11px;
+	line-height: 14px;
+}
+#titleCont2 h1 {
 	position: relative;
 	bottom:11px;
 	line-height: 14px;
