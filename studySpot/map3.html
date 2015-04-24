@@ -7,13 +7,13 @@
         <!--REMOVED FROM ORIGINAL<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />-->
 
         <!--ADDED-->
-        
-        
+        <!--<link rel="stylesheet" href="themes/wells.min.css" />
+        <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />-->
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
         <!--END OF ADDED CONTENT -->
 
         <!--ADDED-->
-        <link rel="stylesheet" type="text/css" href="mapStyle.css" />
+        <link rel="stylesheet" type="text/css" href="myStyle.css" />
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700,100' rel='stylesheet' type='text/css'>
@@ -104,12 +104,13 @@
 
     <body>
 
-        <!--Anderson Forum Page-->
-        <div data-role="page" id="anderson" data-theme="a">
+    <!--Clapp Reading Room Page-->
+        <div data-role="page" id="clapp" data-theme="a">
             <script type="text/javascript">
-                destinationLatitude = 42.294514, 
-                destinationLongitude = -71.308954;
-            </script>    
+                destinationLatitude = 42.291550, 
+                destinationLongitude = -71.306454;
+            </script>  
+
 
             <!-- STUDYSPOT HEADER -->
             <div id="header">
@@ -126,18 +127,19 @@
 
             <div data-role="content">   
                 <!--<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:1em;"> -->
-                    <div id="map_canvas"></div>
-                <!--</div>-->  
+                    <div id="map_canvas" style="width:400px;height:240px;"></div>
+                <!--</div>  -->
 
-                <div id="results" style="display:none;">
+                 <div id="results" style="display:none;">
                     <div id="navigateTo">
-                        <h4 class="title">Anderson Forum</h4>
-                        <h3 class="title">Lulu Chow Wang Campus Center</h3>
-                        <div id="heartNav">
-                            <img id = "heartIcon" src = "heartIconD.png">
-                        </div>
+                        <h4 class="title">Sanger Reading Room/h4>
+                        <h3 class="title">Clapp Library</h3>
+                        
                     </div>
                     <div id="directions"></div>
                 </div> <!--results-->
             </div> <!--content-->
-        </div> <!--page--> 
+        </div> <!--page-->  
+
+    </body>
+</html>

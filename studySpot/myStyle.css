@@ -373,16 +373,28 @@ h3 {
 #filters {
 	position: absolute;
 	top:30px;
-	background-color: #898989;
+	background-color: #67B2AE;
 	width:100%;
 	text-align: center;
+}
+
+#filters2 {
+	position: absolute;
+	top:30px;
+	background-color: #ffffff;
+	width:100%;
+	text-align: center;
+}
+
+#favTitle {
+	color: #67B2AE;
 }
 
 #saveFilters {
 	position: absolute;
 	bottom:0px;
 	left: 0px;
-	background-color: #898989;
+	background-color: #67B2AE;
 	width:100%;
 	text-align: center;
 }
@@ -414,14 +426,19 @@ h3 {
  width: 100%;
 }
 
+#results2 {
+ position: absolute;
+ top: 70px;
+ width: 100%;
+
+}
+
 .container {
 	padding-bottom: 5px;
 }
 
-#results ul
-{
-list-style-type: none;
-}
+
+
 
 .resultsImage {
 	float: left;
@@ -438,7 +455,7 @@ max-height:100%;
 }
 
 .arrowRight {
-	background-color: #898989;
+	background-color: #67B2AE;
 	float:right;
 	width: 40px;
 	height: 140px;
@@ -515,6 +532,13 @@ list-style-type: none;
 	bottom: 5px;
 	right: 35px;
 }
+#results2 ul
+{
+list-style-type: none;
+	position: relative;
+	bottom: 5px;
+	right: 35px;
+}
 
 
 
@@ -535,18 +559,26 @@ list-style-type: none;
 .resultsText h2 {
 	position: relative;
 	bottom: 5px;
-
+	color: #9E9E9E;
 }
+
+
 
 .resultsText h3 {
 	position: relative;
 	bottom: 20px;
+
+}
+
+.subT {
+	color: #9E9E9E;
 }
 
 .resultsText li {
 	position: relative;
 	top: 1px;
-	right:5px;
+	right:4px;
+	color: #67B2AE;
 
 }
 
@@ -747,6 +779,20 @@ list-style-type: none;
 	width: 60px;
 }
 
-#favoritesPage {
+#favoritesPage2 {
 	position: relative;
+	text-align: center;
+}
+
+#andersonRPage {
+	position: relative;
+}
+
+#imgContainer{
+	position: absolute;
+	top:0px;
+	right:0px;
+	left: 0px;
+	width: 100%;
+
 }
