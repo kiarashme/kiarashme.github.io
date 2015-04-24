@@ -797,6 +797,15 @@ display: inline-block;
 
 }
 
+#titleCont2 {
+width: 180px;
+position: relative;
+float: left;
+text-align: left;
+display: inline-block;
+
+}
+
 #addFav {
 	width: 60px;
 	position: relative;
@@ -804,6 +813,16 @@ display: inline-block;
 	text-align: center;
 	display: inline-block;
 	top:50%;
+}
+
+
+#addFav2 {
+	width: 60px;
+	position: relative;
+	float:right;
+	text-align: center;
+	display: inline-block;
+	
 }
 
 #addFav img {
