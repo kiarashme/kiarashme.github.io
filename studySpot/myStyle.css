@@ -407,10 +407,11 @@ h3 {
 	color: #ffffff;
 }
 
+
 #results {
-	position: absolute;
-	top: 90px;
-	width: 100%;
+ position: absolute;
+ top: 90px;
+ width: 100%;
 }
 
 .container {
@@ -727,4 +728,8 @@ list-style-type: none;
 	top: 200px;
 	right:0;
 	width: 60px;
+}
+
+#favoritesPage {
+	position: relative;
 }
