@@ -1,669 +1,228 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-  <title>StudySpot</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <html>
+    <head>
+        <title>StudySpot</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <link rel="stylesheet" type="text/css" href="myTheme.css" />
-  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
-  <link rel="stylesheet" href="myTheme.min.css" />
+        <link rel="stylesheet" type="text/css" href="myTheme.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+        <link rel="stylesheet" href="myTheme.min.css" />
 
-  <link rel="stylesheet" type="text/css" href="myStyle.css" />
-  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-  <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700,100' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="myStyle.css" />
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700,100' rel='stylesheet' type='text/css'>
 
-  <script type="text/javascript">
-  $( document ).ready( function(){
-    $('.option').on('click',function () {
-     $('.option').removeClass('selected');
-     $('.option').children().css({"color":"#66B1AD"});
-     $(this).addClass('selected');
-     $(this).children().css({"color": "#ffffff"})
-
-   });
-
-    $('.noiseOption').on('click',function () {
-     $('.noiseOption').removeClass('selected');
-     $('.noiseOption').children().css({"color":"#66B1AD"});
-     $(this).addClass('selected');
-     $(this).children().css({"color": "#ffffff"})
-   });
-
-    $('.optionLighting').on('click',function () {
-     $('.optionLighting').removeClass('selected');
-     $('.optionLighting').children().css({"color":"#66B1AD"});
-     $(this).addClass('selected');
-     $(this).children().css({"color": "#ffffff"})
-   });
-
-    $('.optionGroup').on('click',function () {
-     $('.optionGroup').removeClass('selected');
-     $('.optionGroup').children().css({"color":"#66B1AD"});
-     $(this).addClass('selected');
-     $(this).children().css({"color": "#ffffff"})
-   });
-
-    $('.optionProximity').on('click',function () {
-     $('.optionProximity').removeClass('selected');
-     $('.optionProximity').children().css({"color":"#66B1AD"});
-     $(this).addClass('selected');
-     $(this).children().css({"color": "#ffffff"})
-   });
-
-    $('.optionEat').on('click',function () {
-     $('.optionEat').removeClass('selected');
-     $('.optionEat').children().css({"color":"#66B1AD"});
-     $(this).addClass('selected');
-     $(this).children().css({"color": "#ffffff"})
-
-   });
-
-    $('.optionResource1').on('click',function () {
-     $('.optionResource1').removeClass('selected');
-     $('.optionResource1').children().css({"color":"#66B1AD"});
-     $(this).addClass('selected');
-     $(this).children().css({"color": "#ffffff"})
-   });
-
-    $('.optionResource2').on('click',function () {
-     $('.optionResource2').removeClass('selected');
-     $('.optionResource2').children().css({"color":"#66B1AD"});
-     $(this).addClass('selected');
-     $(this).children().css({"color": "#ffffff"})
-   });
-
-    $('.optionResource3').on('click',function () {
-     $('.optionResource3').removeClass('selected');
-     $('.optionResource3').children().css({"color":"#66B1AD"});
-     $(this).addClass('selected');
-     $(this).children().css({"color": "#ffffff"})
-   });
-
-    $('.optionResource4').on('click',function () {
-     $('.optionResource4').removeClass('selected');
-     $('.optionResource4').children().css({"color":"#66B1AD"});
-     $(this).addClass('selected');
-     $(this).children().css({"color": "#ffffff"})
-   });
-
-    $('.optionResource5').on('click',function () {
-     $('.optionResource5').removeClass('selected');
-     $('.optionResource5').children().css({"color":"#66B1AD"});
-     $(this).addClass('selected');
-     $(this).children().css({"color": "#ffffff"})
-   });
-
-    $('.optionResource6').on('click',function () {
-     $('.optionResource6').removeClass('selected');
-     $('.optionResource6').children().css({"color":"#66B1AD"});
-     $(this).addClass('selected');
-     $(this).children().css({"color": "#ffffff"})
-   });
-
-    $('.optionResource7').on('click',function () {
-     $('.optionResource7').removeClass('selected');
-     $('.optionResource7').children().css({"color":"#66B1AD"});
-     $(this).addClass('selected');
-     $(this).children().css({"color": "#ffffff"})
-   });
-
-
-
-  });
-</script>
-
- <script type="text/javascript">
+        <script type="text/javascript">
     $( document ).ready( function(){
+        $('.option').on('click',function () {
+             $('.option').removeClass('selected');
+             $('.option').children().css({"color":"#66B1AD"});
+             $(this).addClass('selected');
+             $(this).children().css({"color": "#ffffff"})
+             
+        });
 
-$("#addFav").click(function(){
-    alert("Tha spot was added to your favorites");
-});
-});
+        $('.noiseOption').on('click',function () {
+             $('.noiseOption').removeClass('selected');
+             $('.noiseOption').children().css({"color":"#66B1AD"});
+             $(this).addClass('selected');
+             $(this).children().css({"color": "#ffffff"})
+        });
+
+        $('.optionLighting').on('click',function () {
+             $('.optionLighting').removeClass('selected');
+             $('.optionLighting').children().css({"color":"#66B1AD"});
+             $(this).addClass('selected');
+             $(this).children().css({"color": "#ffffff"})
+        });
+
+        $('.optionGroup').on('click',function () {
+             $('.optionGroup').removeClass('selected');
+             $('.optionGroup').children().css({"color":"#66B1AD"});
+             $(this).addClass('selected');
+             $(this).children().css({"color": "#ffffff"})
+        });
+ 
+        $('.optionProximity').on('click',function () {
+             $('.optionProximity').removeClass('selected');
+             $('.optionProximity').children().css({"color":"#66B1AD"});
+             $(this).addClass('selected');
+             $(this).children().css({"color": "#ffffff"})
+        });
+
+        $('.optionEat').on('click',function () {
+             $('.optionEat').removeClass('selected');
+             $('.optionEat').children().css({"color":"#66B1AD"});
+             $(this).addClass('selected');
+             $(this).children().css({"color": "#ffffff"})
+
+        });
+
+        $('.optionResource1').on('click',function () {
+             $('.optionResource1').removeClass('selected');
+             $('.optionResource1').children().css({"color":"#66B1AD"});
+             $(this).addClass('selected');
+             $(this).children().css({"color": "#ffffff"})
+        });
+
+        $('.optionResource2').on('click',function () {
+             $('.optionResource2').removeClass('selected');
+             $('.optionResource2').children().css({"color":"#66B1AD"});
+             $(this).addClass('selected');
+             $(this).children().css({"color": "#ffffff"})
+        });
+
+        $('.optionResource3').on('click',function () {
+             $('.optionResource3').removeClass('selected');
+             $('.optionResource3').children().css({"color":"#66B1AD"});
+             $(this).addClass('selected');
+             $(this).children().css({"color": "#ffffff"})
+        });
+
+        $('.optionResource4').on('click',function () {
+             $('.optionResource4').removeClass('selected');
+             $('.optionResource4').children().css({"color":"#66B1AD"});
+             $(this).addClass('selected');
+             $(this).children().css({"color": "#ffffff"})
+        });
+
+        $('.optionResource5').on('click',function () {
+             $('.optionResource5').removeClass('selected');
+             $('.optionResource5').children().css({"color":"#66B1AD"});
+             $(this).addClass('selected');
+             $(this).children().css({"color": "#ffffff"})
+        });
+
+        $('.optionResource6').on('click',function () {
+             $('.optionResource6').removeClass('selected');
+             $('.optionResource6').children().css({"color":"#66B1AD"});
+             $(this).addClass('selected');
+             $(this).children().css({"color": "#ffffff"})
+        });
+
+          $('.optionResource7').on('click',function () {
+             $('.optionResource7').removeClass('selected');
+             $('.optionResource7').children().css({"color":"#66B1AD"});
+             $(this).addClass('selected');
+             $(this).children().css({"color": "#ffffff"})
+        });
+            
+
+
+    });
 </script>
 
 
-</head>
+    </head>
 
 
-<body>
-  <!-- Start of first page -->
-  <div data-role="page" id="home" data-theme="a">
+    <body>
+        <!-- Start of first page -->
+        <div data-role="page" id="home" data-theme="a">
 
-   <div id="header">
-    <h1 id ="appTitle" class = "title">StudySpot</h1>
-    <a href="#favoritesPage2" data-transition="slide"><div id="heartDiv">
-      <img id = "heartIcon" src = "heartIconD.png">
-    </div>
-  </a>
+             <div id="header">
+                <h1 id ="appTitle"class = "title">StudySpot</h1>
+              <div id="heartDiv">
+                <img id = "heartIcon" src = "heartIconD.png">
+              </div>
 
-</div>
-
-
-<div id ="homePage" role="content" class="ui-content">  <!-- Start of content -->
+            </div>
 
 
-  <h2 id="spacePreftitle" class = "title">Space preference?</h2>
+            <div id = "homePage" role="content" class="ui-content">  <!-- Start of content -->
 
 
-  <div id ="placePrefer">
-    <div class = "option">
-     <span class="icon-iconFilters-13">
-     </span>
-     <h3 class = "title">
-      Study area
-    </h3>
+            <h2 id="spacePreftitle" class = "title">Space preference?</h2>
+      
 
-  </div>
-  <div class="option">
-   <span class="icon-iconFilters-14"></span>
-   <h3 class = "title">
-    Lounge
-  </h3>
-</div>
-<div class="option">
-  <span class="icon-iconFilters-15"></span>
-  <h3 class = "title">
-    Cafe
-  </h3>
-</div>
-<div class="option">
- <span class="icon-iconFilters-16"></span>
- <h3 class = "title">
-  Computer <br>lab
-</h3>
-</div>
+            <div id ="placePrefer">
+                <div class = "option">
+                     <span class="icon-iconFilters-13">
+                    </span>
+                  <h3 class = "title">
+                    Study area
+                  </h3>
 
+                </div>
+                <div class="option">
+                     <span class="icon-iconFilters-14"></span>
+                    <h3 class = "title">
+                    Lounge
+                  </h3>
+                </div>
+                <div class="option">
+                    <span class="icon-iconFilters-15"></span>
+                        <h3 class = "title">
+                    Cafe
+                  </h3>
+                </div>
+                 <div class="option">
+                   <span class="icon-iconFilters-16"></span>
+                        <h3 class = "title">
+                    Computer <br>lab
+                  </h3>
+                </div>
+                
 
-<div class="option">
-  <span class="icon-iconFilters-17"></span>
-  <h3 class = "title">
-    Classroom
-  </h3>
-</div>
-<div class="option">
- <span class="icon-iconFilters-18"></span>
- <h3 class = "title">
-  Outdoors
-</h3>
-</div>
+                <div class="option">
+                    <span class="icon-iconFilters-17"></span>
+                        <h3 class = "title">
+                    Classroom
+                  </h3>
+                </div>
+                <div class="option">
+                   <span class="icon-iconFilters-18"></span>
+                        <h3 class = "title">
+                    Outdoors
+                  </h3>
+                </div>
 
-</div>
-
+            </div>
+            
 <h2 id ="noisePreftitle" class = "title">What's your noise preference?</h2>
 
-<div id= "noisePrefer">
+              <div id= "noisePrefer">
+              
+
+
+                 <div class="noiseOption">
+                   <span class="icon-iconFilters-19"></span>
+                        <h3 class = "title">
+                   Silent
+                  </h3>
+                </div>
+                
+
+                <div class="noiseOption">
+                    <span class="icon-iconFilters-20"></span>
+                        <h3 class = "title">
+                    Low
+                  </h3>
+                </div>
+                <div class="noiseOption">
+                  <span class="icon-iconFilters-21"></span>
+                        <h3 class = "title">
+                    Social
+                  </h3>
+                </div>
 
 
 
- <div class="noiseOption">
-   <span class="icon-iconFilters-19"></span>
-   <h3 class = "title">
-     Silent
-   </h3>
- </div>
 
-
- <div class="noiseOption">
-  <span class="icon-iconFilters-20"></span>
-  <h3 class = "title">
-    Low
-  </h3>
-</div>
-<div class="noiseOption">
-  <span class="icon-iconFilters-21"></span>
-  <h3 class = "title">
-    Social
-  </h3>
-</div>
-
-
-
-
-</div>
+            </div>
 
 <a href="#resultsPage" data-rel="page" data-transition="slide" ><div id="saveInitial">
-  <h2>
-    Done
-  </h2>
+    <h2>
+        Done
+    </h2>
 </div></a>
 
-</div> <!-- End of content -->
+           </div> <!-- End of content -->
+           
 
-
-</div> <!-- End of first page -->
-
-
-
-
-
-
-
-
-<div data-role="page" id="resultsPage" data-theme="a">
-
- <div id="header">
-  <h1 class = "title">StudySpot</h1>
-  <a href="#favoritesPage2" data-transition="slide"><div id="heartDiv">
-    <img id = "heartIcon" src = "heartIconD.png">
-  </div></a>
-
-  <a href="#home" data-transition="slide"><div id="backArrowDiv">
-    <img id = "arrowIcon" src = "arrowBack.png">
-  </div></a>
-
-</div>
-
-<a href="#filtersP" data-transition="slideup"><div id ="filters">
-  <h2>Filters
-  </h2>
-</div>
-</a>
-
-
-<div id = "results" role="content" class="ui-content">  <!-- Start of content -->
-
-  <div class = container>
-    <a href="results.html" data-rel="page" data-transition="slide" ><div class = "resultsImage">
-      <img class = "placePhoto" src = "anderson.jpg">
-    </div></a>
-
-    <a href="resultsAnd" data-rel="page" data-transition="slide" ><div class = "resultsText">
-      <h2>Lulu</h2>
-      <h3 class="subT">Anderson Forum, 2nd floor</h3>
-      <ul>
-        <li><h3>Dim lighting</h3></li>
-        <li><h3>Couches</h3></li>
-        <li><h3>Tables</h3></li>
-
-      </ul>
-    </div></a>
-
-    <a href="results.html" data-rel="page" data-transition="slide" ><div class = "arrowRight">
-      <img class = "arrowRightImg" src="arrowRightIcon.png">
-
-    </div></a>
-  </div>
-
-
-  <div class = container>
-   <a href="sciCenter.html" data-rel="page" data-transition="slide" ><div class = "resultsImage">
-    <img class = "placePhoto" src = "scicenter.jpg">
-  </div></a>
-
-  <a href="sciCenter.html" data-rel="page" data-transition="slide" ><div class = "resultsText">
-    <h2>Science<br> Center</h2>
-    <h3 class="subT">Leaky beaker, 1st floor</h3>
-    <ul>
-      <li><h3>Electric light</h3></li>
-      <li><h3>Tables</h3></li>
-      <li><h3>Whiteboard</h3></li>
-
-    </ul>
-  </div></a>
-
-  <a href="sciCenter.html" data-rel="page" data-transition="slide" ><div class = "arrowRight">
-    <img class = "arrowRightImg" src="arrowRightIcon.png">
-
-  </div></a>
-
-
-
-
-</div>
-
-<div class = "container">
-  <a href="sciCenter.html" data-rel="page" data-transition="slide" ><div class = "resultsImage">
-    <img class = "placePhoto" src = "clapp.jpg">
-  </div></a>
-
-  <a href="sciCenter.html" data-rel="page" data-transition="slide" ><div class = "resultsText">
-    <h2>Clapp</h2>
-    <h3 class="subT">Room #123, 1st floor</h3>
-    <ul>
-      <li><h3>Electric light</h3></li>
-      <li><h3>Printer</h3></li>
-      <li><h3>Table</h3></li>
-
-    </ul>
-  </div></a>
-
-  <a href="sciCenter.html" data-rel="page" data-transition="slide" ><div class = "arrowRight">
-    <img class = "arrowRightImg" src="arrowRightIcon.png">
-
-  </div></a>
-</div>
-
-
-</div> <!-- End of content -->
-
-
-</div> <!-- End of first page -->
-
-
-
-
-
-
-<div data-role="page" id="favoritesPage2" data-theme="a">
-
- <div id="header">
-  <h1 class = "title">StudySpot</h1>
-  <a href="#favoritesPage2" data-transition="slide"><div id="heartDiv">
-    <img id = "heartIcon" src = "heartIconD.png">
-  </div></a>
-
-  <a href="#home" data-transition="slide"><div id="backArrowDiv">
-    <img id = "arrowIcon" src = "arrowBack.png">
-  </div></a>
-</div>
-<div id ="filters2">
-  <h2 id="favTitle">Your favorites
-  </h2>
-</div>
-<div id = "results2" role="content" class="ui-content">  <!-- Start of content -->
-
-  <div class = container>
-    <div class = "resultsImage">
-      <img class = "placePhoto" src = "anderson.jpg">
-    </div>
-
-    <div class = "resultsText">
-      <h2>Lulu</h2>
-      <h3 class="subT">Anderson Forum, 2nd floor</h3>
-      <ul>
-        <li><h3>Dim lighting</h3></li>
-        <li><h3>Couches</h3></li>
-        <li><h3>Tables</h3></li>
-
-      </ul>
-    </div>
-
-    <div class = "arrowRight">
-      <img class = "arrowRightImg" src="arrowRightIcon.png">
-
-    </div>
-  </div>
-
-
-  <div class = container>
-    <div class = "resultsImage">
-      <img class = "placePhoto" src = "scicenter.jpg">
-    </div>
-
-    <div class = "resultsText">
-      <h2>Science center</h2>
-      <h3 class="subT">Leaky beaker, 1st floor</h3>
-      <ul>
-        <li><h3>Electric light</h3></li>
-        <li><h3>Tables</h3></li>
-        <li><h3>Whiteboard</h3></li>
-
-      </ul>
-    </div>
-
-    <div class = "arrowRight">
-      <img class = "arrowRightImg" src="arrowRightIcon.png">
-
-    </div>
-
-
-
-
-  </div>
-
-  <div class = "container">
-    <div class = "resultsImage">
-      <img class = "placePhoto" src = "clapp.jpg">
-    </div>
-
-    <div class = "resultsText">
-      <h2>Clapp</h2>
-      <h3 class="subT">Room #123, 1st floor</h3>
-      <ul>
-        <li><h3>Electric light</h3></li>
-        <li><h3>Printer</h3></li>
-        <li><h3>Table</h3></li>
-
-      </ul>
-    </div>
-
-    <div class = "arrowRight">
-      <img class = "arrowRightImg" src="arrowRightIcon.png">
-
-    </div>
-  </div>
-
-
-</div> <!-- End of content -->
-
-
-</div> <!-- End of first page -->
-
-
-
-
-
-
-
-
-<div data-role="page" id="filtersP" data-theme="a">
-
-  <div id="header">
-    <h1 class = "title">StudySpot</h1>
-    <a href="#favoritesPage2" data-transition="slide"><div id="heartDiv">
-      <img id = "heartIcon" src = "heartIconD.png">
-    </div></a>
-
-    <a href="#resultsPage" data-transition="slide"><div id="backArrowDiv">
-      <img id = "arrowIcon" src = "arrowBack.png">
-    </div>
-  </a>
-
-</div>
-
-<div id = "filtersPage" role="content" class="ui-content">  <!-- Start of content -->
-
-
-
-  <h2 id="lightingTitle" class = "title">Lighting</h2>
-  <div id ="lightOptions">
-
-    <div class = "optionLighting">
-
-     <span class="icon-iconFilters-01"></span>
-     <h3 class = "title">
-      Sunlight
-    </h3>
-
-  </div>
-  <div class="optionLighting">
-    <span class="icon-iconFilters-02"></span>
-    <h3 class = "title">
-      Electric
-    </h3>
-  </div>
-  <div class="optionLighting">
-    <span class="icon-iconFilters-03"></span>
-    <h3 class = "title">
-      Dim
-    </h3>
-  </div>
-
-</div>
-
-
-
-<h2 id="groupTitle" class = "title">Group work</h2>
-<div id = "groupOptions">
-  <div class = "optionGroup">
-
-   <span class="icon-iconFilters-04"></span>
-   <h3 class = "title">
-    2
-  </h3>
-
-</div>
-
-<div class="optionGroup">
- <span class="icon-iconFilters-05"></span>
- <h3 class = "title">
-  3
-</h3>
-</div>
-
-<div class="optionGroup">
-  <span class="icon-iconFilters-06"></span>
-  <h3 class = "title">
-    3+
-  </h3>
-</div>
-</div> <!-- end of groupWOrk-->
-
-<h2 id="proxTitle" class ="title">Study spot proximity</h2>
-
-<div id="proxOptions">
-
- <div class="optionProximity">
-  <span class="icon-iconFilters-10"></span>
-  <h3 class = "title">
-    Not too far
-  </h3>
-</div>
-
-<div class="optionProximity">
-  <span class="icon-iconFilters-11"></span>
-  <h3 class = "title">
-    Far
-  </h3>
-</div>
-
-</div> <!-- End of proximity div-->
-
-
-<h2 id="eatTitle" class = "title">Will you need food?</h2>
-<div id = "eatOptions">
-  <div class = "optionEat">
-
-   <span class="icon-iconFilters-07"></span>
-   <h3 class = "title">
-    Hungry
-  </h3>
-
-</div>
-<div class="optionEat">
-  <span class="icon-iconFilters-08"></span>
-  <h3 class = "title">
-    Could eat
-  </h3>
-</div>
-
-<div class="optionEat">
- <span class="icon-iconFilters-27"></span>
- <h3 class = "title">
-  Full
-</h3>
-</div>
-</div> <!-- End of optionEat-->
-
-<h2 id="popularTitle" class = "title">Popularity</h2>
-<div id = "popOptions">
-
-  <div class="radioCont">
-    <input id="radio1" name="radios" type="radio"/>
-
-    <label id="label1" for="radio1">
-      Yes
-    </label>
-  </div>
-  
-  <div class="radioCont">
-    <input id="radio2" name="radios" type="radio"/>
-
-    <label for="radio2">
-      No
-    </label>
-  </div>
-</div> <!-- End of popOptions-->
-
-
-  <h2 id="resourceTitle" class = "title">Resources</h2>
-  <div id = "resourceOptions">
-    <div class = "optionResource1">
-
-      <span class="icon-iconFilters-09"></span>
-      <h3 class = "title">
-        Couch
-      </h3>
-
-    </div>
-    <div class="optionResource2">
-     <span class="icon-iconFilters-12"></span>
-     <h3 class = "title">
-      Whiteboard
-    </h3>
-  </div>
-  <div class="optionResource3">
-    <span class="icon-iconFilters-22"></span>
-    <h3 class = "title">
-      Big table
-    </h3>
-  </div>
-
-  <div class="optionResource4">
-    <span class="icon-iconFilters-24"></span>
-    <h3 class = "title">
-      Pretty view
-    </h3>
-  </div>
-
-  <div class="optionResource5">
-   <span class="icon-iconFilters-23"></span>
-   <h3 class = "title">
-    Printer
-  </h3>
-</div>
-
-<div class="optionResource6">
- <span class="icon-iconFilters-25"></span>
- <h3 class = "title">
-  Computer
-</h3>
-</div>
-
-<a href="#popupMenu" data-rel="popup" data-transition="slideup" ><div class="optionResource7">
- <span class="icon-iconFilters-26"></span>
- <h3 class = "title">
-  Software
-</h3>
-</div>
-</a>
-
-</div> <!-- End of resources-->
-
-<a href="#resultsPage" data-transition="slide"><div id="saveFilters">
-  <h2>Save filters</h2>
-</div></a>
-
-</div> <!-- End of content -->
-
-
-</div><!-- End of page-->
-
-
-<div data-role ="popup" id="popupMenu" data-theme="a">
-  <<form>
-    <label>
-        <input type="checkbox" name="checkbox-0 ">Check me
-    </label>
-</form>
-  <div class="saveBtn">
-    <a class="btn" href="#filters" id="register_form" name="register_form">Save</a>
-  </div>
-
-</div>
+                </div> <!-- End of first page -->
 
 </body>
 </html>
