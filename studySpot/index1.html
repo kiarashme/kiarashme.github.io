@@ -18,87 +18,6 @@
 
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700,100' rel='stylesheet' type='text/css'>
 
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3&sensor=false&language=en"></script>
-        <script type="text/javascript">
-
-            var map,
-                currentPosition,
-                directionsDisplay, 
-                directionsService,
-                destinationLatitude,
-                destinationLongitude 
-
-            function initializeMapAndCalculateRoute(lat, lon)
-            {
-                console.log('init map');
-                directionsDisplay = new google.maps.DirectionsRenderer(); 
-                directionsService = new google.maps.DirectionsService();
-
-                currentPosition = new google.maps.LatLng(lat, lon);
-
-                map = new google.maps.Map(document.getElementById('map_canvas'), {
-                   zoom: 15,
-                   center: currentPosition,
-                   mapTypeId: google.maps.MapTypeId.ROADMAP
-                 });
-
-                directionsDisplay.setMap(map);
-
-                 var currentPositionMarker = new google.maps.Marker({
-                    position: currentPosition,
-                    map: map,
-                    title: "Current position"
-                });
-
-                // calculate Route
-                calculateRoute();
-            }
-
-            function locError(error) {
-               // the current position could not be located
-            }
-
-            function locSuccess(position) {
-                // initialize map with current position and calculate the route
-                initializeMapAndCalculateRoute(position.coords.latitude, position.coords.longitude);
-            }
-
-            function calculateRoute() {
-
-                var targetDestination =  new google.maps.LatLng(destinationLatitude, destinationLongitude);
-                if (currentPosition != '' && targetDestination != '') {
-
-                    var request = {
-                        origin: currentPosition, 
-                        destination: targetDestination,
-                        travelMode: google.maps.DirectionsTravelMode["WALKING"]
-                    };
-
-                    directionsService.route(request, function(response, status) {
-                        if (status == google.maps.DirectionsStatus.OK) {
-                            directionsDisplay.setPanel(document.getElementById("directions"));
-                            directionsDisplay.setDirections(response); 
-
-                            $("#results").show();
-                        }
-                        else {
-                            $("#results").hide();
-                        }
-                    });
-                }
-                else {
-                    $("#results").hide();
-                }
-            }
-
-            $(document).live("pagebeforeshow", "#map_page", function() {
-                // find current position and on success initialize map and calculate the route
-                navigator.geolocation.getCurrentPosition(locSuccess, locError);
-            });
-
-        </script>
-
-
   <script type="text/javascript">
   $( document ).ready( function(){
     $('.option').on('click',function () {
@@ -947,6 +866,86 @@
             </div> <!--content-->
               
 </div>
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3&sensor=false&language=en"></script>
+        <script type="text/javascript">
+
+            var map,
+                currentPosition,
+                directionsDisplay, 
+                directionsService,
+                destinationLatitude,
+                destinationLongitude 
+
+            function initializeMapAndCalculateRoute(lat, lon)
+            {
+                directionsDisplay = new google.maps.DirectionsRenderer(); 
+                directionsService = new google.maps.DirectionsService();
+
+                currentPosition = new google.maps.LatLng(lat, lon);
+
+                map = new google.maps.Map(document.getElementById('map_canvas'), {
+                   zoom: 15,
+                   center: currentPosition,
+                   mapTypeId: google.maps.MapTypeId.ROADMAP
+                 });
+
+                directionsDisplay.setMap(map);
+
+                 var currentPositionMarker = new google.maps.Marker({
+                    position: currentPosition,
+                    map: map,
+                    title: "Current position"
+                });
+
+                // calculate Route
+                calculateRoute();
+            }
+
+            function locError(error) {
+               // the current position could not be located
+            }
+
+            function locSuccess(position) {
+                // initialize map with current position and calculate the route
+                initializeMapAndCalculateRoute(position.coords.latitude, position.coords.longitude);
+            }
+
+            function calculateRoute() {
+
+                var targetDestination =  new google.maps.LatLng(destinationLatitude, destinationLongitude);
+                if (currentPosition != '' && targetDestination != '') {
+
+                    var request = {
+                        origin: currentPosition, 
+                        destination: targetDestination,
+                        travelMode: google.maps.DirectionsTravelMode["WALKING"]
+                    };
+
+                    directionsService.route(request, function(response, status) {
+                        if (status == google.maps.DirectionsStatus.OK) {
+                            directionsDisplay.setPanel(document.getElementById("directions"));
+                            directionsDisplay.setDirections(response); 
+
+                            $("#results").show();
+                        }
+                        else {
+                            $("#results").hide();
+                        }
+                    });
+                }
+                else {
+                    $("#results").hide();
+                }
+            }
+
+            $(document).live("pagebeforeshow", "#map_page", function() {
+                // find current position and on success initialize map and calculate the route
+                navigator.geolocation.getCurrentPosition(locSuccess, locError);
+            });
+
+        </script>
+
 
 </body>
 </html>
