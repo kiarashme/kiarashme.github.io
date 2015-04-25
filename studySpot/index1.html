@@ -1115,31 +1115,31 @@
 
         <script type="text/javascript">
 
-            var map,
-                currentPosition,
-                directionsDisplay, 
-                directionsService,
+            var map1,
+                currentPosition1,
+                directionsDisplay1, 
+                directionsService1,
                 destinationLatitudelulu,
                 destinationLongitudelulu 
 
             function initializeMapAndCalculateRoute(lat, lon)
             { 
-                directionsDisplay = new google.maps.DirectionsRenderer(); 
-                directionsService = new google.maps.DirectionsService();
+                directionsDisplay1 = new google.maps.DirectionsRenderer(); 
+                directionsService1 = new google.maps.DirectionsService();
 
-                currentPosition = new google.maps.LatLng(lat, lon);
+                currentPosition1 = new google.maps.LatLng(lat, lon);
 
-                map = new google.maps.Map(document.getElementById('map_canvas_lulu'), {
+                map1 = new google.maps.Map(document.getElementById('map_canvas_lulu'), {
                    zoom: 15,
-                   center: currentPosition,
+                   center: currentPosition1,
                    mapTypeId: google.maps.MapTypeId.ROADMAP
                  });
 
-                directionsDisplay.setMap(map);
+                directionsDisplay1.setMap(map1);
 
                  var currentPositionMarker = new google.maps.Marker({
-                    position: currentPosition,
-                    map: map,
+                    position: currentPosition1,
+                    map: map1,
                     title: "Current position"
                 });
 
@@ -1169,8 +1169,8 @@
 
                     directionsService.route(request, function(response, status) {
                         if (status == google.maps.DirectionsStatus.OK) {
-                            directionsDisplay.setPanel(document.getElementById("directions"));
-                            directionsDisplay.setDirections(response); 
+                            directionsDisplay1.setPanel(document.getElementById("directions"));
+                            directionsDisplay1.setDirections(response); 
 
                             $("#results").show();
                         }
