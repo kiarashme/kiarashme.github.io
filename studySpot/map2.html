@@ -9,14 +9,12 @@
         <!--ADDED-->
         
         
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
         <!--END OF ADDED CONTENT -->
 
         <!--ADDED-->
         <link rel="stylesheet" type="text/css" href="mapStyle.css" />
         <link rel="stylesheet" type="text/css" href="myStyle.css" />
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-        <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700,100' rel='stylesheet' type='text/css'>
         <!--END OF ADDED CONTENT-->
 
@@ -95,7 +93,7 @@
                 }
             }
 
-            $(document).live("pagecontainerbeforeshow", "#map_page", function() {
+            $(document).live("pagebeforeshow", "#map_page", function() {
                 // find current position and on success initialize map and calculate the route
                 navigator.geolocation.getCurrentPosition(locSuccess, locError);
             });
