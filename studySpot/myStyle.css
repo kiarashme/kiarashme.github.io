@@ -438,6 +438,9 @@ h3 {
 .container {
 	padding-bottom: 5px;
 }
+#resultsPage {
+	background-color: #ffffff;
+}
 
 #resultsPage h2 {
 		font-family: Montserrat, 100;
