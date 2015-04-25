@@ -516,7 +516,15 @@ padding-top: 5px;
 	left:40%;
 	margin-bottom: 10px;
 }
-
+#clapP {
+	background-color: white;
+}
+#sciCenter {
+	background-color: white;
+}
+#resultsAnd {
+	background-color: white;
+}
 #classwhite {
 	display: none;
 }
@@ -802,6 +810,7 @@ list-style-type: none;
 #favoritesPage2 {
 	position: relative;
 	text-align: center;
+	background-color: white;
 }
 
 
