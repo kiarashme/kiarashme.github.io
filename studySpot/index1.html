@@ -841,6 +841,17 @@
                 </div> <!-- End of first page -->
 
  <div data-role="page" id="maplulu" data-theme="a">
+   <div id="header">
+  <h1 class = "title">StudySpot</h1>
+  <a href="#favoritesPage2" data-transition="slide"><div id="heartDiv">
+    <img id = "heartIcon" src = "heartIconD.png">
+</div></a>
+
+<a href="#resultsAnd" data-transition="slide"><div id="backArrowDiv">
+    <img id = "arrowIcon" src = "arrowBack.png">
+</div></a>
+
+</div>
 
  <script type="text/javascript">
                 destinationLatitude = 42.293526, 
@@ -878,7 +889,7 @@
                 destinationLongitude 
 
             function initializeMapAndCalculateRoute(lat, lon)
-            {
+            { 
                 directionsDisplay = new google.maps.DirectionsRenderer(); 
                 directionsService = new google.maps.DirectionsService();
 
