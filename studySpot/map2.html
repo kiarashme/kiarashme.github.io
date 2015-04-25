@@ -95,7 +95,7 @@
                 }
             }
 
-            $(document).live("pagebeforeshow", "#map_page", function() {
+            $(document).live("pagecontainerbeforeshow", "#map_page", function() {
                 // find current position and on success initialize map and calculate the route
                 navigator.geolocation.getCurrentPosition(locSuccess, locError);
             });
@@ -143,7 +143,7 @@ $("#addFav2").click(function(){
             <h3 class="title"> Leaky Beaker, 1st floor</h3>
         </div>
 
-<div id="pathDir">
+        <div id="pathDir">
                 <div id="mapResults">                  
                     <div id="directions"></div>
 
