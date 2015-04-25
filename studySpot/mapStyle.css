@@ -16,16 +16,20 @@ h3 {
 }
 
 #directions {
-	position: absolute;
+	position: relative;
+	top: 180px;
 	padding-right: 7%;
-	bottom: 50px;
 }
 
-#navigateTo {
-	position: absolute;
-	bottom: 50px;
+#navigateTo h4 {
+	position: relative;
+	top: 170px;
 }
 
+#navigateTo h3 {
+	position: relative;
+	top: 150px;
+}
 
 #map_canvas {
 	top: 20px;
@@ -76,7 +80,7 @@ h3 {
 	position: absolute;
 	top: 200px;
 	right:0;
-	width: 80px;
+	width: 60px;
 }
 
 #heartIcon {
@@ -195,14 +199,14 @@ h3 {
 	width:100%;
 	text-align: center;
 }
-#h2 {
+#navigate h2 {
 	color: #ffffff;
 }
 
 
 
-#Mapresults {
-	position: relative;
+#results {
+	position: absolute;
 	top: 90px;
 	width: 100%;
 }
