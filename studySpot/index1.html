@@ -840,6 +840,44 @@
 
                 </div> <!-- End of first page -->
 
+
+ <div data-role="page" id="mapSci" data-theme="a">
+   <div id="header">
+  <h1 class = "title">StudySpot</h1>
+  <a href="#favoritesPage2" data-transition="slide"><div id="heartDiv">
+    <img id = "heartIcon" src = "heartIconD.png">
+</div></a>
+
+<a href="#resultsAnd" data-transition="slide"><div id="backArrowDiv">
+    <img id = "arrowIcon" src = "arrowBack.png">
+</div></a>
+
+</div>
+
+ <script type="text/javascript">
+          destinationLatitude = 42.293526, 
+                destinationLongitude = -71.303139;
+            </script>    
+
+            
+            <div data-role="content">   
+                <!--<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:1em;"> -->
+                    <div id="map_canvas"></div>
+                <!--</div>-->   <div id="titleCont2">
+ <h4 class="title">Leaky Beaker</h4>
+                        <h3 class="title">Science Center</h3>
+        </div>
+
+        <div id="pathDir">
+                <div id="mapResults">                  
+                    <div id="directions"></div>
+
+                </div> <!--results-->
+            </div>
+            </div> <!--content-->
+              
+</div>
+
  <div data-role="page" id="maplulu" data-theme="a">
    <div id="header">
   <h1 class = "title">StudySpot</h1>
@@ -918,44 +956,6 @@
               
 </div>
 
-
-
- <div data-role="page" id="mapSci" data-theme="a">
-   <div id="header">
-  <h1 class = "title">StudySpot</h1>
-  <a href="#favoritesPage2" data-transition="slide"><div id="heartDiv">
-    <img id = "heartIcon" src = "heartIconD.png">
-</div></a>
-
-<a href="#resultsAnd" data-transition="slide"><div id="backArrowDiv">
-    <img id = "arrowIcon" src = "arrowBack.png">
-</div></a>
-
-</div>
-
- <script type="text/javascript">
-          destinationLatitude = 42.293526, 
-                destinationLongitude = -71.303139;
-            </script>    
-
-            
-            <div data-role="content">   
-                <!--<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:1em;"> -->
-                    <div id="map_canvas"></div>
-                <!--</div>-->   <div id="titleCont2">
- <h4 class="title">Leaky Beaker</h4>
-                        <h3 class="title">Science Center</h3>
-        </div>
-
-        <div id="pathDir">
-                <div id="mapResults">                  
-                    <div id="directions"></div>
-
-                </div> <!--results-->
-            </div>
-            </div> <!--content-->
-              
-</div>
 
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3&sensor=false&language=en"></script>
         <script type="text/javascript">
