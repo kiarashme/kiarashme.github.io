@@ -720,7 +720,7 @@
  <div data-role="page" id="sciCenter" data-theme="a">
 
              <div id="header">
-                <h1 id ="appTitle"class = "title">StudySpot</h1>
+                <h1 id ="appTitle" class = "title">StudySpot</h1>
 
               <a href="#favoritesPage2" data-transition="slide"><div id="heartDiv">
                 <img id = "heartIcon" src = "heartIconD.png">
@@ -746,7 +746,6 @@
 
 <div id="addFav">
     <img id="heartIcon" src="heartIconD.png">
-</img>
 <h3 class="title">Add to favorites</h3>
 </div>
 <div id="amen">
@@ -783,7 +782,7 @@
   <div data-role="page" id="clappP" data-theme="a">
 
              <div id="header">
-                <h1 id ="appTitle"class = "title">StudySpot</h1>
+                <h1 id ="appTitle" class = "title">StudySpot</h1>
                 <a href="#favoritesPage2" data-transition="slide"><div id="heartDiv">
                 <img id = "heartIcon" src = "heartIconD.png">
               </div></a>
@@ -808,7 +807,6 @@
 
 <div id="addFav">
     <img id="heartIcon" src="heartIconD.png">
-</img>
 <h3 class="title">Add to favorites</h3>
 </div>
 <div id="amen">
@@ -892,14 +890,14 @@
 </div>
 
  <script type="text/javascript">
-             destinationLatitude = 42.294514, 
-                destinationLongitude = -71.308954;
+             destinationLatitudelulu = 42.294514, 
+                destinationLongitudelulu = -71.308954;
             </script>    
 
             
             <div data-role="content">   
                 <!--<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:1em;"> -->
-                    <div id="map_canvas"></div>
+                    <div id="map_canvas_lulu"></div>
                 <!--</div>-->   <div id="titleCont2">
 
             <h2 class="title"> Anderson Forum</h2>
@@ -917,8 +915,6 @@
 </div>
 
 
-
-
  <div data-role="page" id="mapClapp" data-theme="a">
    <div id="header">
   <h1 class = "title">StudySpot</h1>
@@ -933,14 +929,14 @@
 </div>
 
  <script type="text/javascript">
-            destinationLatitude = 42.291550, 
-                destinationLongitude = -71.306454;
+            destinationLatitudeclapp = 42.291550, 
+                destinationLongitudeclapp = -71.306454;
             </script>    
 
             
             <div data-role="content">   
                 <!--<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:1em;"> -->
-                    <div id="map_canvas"></div>
+                    <div id="map_canvas_clapp"></div>
                 <!--</div>-->   <div id="titleCont2">
  <h2 class="title"> Clapp Library</h2>
             <h3 class="title"> Room #123, 1st floor</h3>
@@ -1036,6 +1032,166 @@
 
         </script>
 
+
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3&sensor=false&language=en"></script>
+        <script type="text/javascript">
+
+            var map,
+                currentPosition,
+                directionsDisplay, 
+                directionsService,
+                destinationLatitudeclapp,
+                destinationLongitudeclapp 
+
+            function initializeMapAndCalculateRoute(lat, lon)
+            { 
+                directionsDisplay = new google.maps.DirectionsRenderer(); 
+                directionsService = new google.maps.DirectionsService();
+
+                currentPosition = new google.maps.LatLng(lat, lon);
+
+                map = new google.maps.Map(document.getElementById('map_canvas_clapp'), {
+                   zoom: 15,
+                   center: currentPosition,
+                   mapTypeId: google.maps.MapTypeId.ROADMAP
+                 });
+
+                directionsDisplay.setMap(map);
+
+                 var currentPositionMarker = new google.maps.Marker({
+                    position: currentPosition,
+                    map: map,
+                    title: "Current position"
+                });
+
+                // calculate Route
+                calculateRoute();
+            }
+
+            function locError(error) {
+               // the current position could not be located
+            }
+
+            function locSuccess(position) {
+                // initialize map with current position and calculate the route
+                initializeMapAndCalculateRoute(position.coords.latitude, position.coords.longitude);
+            }
+
+            function calculateRoute() {
+
+                var targetDestination =  new google.maps.LatLng(destinationLatitudeclapp, destinationLongitudeclapp);
+                if (currentPosition != '' && targetDestination != '') {
+
+                    var request = {
+                        origin: currentPosition, 
+                        destination: targetDestination,
+                        travelMode: google.maps.DirectionsTravelMode["WALKING"]
+                    };
+
+                    directionsService.route(request, function(response, status) {
+                        if (status == google.maps.DirectionsStatus.OK) {
+                            directionsDisplay.setPanel(document.getElementById("directions"));
+                            directionsDisplay.setDirections(response); 
+
+                            $("#results").show();
+                        }
+                        else {
+                            $("#results").hide();
+                        }
+                    });
+                }
+                else {
+                    $("#results").hide();
+                }
+            }
+
+            $(document).live("pagebeforeshow", "#map_page", function() {
+                // find current position and on success initialize map and calculate the route
+                navigator.geolocation.getCurrentPosition(locSuccess, locError);
+            });
+
+        </script>
+
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3&sensor=false&language=en"></script>
+        <script type="text/javascript">
+
+            var map,
+                currentPosition,
+                directionsDisplay, 
+                directionsService,
+                destinationLatitudelulu,
+                destinationLongitudelulu 
+
+            function initializeMapAndCalculateRoute(lat, lon)
+            { 
+                directionsDisplay = new google.maps.DirectionsRenderer(); 
+                directionsService = new google.maps.DirectionsService();
+
+                currentPosition = new google.maps.LatLng(lat, lon);
+
+                map = new google.maps.Map(document.getElementById('map_canvas_lulu'), {
+                   zoom: 15,
+                   center: currentPosition,
+                   mapTypeId: google.maps.MapTypeId.ROADMAP
+                 });
+
+                directionsDisplay.setMap(map);
+
+                 var currentPositionMarker = new google.maps.Marker({
+                    position: currentPosition,
+                    map: map,
+                    title: "Current position"
+                });
+
+                // calculate Route
+                calculateRoute();
+            }
+
+            function locError(error) {
+               // the current position could not be located
+            }
+
+            function locSuccess(position) {
+                // initialize map with current position and calculate the route
+                initializeMapAndCalculateRoute(position.coords.latitude, position.coords.longitude);
+            }
+
+            function calculateRoute() {
+
+                var targetDestination =  new google.maps.LatLng(destinationLatitudelulu, destinationLongitudelulu);
+                if (currentPosition != '' && targetDestination != '') {
+
+                    var request = {
+                        origin: currentPosition, 
+                        destination: targetDestination,
+                        travelMode: google.maps.DirectionsTravelMode["WALKING"]
+                    };
+
+                    directionsService.route(request, function(response, status) {
+                        if (status == google.maps.DirectionsStatus.OK) {
+                            directionsDisplay.setPanel(document.getElementById("directions"));
+                            directionsDisplay.setDirections(response); 
+
+                            $("#results").show();
+                        }
+                        else {
+                            $("#results").hide();
+                        }
+                    });
+                }
+                else {
+                    $("#results").hide();
+                }
+            }
+
+            $(document).live("pagebeforeshow", "#map_page", function() {
+                // find current position and on success initialize map and calculate the route
+                navigator.geolocation.getCurrentPosition(locSuccess, locError);
+            });
+
+        </script>
 
 </body>
 </html>
