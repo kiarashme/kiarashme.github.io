@@ -1,0 +1,133 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?t36rs9');
+	src:url('fonts/icomoon.eot?#iefixt36rs9') format('embedded-opentype'),
+		url('fonts/icomoon.woff?t36rs9') format('woff'),
+		url('fonts/icomoon.ttf?t36rs9') format('truetype'),
+		url('fonts/icomoon.svg?t36rs9#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-iconFilters-01:before {
+	content: "\e600";
+}
+
+.icon-iconFilters-02:before {
+	content: "\e601";
+}
+
+.icon-iconFilters-03:before {
+	content: "\e602";
+}
+
+.icon-iconFilters-04:before {
+	content: "\e603";
+}
+
+.icon-iconFilters-05:before {
+	content: "\e604";
+}
+
+.icon-iconFilters-06:before {
+	content: "\e605";
+}
+
+.icon-iconFilters-07:before {
+	content: "\e606";
+}
+
+.icon-iconFilters-08:before {
+	content: "\e607";
+}
+
+.icon-iconFilters-09:before {
+	content: "\e608";
+}
+
+.icon-iconFilters-10:before {
+	content: "\e609";
+}
+
+.icon-iconFilters-11:before {
+	content: "\e60a";
+}
+
+.icon-iconFilters-12:before {
+	content: "\e60b";
+}
+
+.icon-iconFilters-13:before {
+	content: "\e60c";
+}
+
+.icon-iconFilters-14:before {
+	content: "\e60d";
+}
+
+.icon-iconFilters-15:before {
+	content: "\e60e";
+}
+
+.icon-iconFilters-16:before {
+	content: "\e60f";
+}
+
+.icon-iconFilters-17:before {
+	content: "\e610";
+}
+
+.icon-iconFilters-18:before {
+	content: "\e611";
+}
+
+.icon-iconFilters-19:before {
+	content: "\e612";
+}
+
+.icon-iconFilters-20:before {
+	content: "\e613";
+}
+
+.icon-iconFilters-21:before {
+	content: "\e614";
+}
+
+.icon-iconFilters-22:before {
+	content: "\e615";
+}
+
+.icon-iconFilters-23:before {
+	content: "\e616";
+}
+
+.icon-iconFilters-24:before {
+	content: "\e617";
+}
+
+.icon-iconFilters-25:before {
+	content: "\e618";
+}
+
+.icon-iconFilters-26:before {
+	content: "\e619";
+}
+
+.icon-iconFilters-27:before {
+	content: "\e61a";
+}
+

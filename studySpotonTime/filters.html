@@ -1,0 +1,329 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Campus places</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <link rel="stylesheet" type="text/css" href="myTheme.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+        <link rel="stylesheet" href="myTheme.min.css" />
+
+        <link rel="stylesheet" type="text/css" href="myStyle.css" />
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700,100' rel='stylesheet' type='text/css'>
+
+          <script type="text/javascript">
+    $( document ).ready( function(){
+        $('.option').on('click',function () {
+             $('.option').removeClass('selected');
+             $(this).addClass('selected')
+        });
+
+        $('.noiseOption').on('click',function () {
+             $('.noiseOption').removeClass('selected');
+             $(this).addClass('selected')
+        });
+
+        $('.optionLighting').on('click',function () {
+             $('.optionLighting').removeClass('selected');
+             $(this).addClass('selected')
+        });
+
+        $('.optionGroup').on('click',function () {
+             $('.optionGroup').removeClass('selected');
+             $(this).addClass('selected')
+        });
+ 
+        $('.optionProximity').on('click',function () {
+             $('.optionProximity').removeClass('selected');
+             $(this).addClass('selected')
+        });
+
+        $('.optionEat').on('click',function () {
+             $('.optionEat').removeClass('selected');
+             $(this).addClass('selected')
+        });
+
+        $('.optionResource1').on('click',function () {
+             $('.optionResource1').removeClass('selected');
+             $(this).addClass('selected')
+        });
+
+        $('.optionResource2').on('click',function () {
+             $('.optionResource2').removeClass('selected');
+             $(this).addClass('selected')
+        });
+
+        $('.optionResource3').on('click',function () {
+             $('.optionResource3').removeClass('selected');
+             $(this).addClass('selected')
+        });
+
+        $('.optionResource4').on('click',function () {
+             $('.optionResource4').removeClass('selected');
+             $(this).addClass('selected')
+        });
+
+        $('.optionResource5').on('click',function () {
+             $('.optionResource5').removeClass('selected');
+             $(this).addClass('selected')
+        });
+
+        $('.optionResource6').on('click',function () {
+             $('.optionResource6').removeClass('selected');
+             $(this).addClass('selected')
+        });
+
+          $('.optionResource7').on('click',function () {
+             $('.optionResource7').removeClass('selected');
+             $(this).addClass('selected')
+        });
+            
+
+
+    });
+
+
+ 
+
+
+
+ 
+    </script>
+
+    </head>
+
+
+    <body>
+     
+
+   <div data-role="page" id="filtersP" data-theme="a">
+
+        <div id="header">
+                <h1 class = "title">StudySpot</h1>
+              <div id="heartDiv">
+                <img id = "heartIcon" src = "heartIconD.png">
+              </div>
+
+              <div id="backArrowDiv">
+                <img id = "arrowIcon" src = "arrowBack.png">
+              </div>
+
+            </div>
+
+            <div id = "filtersPage" role="content" class="ui-content">  <!-- Start of content -->
+               
+
+      
+<h2 id="lightingTitle" class = "title">Lighting</h2>
+            <div id ="lightOptions">
+            
+                <div class = "optionLighting">
+
+                     <img class="uiIcon" src ="icons/sunlight.png">
+                  <h3 class = "title">
+                    Sunlight
+                  </h3>
+
+                </div>
+                <div class="optionLighting">
+                    <img class="uiIcon" src ="icons/fluor.png">
+                    <h3 class = "title">
+                    Electric
+                  </h3>
+                </div>
+                <div class="optionLighting">
+                    <img class="uiIcon"  src ="icons/dim.png">
+                        <h3 class = "title">
+                    Dim
+                  </h3>
+                </div>
+                 
+            </div>
+
+
+            
+            <h2 id="groupTitle" class = "title">Group work</h2>
+            <div id = "groupOptions">
+                <div class = "optionGroup">
+
+                     <img class="uiIcon" src ="icons/two.png">
+                  <h3 class = "title">
+                    2
+                  </h3>
+
+                </div>
+                <div class="optionGroup">
+                    <img class="uiIcon" src ="icons/three.png">
+                    <h3 class = "title">
+                    3
+                  </h3>
+                </div>
+                <div class="optionGroup">
+                    <img class="uiIcon"  src ="icons/more.png">
+                        <h3 class = "title">
+                    3+
+                  </h3>
+                </div>
+            </div>
+
+                <h2 id="proxTitle" class ="title">Study spot proximity</h2>
+          
+<div id="proxOptions">
+
+           <div class="optionProximity">
+                    <img class="uiIcon"  src ="icons/close.png">
+                        <h3 class = "title">
+                    Not too far
+                  </h3>
+                </div>
+
+                <div class="optionProximity">
+                    <img class="uiIcon"  src ="icons/far.png">
+                        <h3 class = "title">
+                    Far
+                  </h3>
+                </div>
+
+            </div>
+
+
+             <h2 id="eatTitle" class = "title">Will you need food?</h2>
+            <div id = "eatOptions">
+                <div class = "optionEat">
+
+                     <img class="uiIcon" src ="icons/hungry.png">
+                  <h3 class = "title">
+                    Hungry
+                  </h3>
+
+                </div>
+                <div class="optionEat">
+                    <img class="uiIcon" src ="icons/couldEat.png">
+                    <h3 class = "title">
+                    Could eat
+                  </h3>
+                </div>
+                <div class="optionEat">
+                    <img class="uiIcon"  src ="icons/full.png">
+                        <h3 class = "title">
+                    Full
+                  </h3>
+                </div>
+            </div>
+
+  <h2 id="popularTitle" class = "title">Popularity</h2>
+            <div id = "popOptions">
+
+<div class="radioCont">
+<input id="radio1" name="radios" type="radio"/>
+
+        <label id="label1" for="radio1">
+          Yes
+        </label>
+</div>
+<div class="radioCont">
+          <input id="radio2" name="radios" type="radio"/>
+
+        <label for="radio2">
+          No
+        </label>
+</div>
+
+
+
+             <h2 id="resourceTitle" class = "title">Resources</h2>
+            <div id = "resourceOptions">
+                <div class = "optionResource1">
+
+                     <img class="uiIcon" src ="icons/couch.png">
+                  <h3 class = "title">
+                    Couch
+                  </h3>
+
+                </div>
+                <div class="optionResource2">
+                    <img class="uiIcon" src ="icons/whiteboard.png">
+                    <h3 class = "title">
+                    Whiteboard
+                  </h3>
+                </div>
+                <div class="optionResource3">
+                    <img class="uiIcon"  src ="icons/table.png">
+                        <h3 class = "title">
+                    Big table
+                  </h3>
+                </div>
+
+ <div class="optionResource4">
+                    <img class="uiIcon"  src ="icons/view.png">
+                        <h3 class = "title">
+                    Pretty view
+                  </h3>
+                </div>
+
+                <div class="optionResource5">
+                    <img class="uiIcon"  src ="icons/printer.png">
+                        <h3 class = "title">
+                    Printer
+                  </h3>
+                </div>
+
+  <div class="optionResource6">
+                    <img class="uiIcon"  src ="icons/computer.png">
+                        <h3 class = "title">
+                    Computer
+                  </h3>
+                </div>
+
+<a href="#popupMenu" data-rel="popup" data-transition="slideup" ><div class="optionResource7">
+                           <img class="uiIcon"  src ="icons/software.png">
+                        <h3 class = "title">
+                    Software
+                  </h3>
+                </div>
+            </a>
+
+
+
+            </div>
+    
+    
+<div id="saveFilters">
+    <h2>Save filters</h2>
+</div>
+           </div> <!-- End of content -->
+           
+
+                </div> <!-- End of first page -->
+
+
+
+<div data-role ="popup" id="popupMenu" data-theme="a">
+<form>
+    <label>
+        <input type="checkbox" name="checkbox-0 ">Adobe Photoshop
+    </label>
+      <label>
+        <input type="checkbox" name="checkbox-0 ">Adobe Illustrator
+    </label>
+      <label>
+        <input type="checkbox" name="checkbox-0 ">Adobe InDesign
+    </label>
+      <label>
+        <input type="checkbox" name="checkbox-0 ">Adobe AfterEffects
+    </label>
+</form>
+<div class="saveBtn">
+            <a class="btn" href="#filters" id="register_form" name=
+            "register_form">Save</a>
+        </div>
+</div>
+
+
+
+</body>
+</html>
