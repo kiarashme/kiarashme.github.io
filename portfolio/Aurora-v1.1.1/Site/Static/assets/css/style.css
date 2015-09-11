@@ -5,12 +5,13 @@
  * General styles
 /* ---------------------------------------------- */
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
-@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:700,400,300);
+@import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700italic,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 
 body {
-	font: 400 12px/1.8 'Open Sans', serif;
-	color: #666;
+	font: 400 13px/1.8 'Lora', serif;
+	color: #0c0c0c;
 	overflow-x: hidden;
 }
 
@@ -69,7 +70,7 @@ a,
 /* ---------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
-	font: 700 40px/1.2 'Roboto Condensed', sans-serif;
+	font: 700 40px/1.2 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	margin: 5px 0 5px;
@@ -259,7 +260,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 .btn {
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 13px;
@@ -592,7 +593,7 @@ textarea.form-control {
 #filter li {
 	background: #f5f5f5;
 	display: inline-block;
-	font: 400 13px/1.2 'Roboto Condensed', sans-serif;
+	font: 400 13px/1.2 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	text-decoration: none;
 	letter-spacing: 1px;
@@ -814,7 +815,7 @@ button.mfp-close {
 }
 
 .timePosted {
-	font: 400 13px/1.8 'Roboto Condensed', sans-serif;
+	font: 400 13px/1.8 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	margin: 30px 0;
@@ -909,7 +910,7 @@ button.mfp-close {
 	border-radius: 0;
 	margin: 0;
 	text-transform: uppercase;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .navbar-custom,
