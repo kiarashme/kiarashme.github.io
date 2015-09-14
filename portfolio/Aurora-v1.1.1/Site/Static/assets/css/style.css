@@ -70,26 +70,25 @@ a,
 /* ---------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
-	font: 700 40px/1.2 'Montserrat', sans-serif;
-	text-transform: uppercase;
+	font: 700 50px/1.2 'Montserrat', sans-serif;
 	letter-spacing: 5px;
 	margin: 5px 0 5px;
 	color: #222;
 }
 
 h2 {
-	font-size: 30px;
+	font-size: 33px;
 	margin: 0 0 30px;
 }
 
 h3 {
-	font-size: 13px;
+	font-size: 25px;
 	letter-spacing: 1px;
 	margin: 0 0 5px;
 }
 
 h4 {
-	font-size: 12px;
+	font-size: 14px;
 	letter-spacing: 1px;
 }
 
@@ -261,7 +260,6 @@ textarea.form-control {
 
 .btn {
 	font-family: 'Montserrat', sans-serif;
-	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 13px;
 	padding: 8px 26px;
@@ -594,7 +592,6 @@ textarea.form-control {
 	background: #f5f5f5;
 	display: inline-block;
 	font: 400 13px/1.2 'Montserrat', sans-serif;
-	text-transform: uppercase;
 	text-decoration: none;
 	letter-spacing: 1px;
 	padding: 6px 20px;
@@ -680,14 +677,14 @@ transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
 }
 
 .caption-inner .portfolio-item-title {
-	font-size: 14px;
+	font-size: 22px;
 	font-weight: 400;
 }
 
 .caption-inner .portfolio-item-desc {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-style: italic;
-	font-size: 13px;
+	font-size: 16px;
 	color: #777;
 }
 
@@ -704,10 +701,18 @@ transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
 
 .white-popup-block {
 	position: relative;
-	background: #fff;
+	background: #ffffff;
 	text-align: left;
 	max-width: 940px;
 	margin: 40px auto;
+}
+
+.white-popup-block2 {
+	position: relative;
+	background: #fff;
+	text-align: left;
+	max-width: 940px;
+	margin: 5px auto;
 }
 
 .mfp-bg {
@@ -718,8 +723,14 @@ transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
 
 .popup-content,
 .popup-callout {
-	padding: 60px 40px;
+	padding: 60px 40px 10px 40px;
 }
+
+.popup-content2 {
+	padding: 25px 40px 10px 40px;
+}
+
+
 
 .popup-callout {
 	background: #f5f5f5;
@@ -816,7 +827,6 @@ button.mfp-close {
 
 .timePosted {
 	font: 400 13px/1.8 'Montserrat', sans-serif;
-	text-transform: uppercase;
 	letter-spacing: 1px;
 	margin: 30px 0;
 	color: #777;
@@ -909,7 +919,6 @@ button.mfp-close {
 	border: 0;
 	border-radius: 0;
 	margin: 0;
-	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -1098,6 +1107,8 @@ button.mfp-close {
 	.white-popup-block {
 		margin: 80px auto;
 	}
+
+
 
 	button.mfp-close {
 		position: absolute;
