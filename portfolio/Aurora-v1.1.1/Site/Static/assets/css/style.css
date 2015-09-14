@@ -712,12 +712,12 @@ transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
 	background: #fff;
 	text-align: left;
 	max-width: 940px;
-	margin: 5px auto;
+	margin: 0px auto;
 }
 
 .mfp-bg {
-	background: #000;
-	opacity: 0.97;
+	background: #727272;
+	opacity: 0.7;
 	filter: alpha(opacity=97);
 }
 
@@ -742,6 +742,12 @@ transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
 	margin: 0 0 30px;
 }
 
+.popup-header2 {
+	text-align: center;
+	margin: 0 0 10px;
+}
+
+
 .popup-title {
 	margin: 0 0 5px;
 }
@@ -750,6 +756,16 @@ transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-style: italic;
 	font-size: 16px;
+	text-align: center;
+}
+
+
+.popup-subtitle2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 16px;
+	text-align: center;
+	margin: 0 0 10px;
 }
 
 .popup-line {
@@ -1197,4 +1213,11 @@ border-right: 1px solid #f1f1f1;
 line-height: 40px;
 text-align: center;
 font-size: 14px;
+}
+
+
+#boldText {
+font-family: 'Montserrat', sans-serif;
+text-align: center;
+
 }
