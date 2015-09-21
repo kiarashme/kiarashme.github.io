@@ -1,0 +1,285 @@
+
+
+  <!-- 
+Asiya Yakhina
+Final project
+This is a Wall-E scene where Wall-E is animated to gift a stem to Eve and she swirls up and down as a happy response:)
+-->
+<html>
+<head>
+  <title>Wall-E scene</title>
+  <style>      
+  canvas {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    height: 750px;
+  }
+  </style>
+  <script src="http://cs.wellesley.edu/~cs307/threejs/libs/three.min.js"></script>
+  <script src="http://cs.wellesley.edu/~cs307/threejs/libs/OrbitControls.js"></script>  
+  <script src="http://cs.wellesley.edu/~cs307/threejs/libs/dat.gui.min.js"></script>
+  <script src="http://cs.wellesley.edu/~cs307/threejs/dirksen/libs/spin.js"></script>
+  <script src="http://cs.wellesley.edu/~cs307/threejs/dirksen/libs/ThreeBSP.js"></script>
+  <script src="tw.js"></script>
+  <script src="marble.js"></script>
+  <script src="materials.js"></script>
+  <script src="createStem.js"></script>
+  <script src="createEve.js"></script>
+  <script src="createWallE.js"></script>
+
+  
+</head>
+<body>
+
+  <div>
+    <h1>CS307 Final Project: Wall-E Scene<h1>
+    <p>
+      This is a scene inspired by <em>Wall-E</em> an animated film produced by Pixar Animation Studios.
+</p>
+<h2>Modelling</h2>
+<p> I closely examined different Wall-E images that I could find online and attempted to replicate his geometry as accurately as I could. I spent the most time on creating his eyes, especially on recreating the different eye details out of extruded geomteries and bezier surfaces. I also attempted to make the eyes lively and animated. To achieve this affect I used the marble.js code from the library but instead of creating a mirror ball I created 2 glass balls that serve as Well-E's eyes and continuously relfect the scene. Creating Eve did not took as long because she has fewer details and the material of her character is rather uniform and easy to recreate. I used several bezier surfaces to model her character, as well texture mapping for her face.
+</p>
+<img src = "wallEModel.jpg"  height="200" width="200">
+<img src = "wallEMyModel.JPG" height="200" width="200">
+<img src = "eveModel.jpg"  height="200" width="200">
+<img src = "eveMyModel.JPG" height="200" width="200">
+
+      <h2>Texture mapping</h2>
+      <p>
+      I mapped various kinds of metallic textures on Wall-E's parts to achieve a similar kind of grunge feel of his character that the viewers witness in the actual film. 
+    </p>
+      <h2>Animation</h2>
+      <p>
+        In the scene Wall-E is animated to turn his head towards Eve, hand her the stem and tilt his head just like he does so many times in the film. As a response, Eve swirls up and down.
+      </p>
+<p>
+  Wall-E's preparing to give the stem to Eve
+</p>
+
+      <img src = "animBegin.jpg">
+      <p>
+  Wall-E's handing the stem to Eve and she swirls up
+</p>
+
+<img src = "snimMid.JPG">
+      <p>
+  Wall-E has handed the stem to Eve
+</p>
+<img src = "animEnd.JPG" >
+
+
+<p>
+Press <em>g</em> to start the animation.
+</p>
+<p>
+Press <em>s</em> to stop the animation.
+</p>
+<p>
+Press <em>0</em> to restart the animation.
+</p>
+    
+    </div>
+
+  <script id="prog">
+  var renderer = new THREE.WebGLRenderer();
+
+  var animationState; //global to keep track of changes in in the state of the scene
+  /* resetAnimationState
+  Function that returns the animationState to its starting values so that the
+  animation can be restarted.
+  */
+  function resetAnimationState() {
+    animationState = {
+      time: 0
+    }
+  }
+  resetAnimationState();
+
+  var scene = new THREE.Scene(); 
+  TW.mainInit(renderer,scene);
+  var state = TW.cameraSetup(renderer,scene, {minx:-10,maxx:10,miny:-30,maxy:20,minz:0,maxz:0}, 2, 600);
+//creating the ground for the scene and mapping stone texture on it
+  var groundGeom = new THREE.PlaneGeometry(300,300);
+  updateQuadTextureParams(groundGeom, 0, 10, 0, 10)
+  var ground = new THREE.Mesh(groundGeom, groundMat);
+  ground.rotation.x = -Math.PI/2;
+  ground.position.set(0,-21.6,-70);
+  scene.add(ground);
+
+  //creating a sphere to create a sky background for the scene
+  var backgroundGeom = new THREE.SphereGeometry(300,100,100);
+  backgroundMat = new THREE.MeshBasicMaterial({color: 0xc9b195, side: THREE.BackSide});
+  var background = new THREE.Mesh(backgroundGeom, backgroundMat);
+  background.position.set(0,50,-60);
+  scene.add(background);
+
+//these variables need to be global because they're involved in the animation of the scene
+  var glassEyeL;
+  var glassEyeCamL; 
+  var glassEyeR;
+  var glassEyeCamR;
+  var neckNhead;
+  var hand;
+  var head;
+  var stem;
+//creating Wall-E
+  var wallE = createWallE(); 
+//moving it to the left to make space for Eve
+  wallE.position.set(-15,0,-10);
+  //rotating Wall-E a little bit so that he's facing Eve
+  wallE.rotation.y = Math.PI/8;
+  scene.add(wallE);
+//creating Eve
+  var eve = createEve();
+  // moving it to the right to make space for Wall-E
+  eve.position.set(14,-10,4);
+  //rotating it towards Wall-E
+  eve.rotation.y = Math.PI*2-Math.PI/5;
+  scene.add(eve);
+//adding some fog to the scene to blur the edge between the ground and the sky
+  scene.fog = new THREE.FogExp2( 0xc9b195, 0.007 );
+  scene.fog.near = 30;
+//adding lights to the scene
+  ambLight= new THREE.AmbientLight( 0xA8A8A8, 0.01);
+  sptLight = new THREE.SpotLight( 0x999999, 
+               0.7, //spotLightIntensity,
+              300,  //spotLightDistance,
+              2,   //spotLightAngle,
+              20   //spotLightExp
+              ); 
+                   // positioning the bottom spotlight
+                   sptLight.position.set( 0,50,-10);
+                   
+                   dirLight = new THREE.DirectionalLight(0xC2C2C2, 0.4);
+             dirLight.position.set(0.5, 1, 1);
+  scene.add(ambLight);
+  scene.add(sptLight);
+  scene.add(dirLight);
+  //parameters that will be used in animating the scene
+  animationParams = {
+    maxHandRotation: Math.PI/3,
+    headMaxRotation: Math.PI/3,
+    headTiltMax: Math.PI/10,
+    headMotion_begin: 1,
+    headMotion_end: 30,
+    handMotion1_begin: 20,
+    handMotion1_end: 50,
+    headTilt_begin:40,
+    headTilt_end:60,
+    eveUp_begin: 55,
+    eveUp_end: 65,
+    eveDown_begin: 66,
+    eveDown_end: 77,
+    eveRotation: Math.PI*2,
+    eveRotationInit: Math.PI*2-Math.PI/5,
+    eveJumpHeight: 2,
+    eveBack_begin:76,
+    eveBack_end: 86,
+    maxTS: 10
+  }
+  function resetState() {
+    animationState = {
+        wallePartsRotInit: 0, //initial rotation angle of Wall-E hand
+        eveRotationInit: Math.PI*2-Math.PI/5, // intiial rotation angle of Eve
+        eveYcoordInit: -10,
+        time: 0
+      };
+    }
+    function firstState() {
+      resetState();
+      hand.rotation.y=animationState.wallePartsRotInit;
+      neckNhead.rotation.y= animationState.wallePartsRotInit;
+      head.rotation.z=animationState.wallePartsRotInit;
+      eve.rotation.y = animationState.eveRotationInit;
+      eve.position.y = animationState.eveYcoordInit;
+      TW.render();
+    }
+// turns Wall-E's head towards Eve
+    function updateHead(ts){
+     if (ts>animationParams.headMotion_begin && ts < animationParams.headMotion_end){
+      neckNhead.rotation.y += animationParams.headMaxRotation/ (animationParams.headMotion_end-animationParams.headMotion_begin);
+    }
+  }
+  // turns Wall-E's hand towards Eve
+  function updateHand(ts){
+    if (ts>animationParams.handMotion1_begin && ts < animationParams.handMotion1_end){
+      hand.rotation.y += animationParams.maxHandRotation/ (animationParams.handMotion1_end-animationParams.handMotion1_begin);
+      stem.rotation.y+= animationParams.maxHandRotation/ (animationParams.handMotion1_end-animationParams.handMotion1_begin);
+    }
+  }
+// rilts WallE's head
+  function updateTilt(ts) {
+    if (ts>animationParams.headTilt_begin && ts < animationParams.headTilt_end){
+      head.rotation.z += animationParams.headTiltMax/ (animationParams.headTilt_end-animationParams.headTilt_begin);
+    }
+  }
+//animated Eve such that she swirls up and down
+  function updateEve(ts) {
+    if (ts>animationParams.eveUp_begin && ts < animationParams.eveUp_end){
+     for (i = 0; i < 4; i++) { 
+      eve.rotation.y += animationParams.eveRotation/ (animationParams.eveUp_end-animationParams.eveUp_begin);
+      eve.position.y +=animationParams.eveJumpHeight/ (animationParams.eveUp_end-animationParams.eveUp_begin);
+    }
+  }
+  if (ts>animationParams.eveDown_begin && ts < animationParams.eveDown_end){
+   for (i = 0; i < 4; i++) { 
+    eve.rotation.y += animationParams.eveRotation/ (animationParams.eveDown_end-animationParams.eveDown_begin);
+    eve.position.y -=animationParams.eveJumpHeight/ (animationParams.eveDown_end-animationParams.eveDown_begin);
+  }
+}
+// turns Eve such that she faces the camera in the end of her movement
+if (ts>animationParams.eveBack_begin && ts < animationParams.eveBack_end) {
+  eve.rotation.y += animationParams.eveRotationInit/ (animationParams.eveBack_end-animationParams.eveBack_begin);
+} 
+}
+function updateWalle(ts){
+    //console.log("time is " + ts);
+    updateHead(ts);
+    updateHand(ts);
+    updateTilt(ts);
+    updateEve(ts);
+  }
+// updates the scene to initial values
+  function updateState(){
+    animationState.time +=1;
+    updateWalle(animationState.time);
+  }
+//value to stop the animation
+var animationId = null;
+// triggers animation of the scene
+function animateScene() {
+  updateState();
+  animationId = requestAnimationFrame( animateScene );
+  renderer.render(scene, state.cameraObject);
+}
+function animate() {
+  animationId = requestAnimationFrame( animate );
+  render();
+}
+/*stopAnimation
+Stops the animation if it's started.
+*/
+function stopAnimation() {
+  if (animationId != null) {
+    cancelAnimationFrame(animationId);
+  }
+}
+function render() {
+ glassEyeL.visible = false;
+ glassEyeR.visible = false;
+// creates reflections on Wall E's eyes
+ glassEyeCamL.updateCubeMap(renderer, scene);
+ glassEyeCamR.updateCubeMap(renderer, scene);
+ glassEyeL.visible = true;
+ glassEyeR.visible = true;
+ renderer.render(scene, state.cameraObject); //re-render the scene using the TW camera
+ }
+ animate();
+ TW.setKeyboardCallback("g",animateScene,"go:  start animation");
+ TW.setKeyboardCallback("0",firstState,"reset animation");
+ TW.setKeyboardCallback("s",stopAnimation,"stop animation");
+ TW.viewFromFront();        
+ </script>
+</body>
+</html>
