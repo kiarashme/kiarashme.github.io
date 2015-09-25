@@ -10,7 +10,7 @@
 
 
 body {
-	font: 400 15px/1.8 'Lora', serif;
+	font: 400 18px/1.8 'Lora', serif;
 	color: #0c0c0c;
 	overflow-x: hidden;
 }
@@ -71,9 +71,14 @@ a,
 
 h1, h2, h3, h4, h5, h6 {
 	font: 700 50px/1.2 'Montserrat', sans-serif;
-	letter-spacing: 5px;
+	letter-spacing: 3fpx;
 	margin: 5px 0 5px;
 	color: #222;
+}
+
+
+h1 {
+	font-size: 35px;
 }
 
 h2 {
@@ -376,7 +381,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 .module {
-	padding: 120px 0 100px;
+	padding: 30px 0 100px;
 }
 
 .module-gray {
@@ -409,7 +414,14 @@ textarea.form-control {
 
 .module-header {
 	text-align: center;
-	margin: 0 0 60px;
+	margin: 0 0 10px;
+}
+
+.module-headerIndex {
+text-align: center;
+margin-top: 100px;
+margin-bottom: 160px;
+
 }
 
 .module-header-left {
@@ -418,13 +430,30 @@ textarea.form-control {
 
 .module-header-left .module-line {
 	width: inherit;
-	margin: 30px 0;
+	margin: 20px 0;
 }
 
 .module-subtitle {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-style: italic;
-	font-size: 14px;
+	font-size: 20px;
+	margin-bottom: 80px;
+}
+
+.module-subtitle2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 20px;
+	margin-top: 40px;
+	margin-bottom: 80px;
+	
+}
+
+.module-subtitle3 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 20px;
+	margin-bottom: 30px;
 }
 
 .module-line {
@@ -432,6 +461,10 @@ textarea.form-control {
 	width: 55px;
 	height: 1px;
 	margin: 30px auto;
+}
+
+#blue {
+	color: #49e2d6;
 }
 
 .module-icon {
@@ -715,6 +748,22 @@ transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
 	margin: 0px auto;
 }
 
+.white-popup-block3 {
+margin-top: 80px;
+    margin-bottom: 30px;
+    margin-right: 80px;
+    margin-left: 80px;
+
+}
+
+.white-popup-blockI {
+	margin-top: 80px;
+    margin-bottom: 30px;
+    margin-right: 40px;
+    margin-left: 40px;
+
+}
+
 .mfp-bg {
 	background: #0f0f0f;
 	opacity: 0.9;
@@ -741,10 +790,22 @@ transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
 	padding: 10px 40px 10px 40px;
 }
 
+.popup-content4 {
+	padding: 5px 40px 10px 40px;
+}
+
+.popup-content5 {
+	padding: 40px 40px 40px 40px;
+}
 
 .popup-callout {
 	background: #f5f5f5;
 	text-align: center;
+}
+
+.popup-headerWork {
+	text-align: center;
+	margin: 50px;
 }
 
 .popup-header {
@@ -770,7 +831,7 @@ transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
 .popup-subtitle {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-style: italic;
-	font-size: 16px;
+	font-size: 17px;
 	text-align: center;
 }
 
@@ -778,7 +839,7 @@ transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
 .popup-subtitle2 {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-style: italic;
-	font-size: 16px;
+	font-size: 19px;
 	text-align: center;
 	margin: 0 0 10px;
 }
@@ -786,7 +847,7 @@ transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
 .popup-subtitle3 {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-style: italic;
-	font-size: 13px;
+	font-size: 19px;
 	text-align: left;
 
 }
@@ -834,16 +895,19 @@ button.mfp-close {
 
 .portfolio-slider .owl-controls .owl-buttons .owl-prev {
 	left: 0;
-	margin: -20px 0 0 0;
+	visibility: visible;
+	display: inline;
 	-webkit-border-radius: 0 3px 3px 0;
 	   -moz-border-radius: 0 3px 3px 0;
 		 -o-border-radius: 0 3px 3px 0;
 			border-radius: 0 3px 3px 0;
+
 }
 
 .portfolio-slider .owl-controls .owl-buttons .owl-next {
 	right: 0;
-	margin: -20px 0 0 0;
+	visibility: visible;
+	display: inline;
 	-webkit-border-radius: 3px 0 0 3px;
 	   -moz-border-radius: 3px 0 0 3px;
 		 -o-border-radius: 3px 0 0 3px;
@@ -957,8 +1021,8 @@ button.mfp-close {
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav > li > a,
 .navbar-custom .navbar-nav .dropdown-menu > li > a {
-	font-size: 11px;
-	letter-spacing: 3px;
+	font-size: 13px;
+	letter-spacing: 2px;
 	color: #222;
 }
 
@@ -1173,19 +1237,31 @@ button.mfp-close {
 @media (max-width: 480px) {
 
 	h1 {
-		font-size: 34px;
-		letter-spacing: 3px;
+		font-size: 28px;
+		letter-spacing: 2px;
+
 	}
+
+
 
 	h2 {
+		font-size: 30px;
+		margin-bottom: 15px;
+		letter-spacing: 2px;
+	}
+
+	
+
+	#specialH2 {
+	font-family: 'Montserrat', sans-serif;
 		font-size: 24px;
-		margin: 0 0 30px;
-		letter-spacing: 3px;
+		margin: 0 0 10px;
+		letter-spacing: 2px;
+
 	}
 
 
 
-}
 
 .sli-examples .item:hover {
 background: #f0f0f0;
@@ -1237,4 +1313,5 @@ text-align: center;
 	height: 40px;
 	width: 100%;
 	background-color: white;
+	display: block;
 }
