@@ -10,7 +10,7 @@
 
 
 body {
-	font: 400 18px/1.8 'Lora', serif;
+	font: 400 17px/1.8 'Lora', serif;
 	color: #0c0c0c;
 	overflow-x: hidden;
 }
@@ -1064,6 +1064,9 @@ button.mfp-close {
  * Scroll to top
 /* ---------------------------------------------- */
 
+p {
+	 margin-bottom: 30px;
+
 .scroll-up {
 	position: fixed;
 	display: none;
@@ -1302,7 +1305,7 @@ font-size: 14px;
 }
 
 
-#boldText {
+#xText {
 font-family: 'Montserrat', sans-serif;
 text-align: center;
 
