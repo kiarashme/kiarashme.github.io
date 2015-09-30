@@ -328,7 +328,11 @@ textarea.form-control {
 }
 
 .popup-contentBut {
-	padding-bottom: 40px;
+	display: block;
+	clear: left;
+
+
+
 }
 
 
@@ -1338,6 +1342,11 @@ margin-bottom: 15px;
 
 .caption-inner {
 	visibility: visible;
+}
+
+.portfolio-item {
+	display: block;
+	width: 100%;
 }
 
 
