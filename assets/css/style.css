@@ -34,6 +34,13 @@ a:hover {
 /* ---------------------------------------------- */
 
 
+.dinoGif {
+	width: 50%;
+	position: relative;
+	float: left;
+
+}
+
 .navbar a,
 .form-control {
 	-webkit-transition: all 0.4s ease-in-out 0s;
@@ -91,13 +98,13 @@ h3 {
 
 h4 {
 	font-size: 18px;
-	letter-spacing: 1px;
+	letter-spacing: 0.7px;
 }
 
 h5 {
-	font-size: 12px;
+	font-size: 20px;
 	letter-spacing: 1px;
-	font-weight: 400;
+	font-weight: 700;
 }
 
 h6 {
@@ -782,6 +789,15 @@ transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
 	padding-right: 40px;
 }
 
+.popup-content3030 {
+
+	padding-bottom: 40px;
+	padding-top: 40px;
+	padding-left: 40px;
+	padding-right: 40px;
+	clear: left;
+}
+
 
 .popup-contentTitleBtnIm {
 	padding-top: 50px;
@@ -1197,6 +1213,18 @@ button.mfp-close {
 	#homeLabel {
 	padding-top: 120px;
 	padding-bottom: 120px;
+}
+
+
+	#gameGif {
+	width: 800px;
+	height: 582px;
+}
+
+	#gameGif2 {
+	width: 800px;
+	height: 597px;
+}
 /* ---------------------------------------------- /*
  * Media
 /* ---------------------------------------------- */
@@ -1227,12 +1255,43 @@ button.mfp-close {
 		top: -59px;
 	}
 
+	#gameGif {
+	width: 800px;
+	height: 582px;
+}
+
+	#gameGif2 {
+	width: 800px;
+	height: 597px;
+}
+
 
 }
 
-}
+
 
 @media (max-width: 767px) {
+
+
+	.white-popup-block {
+	position: relative;
+	background: #fff;
+	text-align: left;
+	max-width: 940px;
+	margin: 40px auto;
+	margin-bottom: 0px;
+	margin-top: 30px;
+}
+
+	#gameGif {
+	width: 500px;
+	height: 364px;
+}
+
+#gameGif2 {
+	width: 500px;
+	height: 373px;
+}
 
 	.portfolio-items-container .portfolio-item {
 		width: 100%;
@@ -1258,9 +1317,44 @@ button.mfp-close {
 	padding-bottom: 80px;
 }
 
+body {
+	font: 400 15px/1.8 'Open Sans', serif;
+}
+
+
+#gameGif {
+	width: 500px;
+	height: 364px;
+}
+
+#gameGif2 {
+	width: 500px;
+	height: 373px;
+}
+
 }
 
 @media (max-width: 480px) {
+
+	.white-popup-block {
+	position: relative;
+	background: #fff;
+	text-align: left;
+	max-width: 940px;
+	margin: 40px auto;
+	margin-bottom: 0px;
+	margin-top: 20px;
+}
+
+#gameGif {
+	width: 350px;
+	height: 255px;
+}
+
+#gameGif2 {
+	width: 350px;
+	height: 261px;
+}
 
 	h1 {
 		font-size: 28px;
