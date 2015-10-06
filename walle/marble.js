@@ -1,39 +1,39 @@
 function createMarble(marbleColor, marbleSpecular, marbleShininess, marbleSize) {
 
-	// phong material translucence
+    // phong material translucence
 
-	
 
-	// create additional camera
 
-        var mSphereCamera = new THREE.CubeCamera(0.1, 1000, 512);
+    // create additional camera
 
-         mSphereCamera.position.set(10, 50, 25 );
+    var mSphereCamera = new THREE.CubeCamera(0.1, 1000, 512);
 
-         scene.add(mSphereCamera);
+    mSphereCamera.position.set(10, 50, 25);
 
-	
+    scene.add(mSphereCamera);
 
-	var marbleMat = new THREE.MeshPhongMaterial( { color: marbleColor, refractionRatio: .5,
 
-						envMap: mSphereCamera.renderTarget,
 
-						shininess: marbleShininess,
-						transparent: true,
-						opacity: 0.5 
+    var marbleMat = new THREE.MeshPhongMaterial({
+        color: marbleColor,
+        refractionRatio: .5,
 
-					} );
+        envMap: mSphereCamera.renderTarget,
 
-	var sphereGeom =  new THREE.SphereGeometry( marbleSize, 32, 16 );
+        shininess: marbleShininess,
+        transparent: true,
+        opacity: 0.5
 
-	var marble = new THREE.Mesh( sphereGeom, marbleMat );
+    });
 
-	
+    var sphereGeom = new THREE.SphereGeometry(marbleSize, 32, 16);
 
-	var obArray = [marble, mSphereCamera];
+    var marble = new THREE.Mesh(sphereGeom, marbleMat);
 
-	return obArray;
+
+
+    var obArray = [marble, mSphereCamera];
+
+    return obArray;
 
 }
-
- 
