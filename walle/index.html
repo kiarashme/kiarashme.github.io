@@ -1,642 +1,537 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="">
-
-
-	<title>Asiya Yakhina</title>
-
-	<!-- CSS -->
-	<!-- Bootstrap core CSS -->
-	<link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-
-	<!-- Font Awesome CSS -->
-	<link href="../assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
-
-	<!-- Elegant icons CSS -->
-	<link href="../assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
-
-	<!--[if lte IE 7]>
-		<script src="assets/js/icons-lte-ie7.js"></script>
-	<![endif]-->
-
-	<!-- Magnific-popup lightbox -->
-	<link href="../assets/css/magnific-popup.css" rel="stylesheet">
-
-	<!-- Owl Carousel -->
-	<link href="../assets/css/owl.theme.css" rel="stylesheet">
-	<link href="../assets/css/owl.carousel.css" rel="stylesheet">
-
-	<!-- Animate css -->
-	<link href="../assets/css/animate.css" rel="stylesheet">
-
-	<!-- Custom styles CSS -->
-	<link href="../assets/css/style.css" rel="stylesheet" media="screen">
-<link rel="shortcut icon" href="../favicon2.png">  
-	<style>
-
- canvas {
-    display: block;
-    margin: 40px auto;
-    width: 80%;
-    height: 750px;
-  }
-  </style>
-  <script src="http://cs.wellesley.edu/~cs307/threejs/libs/three.min.js"></script>
-  <script src="http://cs.wellesley.edu/~cs307/threejs/libs/OrbitControls.js"></script>  
-  <script src="http://cs.wellesley.edu/~cs307/threejs/libs/dat.gui.min.js"></script>
-  <script src="http://cs.wellesley.edu/~cs307/threejs/dirksen/libs/spin.js"></script>
-  <script src="http://cs.wellesley.edu/~cs307/threejs/dirksen/libs/ThreeBSP.js"></script>
-  <script src="tw.js"></script>
-  <script src="marble.js"></script>
-  <script src="materials.js"></script>
-  <script src="createStem.js"></script>
-  <script src="createEve.js"></script>
-  <script src="createWallE.js"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Asiya Yakhina</title>
+    <!-- CSS -->
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- Font Awesome CSS -->
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+    <!-- Elegant icons CSS -->
+    <link href="../assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
+    <!--[if lte IE 7]>
+    <script src="assets/js/icons-lte-ie7.js"></script>
+  <![endif]-->
+    <!-- Magnific-popup lightbox -->
+    <link href="../assets/css/magnific-popup.css" rel="stylesheet">
+    <!-- Owl Carousel -->
+    <link href="../assets/css/owl.theme.css" rel="stylesheet">
+    <link href="../assets/css/owl.carousel.css" rel="stylesheet">
+    <!-- Animate css -->
+    <link href="../assets/css/animate.css" rel="stylesheet">
+    <!-- Custom styles CSS -->
+    <link href="../assets/css/style.css" rel="stylesheet" media="screen">
+    <link rel="shortcut icon" href="../favicon2.png">
+    <style>
+    canvas {
+        display: block;
+        margin: 40px auto;
+        width: 80%;
+        height: 750px;
+    }
+    </style>
+    <script src="http://cs.wellesley.edu/~cs307/threejs/libs/three.min.js"></script>
+    <script src="http://cs.wellesley.edu/~cs307/threejs/libs/OrbitControls.js"></script>
+    <script src="http://cs.wellesley.edu/~cs307/threejs/libs/dat.gui.min.js"></script>
+    <script src="http://cs.wellesley.edu/~cs307/threejs/dirksen/libs/spin.js"></script>
+    <script src="http://cs.wellesley.edu/~cs307/threejs/dirksen/libs/ThreeBSP.js"></script>
+    <script src="tw.js"></script>
+    <script src="marble.js"></script>
+    <script src="materials.js"></script>
+    <script src="createStem.js"></script>
+    <script src="createEve.js"></script>
+    <script src="createWallE.js"></script>
 </head>
+
 <body>
-
-
-
-
-
-<header class="header">
-
-    <nav class="navbar navbar-custom" role="navigation">
-
-      <div class="container">
-
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="../">ASIYA YAKHINA</a>
+    <header class="header">
+        <nav class="navbar navbar-custom" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../">ASIYA YAKHINA</a>
+                </div>
+                <div class="collapse navbar-collapse" id="custom-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="../">PORTFOLIO</a></li>
+                        <li><a href="../aboutme">ABOUT ME</a></li>
+                        <li><a href="../resume">RESUME</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- .container -->
+        </nav>
+    </header>
+    <div id="custom-content" class="white-popup-block">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <!-- Put your image here -->
+                <img src="walleCover.png" alt="">
+            </div>
+            <!-- .col -->
         </div>
+        <!-- .row -->
+        <div class="popup-content500">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="popup-header">
+                        <h2 class="popup-title">Wall-E Scene</h2>
+                        <div class="popup-subtitle">
+                            Recreating Pixar's robot character in Three.js
+                        </div>
+                        <div class="popup-line"></div>
+                    </div>
+                </div>
+            </div>
+            <script id="prog">
+            var renderer = new THREE.WebGLRenderer();
 
-        <div class="collapse navbar-collapse" id="custom-collapse">
-          <ul class="nav navbar-nav navbar-right">
-        
-            <li><a href="../">PORTFOLIO</a></li>
-            <li><a href="../aboutme">ABOUT ME</a></li>
-  
-            <li><a href="../resume">RESUME</a></li>
-          </ul>
+            var animationState; //global to keep track of changes in in the state of the scene
+            /* resetAnimationState
+            Function that returns the animationState to its starting values so that the
+            animation can be restarted.
+            */
+            function resetAnimationState() {
+                animationState = {
+                    time: 0
+                }
+            }
+            resetAnimationState();
+
+            var scene = new THREE.Scene();
+            TW.mainInit(renderer, scene);
+            var state = TW.cameraSetup(renderer, scene, {
+                minx: -10,
+                maxx: 10,
+                miny: -30,
+                maxy: 20,
+                minz: 0,
+                maxz: 0
+            }, 2, 600);
+            //creating the ground for the scene and mapping stone texture on it
+            var groundGeom = new THREE.PlaneGeometry(300, 300);
+            updateQuadTextureParams(groundGeom, 0, 10, 0, 10)
+            var ground = new THREE.Mesh(groundGeom, groundMat);
+            ground.rotation.x = -Math.PI / 2;
+            ground.position.set(0, -21.6, -70);
+            scene.add(ground);
+
+            //creating a sphere to create a sky background for the scene
+            var backgroundGeom = new THREE.SphereGeometry(300, 100, 100);
+            backgroundMat = new THREE.MeshBasicMaterial({
+                color: 0xc9b195,
+                side: THREE.BackSide
+            });
+            var background = new THREE.Mesh(backgroundGeom, backgroundMat);
+            background.position.set(0, 50, -60);
+            scene.add(background);
+
+            //these variables need to be global because they're involved in the animation of the scene
+            var glassEyeL;
+            var glassEyeCamL;
+            var glassEyeR;
+            var glassEyeCamR;
+            var neckNhead;
+            var hand;
+            var head;
+            var stem;
+            //creating Wall-E
+            var wallE = createWallE();
+            //moving it to the left to make space for Eve
+            wallE.position.set(-15, 0, -10);
+            //rotating Wall-E a little bit so that he's facing Eve
+            wallE.rotation.y = Math.PI / 8;
+            scene.add(wallE);
+            //creating Eve
+            var eve = createEve();
+            // moving it to the right to make space for Wall-E
+            eve.position.set(14, -10, 4);
+            //rotating it towards Wall-E
+            eve.rotation.y = Math.PI * 2 - Math.PI / 5;
+            scene.add(eve);
+            //adding some fog to the scene to blur the edge between the ground and the sky
+            scene.fog = new THREE.FogExp2(0xc9b195, 0.007);
+            scene.fog.near = 30;
+            //adding lights to the scene
+            ambLight = new THREE.AmbientLight(0xA8A8A8, 0.01);
+            sptLight = new THREE.SpotLight(0x999999,
+                0.7, //spotLightIntensity,
+                300, //spotLightDistance,
+                2, //spotLightAngle,
+                20 //spotLightExp
+            );
+            // positioning the bottom spotlight
+            sptLight.position.set(0, 50, -10);
+
+            dirLight = new THREE.DirectionalLight(0xC2C2C2, 0.4);
+            dirLight.position.set(0.5, 1, 1);
+            scene.add(ambLight);
+            scene.add(sptLight);
+            scene.add(dirLight);
+            //parameters that will be used in animating the scene
+            animationParams = {
+                maxHandRotation: Math.PI / 3,
+                headMaxRotation: Math.PI / 3,
+                headTiltMax: Math.PI / 10,
+                headMotion_begin: 1,
+                headMotion_end: 30,
+                handMotion1_begin: 20,
+                handMotion1_end: 50,
+                headTilt_begin: 40,
+                headTilt_end: 60,
+                eveUp_begin: 55,
+                eveUp_end: 65,
+                eveDown_begin: 66,
+                eveDown_end: 77,
+                eveRotation: Math.PI * 2,
+                eveRotationInit: Math.PI * 2 - Math.PI / 5,
+                eveJumpHeight: 2,
+                eveBack_begin: 76,
+                eveBack_end: 86,
+                maxTS: 10
+            }
+
+            function resetState() {
+                animationState = {
+                    wallePartsRotInit: 0, //initial rotation angle of Wall-E hand
+                    eveRotationInit: Math.PI * 2 - Math.PI / 5, // intiial rotation angle of Eve
+                    eveYcoordInit: -10,
+                    time: 0
+                };
+            }
+
+            function firstState() {
+                resetState();
+                hand.rotation.y = animationState.wallePartsRotInit;
+                neckNhead.rotation.y = animationState.wallePartsRotInit;
+                head.rotation.z = animationState.wallePartsRotInit;
+                eve.rotation.y = animationState.eveRotationInit;
+                eve.position.y = animationState.eveYcoordInit;
+                TW.render();
+            }
+            // turns Wall-E's head towards Eve
+            function updateHead(ts) {
+                if (ts > animationParams.headMotion_begin && ts < animationParams.headMotion_end) {
+                    neckNhead.rotation.y += animationParams.headMaxRotation / (animationParams.headMotion_end - animationParams.headMotion_begin);
+                }
+            }
+            // turns Wall-E's hand towards Eve
+            function updateHand(ts) {
+                if (ts > animationParams.handMotion1_begin && ts < animationParams.handMotion1_end) {
+                    hand.rotation.y += animationParams.maxHandRotation / (animationParams.handMotion1_end - animationParams.handMotion1_begin);
+                    stem.rotation.y += animationParams.maxHandRotation / (animationParams.handMotion1_end - animationParams.handMotion1_begin);
+                }
+            }
+            // rilts WallE's head
+            function updateTilt(ts) {
+                if (ts > animationParams.headTilt_begin && ts < animationParams.headTilt_end) {
+                    head.rotation.z += animationParams.headTiltMax / (animationParams.headTilt_end - animationParams.headTilt_begin);
+                }
+            }
+            //animated Eve such that she swirls up and down
+            function updateEve(ts) {
+                if (ts > animationParams.eveUp_begin && ts < animationParams.eveUp_end) {
+                    for (i = 0; i < 4; i++) {
+                        eve.rotation.y += animationParams.eveRotation / (animationParams.eveUp_end - animationParams.eveUp_begin);
+                        eve.position.y += animationParams.eveJumpHeight / (animationParams.eveUp_end - animationParams.eveUp_begin);
+                    }
+                }
+                if (ts > animationParams.eveDown_begin && ts < animationParams.eveDown_end) {
+                    for (i = 0; i < 4; i++) {
+                        eve.rotation.y += animationParams.eveRotation / (animationParams.eveDown_end - animationParams.eveDown_begin);
+                        eve.position.y -= animationParams.eveJumpHeight / (animationParams.eveDown_end - animationParams.eveDown_begin);
+                    }
+                }
+                // turns Eve such that she faces the camera in the end of her movement
+                if (ts > animationParams.eveBack_begin && ts < animationParams.eveBack_end) {
+                    eve.rotation.y += animationParams.eveRotationInit / (animationParams.eveBack_end - animationParams.eveBack_begin);
+                }
+            }
+
+            function updateWalle(ts) {
+                //console.log("time is " + ts);
+                updateHead(ts);
+                updateHand(ts);
+                updateTilt(ts);
+                updateEve(ts);
+            }
+            // updates the scene to initial values
+            function updateState() {
+                animationState.time += 1;
+                updateWalle(animationState.time);
+            }
+            //value to stop the animation
+            var animationId = null;
+            // triggers animation of the scene
+            function animateScene() {
+                updateState();
+                animationId = requestAnimationFrame(animateScene);
+                renderer.render(scene, state.cameraObject);
+            }
+
+            function animate() {
+                animationId = requestAnimationFrame(animate);
+                render();
+            }
+            /*stopAnimation
+            Stops the animation if it's started.
+            */
+            function stopAnimation() {
+                if (animationId != null) {
+                    cancelAnimationFrame(animationId);
+                }
+            }
+
+            function render() {
+                glassEyeL.visible = false;
+                glassEyeR.visible = false;
+                // creates reflections on Wall E's eyes
+                glassEyeCamL.updateCubeMap(renderer, scene);
+                glassEyeCamR.updateCubeMap(renderer, scene);
+                glassEyeL.visible = true;
+                glassEyeR.visible = true;
+                renderer.render(scene, state.cameraObject); //re-render the scene using the TW camera
+            }
+            animate();
+            TW.setKeyboardCallback("g", animateScene, "go:  start animation");
+            TW.setKeyboardCallback("0", firstState, "reset animation");
+            TW.setKeyboardCallback("s", stopAnimation, "stop animation");
+            TW.viewFromFront();
+            </script>
         </div>
-
-      </div><!-- .container -->
-
-    </nav>
-
-  </header>
-
-
-
-
-
-
-
-
-
-
-<div id="custom-content" class="white-popup-block">
-
-
-<div class="row">
-    <div class="col-sm-12 text-center">
-
-      <!-- Put your image here -->
-
-      <img src="walleCover.png" alt="">
-
-    </div><!-- .col -->
-  </div><!-- .row -->
-
-
-
-<div class="popup-content500">
-		<div class="row">
-
-			<div class="col-sm-12">
-
-				<div class="popup-header">
-					<h2 class="popup-title">Wall-E Scene</h2>
-					<div class="popup-subtitle">
-						Recreating Pixar's robot character in Three.js
-					</div>
-					<div class="popup-line"></div>
-				</div>
-
-			</div>
-
-		</div>
-
-
- <script id="prog">
-  var renderer = new THREE.WebGLRenderer();
-
-  var animationState; //global to keep track of changes in in the state of the scene
-  /* resetAnimationState
-  Function that returns the animationState to its starting values so that the
-  animation can be restarted.
-  */
-  function resetAnimationState() {
-    animationState = {
-      time: 0
-    }
-  }
-  resetAnimationState();
-
-  var scene = new THREE.Scene(); 
-  TW.mainInit(renderer,scene);
-  var state = TW.cameraSetup(renderer,scene, {minx:-10,maxx:10,miny:-30,maxy:20,minz:0,maxz:0}, 2, 600);
-//creating the ground for the scene and mapping stone texture on it
-  var groundGeom = new THREE.PlaneGeometry(300,300);
-  updateQuadTextureParams(groundGeom, 0, 10, 0, 10)
-  var ground = new THREE.Mesh(groundGeom, groundMat);
-  ground.rotation.x = -Math.PI/2;
-  ground.position.set(0,-21.6,-70);
-  scene.add(ground);
-
-  //creating a sphere to create a sky background for the scene
-  var backgroundGeom = new THREE.SphereGeometry(300,100,100);
-  backgroundMat = new THREE.MeshBasicMaterial({color: 0xc9b195, side: THREE.BackSide});
-  var background = new THREE.Mesh(backgroundGeom, backgroundMat);
-  background.position.set(0,50,-60);
-  scene.add(background);
-
-//these variables need to be global because they're involved in the animation of the scene
-  var glassEyeL;
-  var glassEyeCamL; 
-  var glassEyeR;
-  var glassEyeCamR;
-  var neckNhead;
-  var hand;
-  var head;
-  var stem;
-//creating Wall-E
-  var wallE = createWallE(); 
-//moving it to the left to make space for Eve
-  wallE.position.set(-15,0,-10);
-  //rotating Wall-E a little bit so that he's facing Eve
-  wallE.rotation.y = Math.PI/8;
-  scene.add(wallE);
-//creating Eve
-  var eve = createEve();
-  // moving it to the right to make space for Wall-E
-  eve.position.set(14,-10,4);
-  //rotating it towards Wall-E
-  eve.rotation.y = Math.PI*2-Math.PI/5;
-  scene.add(eve);
-//adding some fog to the scene to blur the edge between the ground and the sky
-  scene.fog = new THREE.FogExp2( 0xc9b195, 0.007 );
-  scene.fog.near = 30;
-//adding lights to the scene
-  ambLight= new THREE.AmbientLight( 0xA8A8A8, 0.01);
-  sptLight = new THREE.SpotLight( 0x999999, 
-               0.7, //spotLightIntensity,
-              300,  //spotLightDistance,
-              2,   //spotLightAngle,
-              20   //spotLightExp
-              ); 
-                   // positioning the bottom spotlight
-                   sptLight.position.set( 0,50,-10);
-                   
-                   dirLight = new THREE.DirectionalLight(0xC2C2C2, 0.4);
-             dirLight.position.set(0.5, 1, 1);
-  scene.add(ambLight);
-  scene.add(sptLight);
-  scene.add(dirLight);
-  //parameters that will be used in animating the scene
-  animationParams = {
-    maxHandRotation: Math.PI/3,
-    headMaxRotation: Math.PI/3,
-    headTiltMax: Math.PI/10,
-    headMotion_begin: 1,
-    headMotion_end: 30,
-    handMotion1_begin: 20,
-    handMotion1_end: 50,
-    headTilt_begin:40,
-    headTilt_end:60,
-    eveUp_begin: 55,
-    eveUp_end: 65,
-    eveDown_begin: 66,
-    eveDown_end: 77,
-    eveRotation: Math.PI*2,
-    eveRotationInit: Math.PI*2-Math.PI/5,
-    eveJumpHeight: 2,
-    eveBack_begin:76,
-    eveBack_end: 86,
-    maxTS: 10
-  }
-  function resetState() {
-    animationState = {
-        wallePartsRotInit: 0, //initial rotation angle of Wall-E hand
-        eveRotationInit: Math.PI*2-Math.PI/5, // intiial rotation angle of Eve
-        eveYcoordInit: -10,
-        time: 0
-      };
-    }
-    function firstState() {
-      resetState();
-      hand.rotation.y=animationState.wallePartsRotInit;
-      neckNhead.rotation.y= animationState.wallePartsRotInit;
-      head.rotation.z=animationState.wallePartsRotInit;
-      eve.rotation.y = animationState.eveRotationInit;
-      eve.position.y = animationState.eveYcoordInit;
-      TW.render();
-    }
-// turns Wall-E's head towards Eve
-    function updateHead(ts){
-     if (ts>animationParams.headMotion_begin && ts < animationParams.headMotion_end){
-      neckNhead.rotation.y += animationParams.headMaxRotation/ (animationParams.headMotion_end-animationParams.headMotion_begin);
-    }
-  }
-  // turns Wall-E's hand towards Eve
-  function updateHand(ts){
-    if (ts>animationParams.handMotion1_begin && ts < animationParams.handMotion1_end){
-      hand.rotation.y += animationParams.maxHandRotation/ (animationParams.handMotion1_end-animationParams.handMotion1_begin);
-      stem.rotation.y+= animationParams.maxHandRotation/ (animationParams.handMotion1_end-animationParams.handMotion1_begin);
-    }
-  }
-// rilts WallE's head
-  function updateTilt(ts) {
-    if (ts>animationParams.headTilt_begin && ts < animationParams.headTilt_end){
-      head.rotation.z += animationParams.headTiltMax/ (animationParams.headTilt_end-animationParams.headTilt_begin);
-    }
-  }
-//animated Eve such that she swirls up and down
-  function updateEve(ts) {
-    if (ts>animationParams.eveUp_begin && ts < animationParams.eveUp_end){
-     for (i = 0; i < 4; i++) { 
-      eve.rotation.y += animationParams.eveRotation/ (animationParams.eveUp_end-animationParams.eveUp_begin);
-      eve.position.y +=animationParams.eveJumpHeight/ (animationParams.eveUp_end-animationParams.eveUp_begin);
-    }
-  }
-  if (ts>animationParams.eveDown_begin && ts < animationParams.eveDown_end){
-   for (i = 0; i < 4; i++) { 
-    eve.rotation.y += animationParams.eveRotation/ (animationParams.eveDown_end-animationParams.eveDown_begin);
-    eve.position.y -=animationParams.eveJumpHeight/ (animationParams.eveDown_end-animationParams.eveDown_begin);
-  }
-}
-// turns Eve such that she faces the camera in the end of her movement
-if (ts>animationParams.eveBack_begin && ts < animationParams.eveBack_end) {
-  eve.rotation.y += animationParams.eveRotationInit/ (animationParams.eveBack_end-animationParams.eveBack_begin);
-} 
-}
-function updateWalle(ts){
-    //console.log("time is " + ts);
-    updateHead(ts);
-    updateHand(ts);
-    updateTilt(ts);
-    updateEve(ts);
-  }
-// updates the scene to initial values
-  function updateState(){
-    animationState.time +=1;
-    updateWalle(animationState.time);
-  }
-//value to stop the animation
-var animationId = null;
-// triggers animation of the scene
-function animateScene() {
-  updateState();
-  animationId = requestAnimationFrame( animateScene );
-  renderer.render(scene, state.cameraObject);
-}
-function animate() {
-  animationId = requestAnimationFrame( animate );
-  render();
-}
-/*stopAnimation
-Stops the animation if it's started.
-*/
-function stopAnimation() {
-  if (animationId != null) {
-    cancelAnimationFrame(animationId);
-  }
-}
-function render() {
- glassEyeL.visible = false;
- glassEyeR.visible = false;
-// creates reflections on Wall E's eyes
- glassEyeCamL.updateCubeMap(renderer, scene);
- glassEyeCamR.updateCubeMap(renderer, scene);
- glassEyeL.visible = true;
- glassEyeR.visible = true;
- renderer.render(scene, state.cameraObject); //re-render the scene using the TW camera
- }
- animate();
- TW.setKeyboardCallback("g",animateScene,"go:  start animation");
- TW.setKeyboardCallback("0",firstState,"reset animation");
- TW.setKeyboardCallback("s",stopAnimation,"stop animation");
- TW.viewFromFront();        
- </script>
- </div>
-
-
-
-<div class="popup-content020" class="white-popup-block">
-		<div class="row">
-
-			<div class="col-sm-12">
-
-				<div class="popup-header">
-					<h4 class="popup-title">Modelling</h4>
-				</div>
-				</div>
-</div>
-
-<div class="row">
-
-			<div class="col-sm-12">
-
- <p>
-	 I closely examined different Wall-E images that I could find online and replicated his geometry in Three.js - a 3D Javascript library. I spent the most time on creating his eyes, especially on recreating the different eye details out of extruded geomteries and bezier surfaces. </p>
-
-	 <p>I also ensured that the eyes look lively and animated. To achieve this effect, I placed 2 extra cameras inside the eyes that continuously "record" the scene. Then I mapped the video that the camperas are recording as a texture on the eyes' surface. That way, Well-E's eyes are continuously relfecting the scene. 
-	 </p>
-
-	 <p>Creating Eve did not take as long because she has fewer details and the material of her character is rather uniform and easy to recreate. I used several bezier surfaces to model her character, as well texture mapping for her face.
-</p>
-</div>
-</div>
-
-
-
-
-
-		<div class="row">
-			<div class="col-sm-12">
-	<div class="headerUnderText">
-					<h4 class="popup-title">Texture Mapping</h4>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-
-			<div class="col-sm-12">
-				<p> I mapped various kinds of metallic textures on Wall-E's parts to achieve a similar kind of grunge feel of his character that the viewers witness in the original film.</p>
-</div>
-		</div>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-12 text-center">
-
-      <!-- Put your image here -->
-
-      <img src="textures.png" alt="">
-
-    </div><!-- .col -->
-  </div><!-- .row -->
-
-
-
-
-
-  <div class="popup-content0">
-
-
-    <div class="row">
-      <div class="col-sm-12">
-      <div class="headerUnderText">
-          <h4 class="popup-title">Lighting</h4>
+        <div class="popup-content020" class="white-popup-block">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="popup-header">
+                        <h4 class="popup-title">Modelling</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>
+                        I closely examined different Wall-E images that I could find online and replicated his geometry in Three.js - a 3D Javascript library. I spent the most time on creating his eyes, especially on recreating the different eye details out of extruded geomteries and bezier surfaces. </p>
+                    <p>I also ensured that the eyes look lively and animated. To achieve this effect, I placed 2 extra cameras inside the eyes that continuously "record" the scene. Then I mapped the video that the camperas are recording as a texture on the eyes' surface. That way, Well-E's eyes are continuously relfecting the scene.
+                    </p>
+                    <p>Creating Eve did not take as long because she has fewer details and the material of her character is rather uniform and easy to recreate. I used several bezier surfaces to model her character, as well texture mapping for her face.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="headerUnderText">
+                        <h4 class="popup-title">Texture Mapping</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p> I mapped various kinds of metallic textures on Wall-E's parts to achieve a similar kind of grunge feel of his character that the viewers witness in the original film.</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-
-
-      <div class="row">
-
-      <div class="col-sm-12">
-        <p> I used directional and ambient lighting to highlight the form and the material of the characters to the viewer's eyes. </p>
-</div>
-    </div>
-
-<div class="row">
-			<div class="col-sm-12">
-			<div class="headerUnderText">
-					<h4 class="popup-title">Animation</h4>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-
-			<div class="col-sm-12">
-				<p> In the scene Wall-E is animated to turn his head towards Eve, hand her a stem and tilt his head just like he does in the film. As a response, Eve swirls up and down.</p>
-</div>
-		</div>
-
-
-
-	<div class="row">
-<div class="col-sm-12">
-<p>Interact with the scene by hovering over it zoom in r out, and dragging the cursor on the scene.</p>
-
-<b><p>Press <em>g</em> to start the animation.</p>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <!-- Put your image here -->
+                <img src="textures.png" alt="">
+            </div>
+            <!-- .col -->
+        </div>
+        <!-- .row -->
+        <div class="popup-content0">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="headerUnderText">
+                        <h4 class="popup-title">Lighting</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p> I used directional and ambient lighting to highlight the form and the material of the characters to the viewer's eyes. </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="headerUnderText">
+                        <h4 class="popup-title">Animation</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p> In the scene Wall-E is animated to turn his head towards Eve, hand her a stem and tilt his head just like he does in the film. As a response, Eve swirls up and down.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>Interact with the scene by hovering over it zoom in r out, and dragging the cursor on the scene.</p>
+                    <b><p>Press <em>g</em> to start the animation.</p>
 
 <p>Press <em>s</em> to stop the animation.</p>
 
 <p>Press <em>0</em> to restart the animation.</p></b>
-</div>
-
-</div>
-</div>
-</div>
-
-
-
-
-            <div class="row">
-
-      <div class="col-sm-12">
-
-        <div class="popup-headerWork">
-          <h2 class="popup-title">More Work</h2>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-
-
-  <ul class="portfolio-items-container">
-  <li class="portfolio-item" data-groups="all slideshow">
-        <figure>
-          <img src="../assets/images/studySpot/studySpotTile.png">
-          <figcaption>
-            <a href="../studyspot"></a>
-            <div class="caption-inner">
-              <h4 class="portfolio-item-title">iPhone app design + development</h4>
-              <div class="portfolio-item-desc">Helping students find their perfect study spot</div>
-            </div>
-          </figcaption>
-        </figure>
-      </li>
-
-      <li class="portfolio-item" data-groups="all video">
-        <figure>
-          <img src="../assets/images/arcelik/istiklalTile.png" alt="">
-          <figcaption>
-            <a href="../arcelik"></a>
-            <div class="caption-inner">
-              <h4 class="portfolio-item-title">Experience Design</h4>
-              <div class="portfolio-item-desc">Rethinking retail experience for millennials</div>
-            </div>
-          </figcaption>
-        </figure>
-      </li>
-
-      
-
-      <li class="portfolio-item" data-groups="all video">
-        <figure>
-          <img src="../assets/images/blockedOnline/blockedOnlineTile-01.png" alt="">
-          <figcaption>
-            <a href="../blockedonline"></a>
-            <div class="caption-inner">
-              <h4 class="portfolio-item-title">Web Design</h4>
-              <div class="portfolio-item-desc">Blocked Online: Unveiling internet censorship</div>
-            </div>
-          </figcaption>
-        </figure>
-      </li>
-
-      <li class="portfolio-item" data-groups="all image">
-        <figure>
-          <img src="../assets/images/VRtile.jpg" alt="">
-          <figcaption>
-            <a href="../research"></a>
-            
-            <div class="caption-inner">
-              <h4 class="portfolio-item-title">Research + Prototype Design</h4>
-              <div class="portfolio-item-desc">Exploring collaborative spatial design <br>in a virtual environment</div>
-            
-          </a>
-          </figcaption>
-        </figure>
-      </li>
-
-      <li class="portfolio-item" data-groups="all slideshow">
-        <figure>
-          <img src="../assets/images/brainstorming/brainst.png" alt="">
-          <figcaption>
-            <a href="../brainstorming"></a>
-            <div class="caption-inner">
-              <h4 class="portfolio-item-title">Brainstorm Facilitation</h4>
-              <div class="portfolio-item-desc">Using design thinking principles<br>
-                to lead creative ideation meetings</div>
-            </div>
-          </figcaption>
-        </figure>
-      </li>
-
-
-      <li class="portfolio-item" data-groups="all image">
-        <figure>
-          <img src="../assets/images/lastdinosaur/dinoTile1.png" alt="">
-          <figcaption>
-            <a href="../lastdinosaur"></a>
-            <div class="caption-inner">
-              <h4 class="portfolio-item-title">Game design + development</h4>
-              <div class="portfolio-item-desc">Save the dinosaur from extinction</div>
-            </div>
-          </figcaption>
-        </figure>
-      </li>
-
-
-</ul>
-
-
-            
-      <div class="popup-content3030" style="text-align: center">
-            <div class="row">
-      <div class="col-sm-12">
-          <h5 class="popup-title">Side projects</h5>
-        </div>
-      </div>
-    </div>
-
-    <ul class="portfolio-items-container">
-          <li class="portfolio-item" data-groups="all image">
-        <figure>
-          <img src="../assets/images/walle/wallEcolver.png" alt="">
-          <figcaption>
-            <a href="../walle"></a>
-            <div class="caption-inner">
-              <h4 class="portfolio-item-title">3D modelling</h4>
-              <div class="portfolio-item-desc">Recreating Wall-E in Three.js</div>
-            </div>
-          </figcaption>
-        </figure>
-      </li>
-
-  <li class="portfolio-item" data-groups="all image">
-        <figure>
-          <img src="../assets/images/ircj/ircjProjTile.png" alt="">
-          <figcaption>
-            <a href="../ircj"></a>
-            <div class="caption-inner">
-              <h4 class="portfolio-item-title">Graphic + Print Design</h4>
-              <div class="portfolio-item-desc">Designing the layout for IRC journal at Wellesley College</div>
-            </div>
-          </figcaption>
-        </figure>
-      </li>
-
-
-  <li class="portfolio-item" data-groups="all image">
-        <figure>
-          <img src="../assets/images/vrTour/towerCourt600.png" alt="">
-          <figcaption>
-            <a href="../wellesleytour"></a>
-            <div class="caption-inner">
-              <h4 class="portfolio-item-title">VR Tour Development</h4>
-              <div class="portfolio-item-desc">Recreating a corner of Wellesley campus in Unity3D</div>
-            </div>
-          </figcaption>
-        </figure>
-      </li>
-
-    </ul><!-- .projects-container -->
-
-<div class="popup-contentBut">
     <div class="row">
-    <div class="col-sm-12 text-center">
-
-
-<a href="mailto:ayakhina@wellesley.edu" class="btn btn-custom-4">ayakhina@wellesley.edu</a> </div>
-
-</div>
-</div>
-
-
-
-	<script src="../assets/js/jquery-1.11.1.min.js"></script>
-	<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-	<script src="../assets/js/jquery.magnific-popup.min.js"></script>
-	<script src="../assets/js/imagesloaded.pkgd.js"></script>
-	<script src="../assets/js/jquery.shuffle.min.js"></script>
-	<script src="../assets/js/twitterFetcher_min.js"></script>
-	<script src="../assets/js/owl.carousel.min.js"></script>
-	<script src="../assets/js/jquery.fitvids.js"></script>
-	<script src="../assets/js/jquery.sticky.js"></script>
-	
-	<script src="assets/js/wow.min.js"></script>
-
-	<script src="../assets/js/custom.js"></script>
-	<script src="../assets/js/custom-shuffle-init.js"></script>
-
-
-  
-
+        <div class="col-sm-12">
+            <div class="popup-headerWork">
+                <h2 class="popup-title">More Work</h2>
+            </div>
+        </div>
+    </div>
+    <ul class="portfolio-items-container">
+        <li class="portfolio-item" data-groups="all slideshow">
+            <figure>
+                <img src="../assets/images/studySpot/studySpotTile.png">
+                <figcaption>
+                    <a href="../studyspot"></a>
+                    <div class="caption-inner">
+                        <h4 class="portfolio-item-title">iPhone app design + development</h4>
+                        <div class="portfolio-item-desc">Helping students find their perfect study spot</div>
+                    </div>
+                </figcaption>
+            </figure>
+        </li>
+        <li class="portfolio-item" data-groups="all video">
+            <figure>
+                <img src="../assets/images/arcelik/istiklalTile.png" alt="">
+                <figcaption>
+                    <a href="../arcelik"></a>
+                    <div class="caption-inner">
+                        <h4 class="portfolio-item-title">Experience Design</h4>
+                        <div class="portfolio-item-desc">Rethinking retail experience for millennials</div>
+                    </div>
+                </figcaption>
+            </figure>
+        </li>
+        <li class="portfolio-item" data-groups="all video">
+            <figure>
+                <img src="../assets/images/blockedOnline/blockedOnlineTile-01.png" alt="">
+                <figcaption>
+                    <a href="../blockedonline"></a>
+                    <div class="caption-inner">
+                        <h4 class="portfolio-item-title">Web Design</h4>
+                        <div class="portfolio-item-desc">Blocked Online: Unveiling internet censorship</div>
+                    </div>
+                </figcaption>
+            </figure>
+        </li>
+        <li class="portfolio-item" data-groups="all image">
+            <figure>
+                <img src="../assets/images/VRtile.jpg" alt="">
+                <figcaption>
+                    <a href="../research"></a>
+                    <div class="caption-inner">
+                        <h4 class="portfolio-item-title">Research + Prototype Design</h4>
+                        <div class="portfolio-item-desc">Exploring collaborative spatial design
+                            <br>in a virtual environment</div>
+                        </a>
+                </figcaption>
+            </figure>
+        </li>
+        <li class="portfolio-item" data-groups="all slideshow">
+            <figure>
+                <img src="../assets/images/brainstorming/brainst.png" alt="">
+                <figcaption>
+                    <a href="../brainstorming"></a>
+                    <div class="caption-inner">
+                        <h4 class="portfolio-item-title">Brainstorm Facilitation</h4>
+                        <div class="portfolio-item-desc">Using design thinking principles
+                            <br> to lead creative ideation meetings</div>
+                    </div>
+                </figcaption>
+            </figure>
+        </li>
+        <li class="portfolio-item" data-groups="all image">
+            <figure>
+                <img src="../assets/images/lastdinosaur/dinoTile1.png" alt="">
+                <figcaption>
+                    <a href="../lastdinosaur"></a>
+                    <div class="caption-inner">
+                        <h4 class="portfolio-item-title">Game design + development</h4>
+                        <div class="portfolio-item-desc">Save the dinosaur from extinction</div>
+                    </div>
+                </figcaption>
+            </figure>
+        </li>
+    </ul>
+    <div class="popup-content3030" style="text-align: center">
+        <div class="row">
+            <div class="col-sm-12">
+                <h5 class="popup-title">Side projects</h5>
+            </div>
+        </div>
+    </div>
+    <ul class="portfolio-items-container">
+        <li class="portfolio-item" data-groups="all image">
+            <figure>
+                <img src="../assets/images/walle/wallEcolver.png" alt="">
+                <figcaption>
+                    <a href="../walle"></a>
+                    <div class="caption-inner">
+                        <h4 class="portfolio-item-title">3D modelling</h4>
+                        <div class="portfolio-item-desc">Recreating Wall-E in Three.js</div>
+                    </div>
+                </figcaption>
+            </figure>
+        </li>
+        <li class="portfolio-item" data-groups="all image">
+            <figure>
+                <img src="../assets/images/ircj/ircjProjTile.png" alt="">
+                <figcaption>
+                    <a href="../ircj"></a>
+                    <div class="caption-inner">
+                        <h4 class="portfolio-item-title">Graphic + Print Design</h4>
+                        <div class="portfolio-item-desc">Designing the layout for IRC journal at Wellesley College</div>
+                    </div>
+                </figcaption>
+            </figure>
+        </li>
+        <li class="portfolio-item" data-groups="all image">
+            <figure>
+                <img src="../assets/images/vrTour/towerCourt600.png" alt="">
+                <figcaption>
+                    <a href="../wellesleytour"></a>
+                    <div class="caption-inner">
+                        <h4 class="portfolio-item-title">VR Tour Development</h4>
+                        <div class="portfolio-item-desc">Recreating a corner of Wellesley campus in Unity3D</div>
+                    </div>
+                </figcaption>
+            </figure>
+        </li>
+    </ul>
+    <!-- .projects-container -->
+    <div class="popup-contentBut">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <a href="mailto:ayakhina@wellesley.edu" class="btn btn-custom-4">ayakhina@wellesley.edu</a> </div>
+        </div>
+    </div>
+    <script src="../assets/js/jquery-1.11.1.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="../assets/js/imagesloaded.pkgd.js"></script>
+    <script src="../assets/js/jquery.shuffle.min.js"></script>
+    <script src="../assets/js/twitterFetcher_min.js"></script>
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <script src="../assets/js/jquery.fitvids.js"></script>
+    <script src="../assets/js/jquery.sticky.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/custom-shuffle-init.js"></script>
 </body>
+
 </html>
