@@ -10,7 +10,7 @@
 
 body {
 	font: 400 15px/1.8 'Open Sans', serif;
-	color: #555;
+	color: #494542;
 	overflow-x: hidden;
 }
 
@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	margin: 5px 0 5px;
-	color: #333;
+	color: #494542;
 }
 
 h2 {
@@ -218,7 +218,7 @@ h6 {
 }
 
 .label-custom-2 {
-	background: #222;
+	background: #494542;
 }
 
 /* ---------------------------------------------- /*
@@ -354,15 +354,15 @@ textarea.form-control {
 
 .btn-custom-4 {
 	background: none;
-	border: 1px solid #222;
-	color: #222;
+	border: 1px solid #494542;
+	color: #494542;
 }
 
 .btn-custom-4:hover,
 .btn-custom-4:focus,
 .btn-custom-4:active,
 .btn-custom-4.active {
-	background: #222;
+	background: #494542;
 	color: #FFF;
 }
 
@@ -1053,7 +1053,7 @@ button.mfp-close {
 .navbar-custom .navbar-nav .dropdown-menu > li > a {
 	font-size: 13px;
 	letter-spacing: 1px;
-	color: #222;
+	color: #494542;
 }
 
 .navbar-custom .nav li.active,
@@ -1475,7 +1475,7 @@ display: inline-block;
 margin-right: 5px;
 min-width: 70px;
 min-height: 70px;
-border-right: 1px solid #f1f1f1;
+border-right: 1px solid #;
 line-height: 70px;
 text-align: center;
 font-size: 32px;
