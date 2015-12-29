@@ -668,11 +668,20 @@ textarea.form-control {
 }
 
 .portfolio-items-container .portfolio-item {
--webkit-transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
--moz-transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
--ms-transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
--o-transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
-transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+ 
+ -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+
+
+-webkit-transition: opacity 0.35s ease-out .25s, transform 0.35s ease-in .25s;
+-moz-transition: opacity 0.35s ease-out .25s, transform 0.35s ease-in.25s;
+-ms-transition: opacity 0.35s ease-out .25s, transform 0.35s ease-in .25s;
+-o-transition: opacity 0.35s ease-out .25s, transform 0.35s ease-in .25s;
+transition: opacity 0.35s ease-out .25s, transform 0.35s ease-in .25s;
 }
 
 .portfolio-items-container .portfolio-item figcaption {
