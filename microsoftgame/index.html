@@ -2,19 +2,21 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Asiya Yakhina</title>
+    <!-- CSS -->
+    <!-- Bootstrap core CSS -->
     <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <!-- Font Awesome CSS -->
     <link href="../assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
     <!-- Elegant icons CSS -->
     <link href="../assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
     <!--[if lte IE 7]>
-		<script src="assets/js/icons-lte-ie7.js"></script>
-	<![endif]-->
+        <script src="assets/js/icons-lte-ie7.js"></script>
+    <![endif]-->
     <!-- Magnific-popup lightbox -->
     <link href="../assets/css/magnific-popup.css" rel="stylesheet">
     <!-- Owl Carousel -->
@@ -25,17 +27,13 @@
     <!-- Custom styles CSS -->
     <link href="../assets/css/style.css" rel="stylesheet" media="screen">
     <link rel="shortcut icon" href="../favicon2.png">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="../sss/sss.min.js"></script>
+    <link rel="stylesheet" href="../sss/sss.css" type="text/css" media="all">
     <script>
-    var myVideo = document.getElementById('video');
-    if (typeof myVideo.loop == 'boolean') { // loop supported
-        myVideo.loop = true;
-    } else { // loop property not supported
-        myVideo.on('ended', function() {
-            this.currentTime = 0;
-            this.play();
-        }, false);
-    }
-    myVideo.play();
+    jQuery(function($) {
+        $('.slider').sss();
+    });
     </script>
 </head>
 
@@ -67,7 +65,7 @@
         <div class="row">
             <div class="col-sm-12 text-center">
                 <!-- Put your image here -->
-                <img src="../assets/images/vrTour/towerCourt1000.png" alt="">
+                <img src="../assets/images/microsoft/splashCover.png" alt="">
             </div>
             <!-- .col -->
         </div>
@@ -76,47 +74,65 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="popup-header">
-                        <h2 class="popup-title">VR Tour Development</h2>
+                        <h2 class="popup-title">Game Design Project</h2>
                         <div class="popup-subtitle">
-                            Recreating a corner of Wellesley campus in Unity3D
+                            UX design internship at Microsoft
                         </div>
                         <div class="popup-line"></div>
                     </div>
-                    <p>During my semester as a research assistant at the <a href="http://cs.wellesley.edu/~hcilab/" target="_blank">HCI lab</a> at Wellesley, I was given a task of creating a virtual reality tour of a certain place on Wellesley Campus for the science fair.</p>
-                    <p>I picked Tower Court - a spacious green courtyard that is surrounded by three beautiful dorm buildings.
-                    </p>
-                    <p>
-                        I created a 3D model of this space in Unity3D, took high resolution photographs of the dorm buildings, cleaned them up, edited the perspective, and texture mapped them on the building blocks.
-                    </p>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <!-- Put your image here -->
-                <img src="../assets/images/vrTour/towerCourtModel.png" alt="">
-            </div>
-            <!-- .col -->
-        </div>
-        <div class="popup-contentBtnPar">
             <div class="row">
                 <div class="col-sm-12">
-                    <p>
-                        For the purpose of the demo, I integrated Oculus Rift with my Unity application so that the visitors could be fully immersed in the environment and could view it by simply turning their head. I also added a "player" object into the scene, so that the visitors could explore the space by simply using arrow keys to walk around.
+                   <p> <b>My role:</b> designing the game mechanics, prototyping interaction, designing user workflows, designing the character and the game story, designing and producing visual assets for the game, user-testing.
+                    </p>
+
+                    <p>I worked on this project as a UX+UI designer along with four developers and a project manager. Throughout the internship we used agile scrum development methodology which entailed sprint planning, task weighting and delivering end-to-end user experiences at the end of each sprint.
+                    </p>
+                  
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="headerUnderText">
+                        <h4 class="popup-title">Final Outcome</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>Over twelve weeks we designed and developed a gesture-controlled mobile game thereby taking the project from a mere idea to the version that was ready to be shipped to the store. 
                     </p>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <video id="video" width="100%" height="auto" autoplay="true" loop="true">
-                    <source src="vrTour.mp4" type="video/mp4">
-                    <source src="vrTour.ogg" type="video/ogg"> Your browser does not support the video tag.
-                </video>
+      <div class="row">
+            <div class="col-sm-12">
+                <div class="slider" id="gameSlider">
+                    <img src="../assets/images/microsoft/1.jpeg" />
+                    <img src="../assets/images/microsoft/2.jpeg" />
+                    <img src="../assets/images/microsoft/3.jpeg" />
+                    <img src="../assets/images/microsoft/4.jpeg" />
+            
+                </div>
             </div>
-            <!-- .col -->
         </div>
+            <div class="popup-content">
+            <div class="row">
+<div class="col-sm-12">
+                   <p> The <a href="https://www.microsoft.com/en-us/store/games/fycpt/9nblggh1z3c5#app-details">beta version</a> has been released on the Microsoft Store, and has been mentioned in the <a href ="http://wmpoweruser.com/microsoft-is-testing-a-game-for-the-microsoft-band-in-the-windows-mobile-store/">following article</a>. Because the final version of the game hasn’t been published yet, I cannot disclose more details but will be able to go over my design process in person.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- .row -->
     </div>
+
+
+
     <div class="row">
         <div class="col-sm-12">
             <div class="popup-headerWork">

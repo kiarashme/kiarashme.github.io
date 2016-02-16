@@ -25,18 +25,6 @@
     <!-- Custom styles CSS -->
     <link href="../assets/css/style.css" rel="stylesheet" media="screen">
     <link rel="shortcut icon" href="../favicon2.png">
-    <script>
-    var myVideo = document.getElementById('video');
-    if (typeof myVideo.loop == 'boolean') { // loop supported
-        myVideo.loop = true;
-    } else { // loop property not supported
-        myVideo.on('ended', function() {
-            this.currentTime = 0;
-            this.play();
-        }, false);
-    }
-    myVideo.play();
-    </script>
 </head>
 
 <body>
@@ -67,7 +55,7 @@
         <div class="row">
             <div class="col-sm-12 text-center">
                 <!-- Put your image here -->
-                <img src="../assets/images/vrTour/towerCourt1000.png" alt="">
+                <img src="../assets/images/keepaway/coverBig.png" alt="">
             </div>
             <!-- .col -->
         </div>
@@ -76,46 +64,190 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="popup-header">
-                        <h2 class="popup-title">VR Tour Development</h2>
+                        <h2 class="popup-title">KeepAway</h2>
                         <div class="popup-subtitle">
-                            Recreating a corner of Wellesley campus in Unity3D
+                            Distracting your dog from destroying your house
+
                         </div>
                         <div class="popup-line"></div>
                     </div>
-                    <p>During my semester as a research assistant at the <a href="http://cs.wellesley.edu/~hcilab/" target="_blank">HCI lab</a> at Wellesley, I was given a task of creating a virtual reality tour of a certain place on Wellesley Campus for the science fair.</p>
-                    <p>I picked Tower Court - a spacious green courtyard that is surrounded by three beautiful dorm buildings.
-                    </p>
-                    <p>
-                        I created a 3D model of this space in Unity3D, took high resolution photographs of the dorm buildings, cleaned them up, edited the perspective, and texture mapped them on the building blocks.
-                    </p>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <!-- Put your image here -->
-                <img src="../assets/images/vrTour/towerCourtModel.png" alt="">
-            </div>
-            <!-- .col -->
-        </div>
-        <div class="popup-contentBtnPar">
             <div class="row">
                 <div class="col-sm-12">
-                    <p>
-                        For the purpose of the demo, I integrated Oculus Rift with my Unity application so that the visitors could be fully immersed in the environment and could view it by simply turning their head. I also added a "player" object into the scene, so that the visitors could explore the space by simply using arrow keys to walk around.
+                    <p> <b>My role:</b> conducting preliminary research on various dog toy solutions, designing and implementing prototypes with Arduino and an Estimote Beacon, testing the prototype with my boyfriend's puppy.
+
+<p>I worked on this application with Purcell Liddy and Laura Ascher.</p>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="headerUnderText">
+                        <h4 class="popup-title">Problem</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>Dogs can get into all sorts of messes (eating shoes, destroying pillows etc) while their owner isn’t watching. 
+
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="headerUnderText">
+                        <h4 class="popup-title">Solution</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p> KeepAway is an interactive dog toy that is designed to move and light up if 
+the dog approaches a certain spot in the house.
                     </p>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <video id="video" width="100%" height="auto" autoplay="true" loop="true">
-                    <source src="vrTour.mp4" type="video/mp4">
-                    <source src="vrTour.ogg" type="video/ogg"> Your browser does not support the video tag.
-                </video>
+        <div id="custom-content" >
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <!-- Put your image here -->
+                    <img src="../assets/images/keepaway/storyboard.png" alt="">
+                </div>
+                <!-- .col -->
             </div>
-            <!-- .col -->
+            <!-- .row -->
         </div>
+        <div class="popup-content0">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="headerUnderText">
+                        <h4 class="popup-title"> Prototyping: First round</h4>
+                         <div class="popup-subtitle">
+                            The collar component
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>We started by prototyping the component that goes on the dog’s collar.</p>
+
+                    <p> The blue container is attached to a collar, and holds the proximity sensor. The container can be securely fastened to any dog’s collar.</p>
+
+                    <p>This prototype shows a rectangular container to hold the sensor, however the final design will feature rounded edges to ensure comfortable wearing experience for the dog.</p>
+
+                </div>
+            </div>
+        </div>
+        <div id="custom-content" class="white-popup-block2">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <!-- Put your image here -->
+                    <img src="../assets/images/keepaway/collarPrototype.png" alt="">
+                </div>
+                <!-- .col -->
+            </div>
+            <!-- .row -->
+        </div>
+        <div class="popup-content0">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="headerUnderText">
+                        <h4 class="popup-title">Prototyping: Second Round</h4>
+                        <div class="popup-subtitle">
+                            The toy component
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>The next step was activating the lights on the toy remotely. I used arduino, LED lights, a bluetooth module, and an Android app that could activate the arduino via Bluetooth.
+                    </p>
+                </div>
+            </div>
+   </div>
+               <div id="custom-content" class="white-popup-block2">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <!-- Put your image here -->
+                    <img src="../assets/images/keepaway/lightPrototype.png" alt="">
+                </div>
+                <!-- .col -->
+            </div>
+            <!-- .row -->
+        </div>
+      
+        
+
+        <div class="popup-contentBtnPar">
+            
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>Laura made a hedgehog-like cover for the toy out of felt. We put the LEDs through the spikes so that the lights would be obviously exposed.
+                    </p>
+                    <p>Below, is the video of our first demo:
+                    </p>
+                </div>
+            </div>
+        </div>
+          <div class="row">
+                <div class="col-sm-12 text-center">
+
+                    <iframe width="854" height="480" src="https://www.youtube.com/embed/k4Ax5YAMop0" frameborder="0" allowfullscreen></iframe>
+                
+                </div>
+                <!-- .col -->
+            </div>
+        <div class="popup-content0">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="headerUnderText">
+                        <h4 class="popup-title">Prototyping: Third Round</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>For the final round of prototyping, we built a wire structure and a base on wheels that would hold the toy. We took the Android app that activated Arduino via Bluetooth for our first demo and used it as a sample to write our own app that would also respond to beacon activation.
+                    </p>
+                    <p>In the end we had an app which allowed us to activate the toy manually and as a response to the activation of the proximity sensor.
+                    </p>
+                </div>
+            </div>
+             <div class="col-sm-12 text-center">
+<iframe width="854" height="480" src="https://www.youtube.com/embed/fgFnPdq1EjY" frameborder="0" allowfullscreen></iframe>
+</div>
+        </div>
+
+
+
+
+
+            <div class="popup-content0">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="headerUnderText">
+                        <h4 class="popup-title">Takeaways and future work</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>More than anything, this was a really fun learning experience that exposed me to solving problems that I've never encountered before. With no prior experience of working with Arduino or beacons I found the necessary resources to put together a viable solution. As a product, this still needs a lot of work, such as making the toy durable against the dog's rough play, as well as specifying the distance at which the proximity sensor is activated.</p>
+                </div>
+            </div>
+        </div>
+   
+
+
+
+       
     </div>
     <div class="row">
         <div class="col-sm-12">
@@ -125,7 +257,7 @@
         </div>
     </div>
     <ul class="portfolio-items-container">
-           <li class="portfolio-item" data-groups="all video">
+        <li class="portfolio-item" data-groups="all video">
                 <figure>
                     <img src="../assets/images/arcelik/istiklalTile.png" alt="">
                     <figcaption>
@@ -233,7 +365,6 @@
                     </figcaption>
                 </figure>
             </li>
-
     </ul>
     <div class="popup-content3030" style="text-align: center">
         <div class="row">
@@ -281,6 +412,8 @@
         </li>
     </ul>
     <!-- .projects-container -->
+    <!-- Portfolio end -->
+    </div>
     <!-- Services start -->
     <div class="popup-contentBut">
         <div class="row">
